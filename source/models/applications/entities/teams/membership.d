@@ -4,35 +4,28 @@ module models.applications.teams.membership;
 import models.applications;
 
 // TeamMembership that is attached to one or more objects, including other notes.
-  class DAPLTeamMembership : DOOPEntity {
-  this() { super();
-    this.addValues([
-      "systemUserId":UUIDAttribute, // 
-      "teamId":UUIDAttribute, // 
-    ]);
+  class DTeamMembershipEntity : DOOPEntity {
+  mixin(EntityThis!("TeamMembershipEntity"));
+  
+  override void initialize() {
+    super.initialize;
+
+    this
+      .addValues([
+        "systemUserId":UUIDAttribute, // 
+        "teamId":UUIDAttribute, // 
+      ])
+      .registerPath("applications_teammemberships");
   }
-
-  override string entityClass() { return "aplTeamMembership"; }
-  override string entityClasses() { return "aplTeamMemberships"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
 }
-auto APLTeamMembership() { return new DAPLTeamMembership; } 
-auto APLTeamMembership(Json json) { return new DAPLTeamMembership(json); } 
+mixin(EntityCalls!("TeamMembershipEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLTeamMembership);
+    assert(TeamMembershipEntity);
   
-  auto entity = APLTeamMembership;
+  auto entity = TeamMembershipEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
