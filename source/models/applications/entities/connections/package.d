@@ -1,7 +1,7 @@
 module models.applications.connections;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.connections.connection;
 

@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.facility_equipment;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Resource that can be scheduled.
 class DAPLFacilityEquipment : DOOPEntity {

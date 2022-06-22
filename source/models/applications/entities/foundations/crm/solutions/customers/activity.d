@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.solutions.customers.activity;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // An activity performed by a user that has observational value to the business.
 class DAPLCustomerActivity : DOOPEntity {

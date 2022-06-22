@@ -1,7 +1,7 @@
 module models.applications.foundations.bookables.resources.bookings.header;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 static this() {
   createEntities[DAPLBookableResourceBookingHeader.namespace] = (Json json) => APLBookableResourceBookingHeader(json); 

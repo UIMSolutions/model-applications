@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.orders.product;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Line item in a sales order.
 class DAPLOrderProduct : DOOPEntity {

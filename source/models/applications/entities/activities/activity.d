@@ -1,7 +1,7 @@
 module models.applications.activities.activity;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Task performed, or to be performed, by a user. An activity is any action for which an entry can be made on a calendar.
 class DActivityEntity : DOOPEntity {

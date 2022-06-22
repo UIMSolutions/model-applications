@@ -1,7 +1,7 @@
 module models.applications.goals.metric;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 static this() {
   createEntities[DAPLGoalMetric.namespace] = (Json json) => APLGoalMetric(json); 

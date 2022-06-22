@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.solutions.customers;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Subpackage
 public import models.applications.foundations.crm.solutions.customers.segments;

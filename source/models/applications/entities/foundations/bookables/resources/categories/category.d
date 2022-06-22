@@ -1,7 +1,7 @@
 module models.applications.foundations.bookables.resources.categories.category;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Categorize resources that have capacity into categories such as roles.
 class DAPLBookableResourceCategory : DOOPEntity {

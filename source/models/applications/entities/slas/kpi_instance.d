@@ -1,7 +1,7 @@
 module models.applications.slas.kpi_instance;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case
 class DAPLSLAKpiInstance : DOOPEntity {

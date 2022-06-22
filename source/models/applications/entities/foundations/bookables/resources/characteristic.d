@@ -1,7 +1,7 @@
 module models.applications.foundations.bookables.resources.characteristic;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 static this() {
   createEntities[DAPLBookableResourceCharacteristic.namespace] = (Json json) => APLBookableResourceCharacteristic(json); 

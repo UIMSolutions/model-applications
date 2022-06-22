@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.estimates;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.foundations.crm.projects.service_automation.estimates.estimate;
 

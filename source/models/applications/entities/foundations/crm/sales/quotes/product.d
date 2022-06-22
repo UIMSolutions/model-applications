@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.quotes.product;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Product line item in a quote. The details include such information as product ID, description, quantity, and cost.
 class DAPLQuoteProduct : DOOPEntity {

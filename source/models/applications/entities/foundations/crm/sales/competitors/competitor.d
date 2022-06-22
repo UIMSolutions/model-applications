@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.competitors.competitor;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Business competing for the sale represented by a lead or opportunity.
 class DAPLCompetitor : DOOPEntity {

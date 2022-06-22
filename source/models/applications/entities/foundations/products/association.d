@@ -1,7 +1,7 @@
 module models.applications.foundations.products.association;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Instance of a product added to a bundle or kit.
 class DAPLProductAssociation : DOOPEntity {

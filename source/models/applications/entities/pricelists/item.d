@@ -1,7 +1,7 @@
 module models.applications.pricelists.item;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit.
 class DAPLPriceListItem : DOOPEntity {

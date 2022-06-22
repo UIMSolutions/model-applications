@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.services.entitlements.entitlement;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // 
 class DAPLEntitlement : DOOPEntity {

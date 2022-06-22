@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.campaign;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Container for campaign activities and responses, sales literature, products, and lists to create, plan, execute, and track the results of a specific marketing campaign through its life.
 class DAPLCampaign : DOOPEntity {

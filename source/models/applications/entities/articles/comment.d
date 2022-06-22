@@ -1,10 +1,10 @@
 module models.applications.articles.comment;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 /* static this() {
   jsonToEntity["applications.articles.comment"] = (Json json) => APLArticleComment(json); }

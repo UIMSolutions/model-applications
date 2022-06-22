@@ -1,7 +1,7 @@
 module models.applications.foundations.products.product;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Information about products and their pricing information.
 class DAPLProduct : DOOPEntity {

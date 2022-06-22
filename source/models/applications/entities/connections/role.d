@@ -1,7 +1,7 @@
 module models.applications.connections.role;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Role describing a relationship between a two records.
   class DAPLConnectionRole : DOOPEntity {

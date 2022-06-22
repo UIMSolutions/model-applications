@@ -2,7 +2,7 @@ module models.applications.foundations.crm.services.entitlements.product;
 
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // The root entity for portal Ideas.
 class DAPLEntitlementProduct : DOOPEntity {

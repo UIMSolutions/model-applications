@@ -1,7 +1,7 @@
 module models.applications.appointment;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Commitment representing a time interval with start/end times and duration.
 class DAppointmentEntity : DOOPEntity {

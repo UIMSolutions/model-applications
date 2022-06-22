@@ -1,7 +1,7 @@
 module models.applications.queues.queue;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // A list of records that require action, such as accounts, activities, and cases.
 class DAPLQueue : DOOPEntity {

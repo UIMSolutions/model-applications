@@ -1,11 +1,11 @@
 module models.applications.territory;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Territory represents sales regions.
-class DAPLTerritory : DOOPEntity {
-  mixin(EntityThis!("APLTerritory"));
+class DTerritoryEntity : DOOPEntity {
+  mixin(EntityThis!("TerritoryEntity"));
   
   override void initialize() {
     super.initialize;
@@ -27,14 +27,14 @@ class DAPLTerritory : DOOPEntity {
       .registerPath("applications_territories");
   }
 }
-mixin(EntityCalls!("APLTerritory"));
+mixin(EntityCalls!("TerritoryEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLTerritory);
+    assert(TerritoryEntity);
   
-  auto entity = APLTerritory;
+  auto entity = TerritoryEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

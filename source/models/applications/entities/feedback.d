@@ -1,7 +1,7 @@
 module models.applications.feedback;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Feedback that is attached to one or more objects, including other notes.
 class DFeedbackEntity : DOOPEntity {

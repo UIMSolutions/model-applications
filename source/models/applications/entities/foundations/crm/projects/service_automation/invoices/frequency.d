@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.invoices.frequency;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // InvoiceFrequency of a user in the hierarchy
 class DAPLInvoiceFrequency : DOOPEntity {

@@ -1,7 +1,7 @@
 module models.applications.articles.template_;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 /* static this() {
   jsonToEntity["applications.articles.template"] = (Json json) => APLArticleTemplate(json); }

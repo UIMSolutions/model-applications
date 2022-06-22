@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.solutions.customers.segments.membership;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Members participating in a given segment.
 class DAPLSegmentMembership : DOOPEntity {

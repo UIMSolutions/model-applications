@@ -1,7 +1,7 @@
 module models.applications.activities.party;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // ActivityParty that is attached to one or more objects, including other notes.
 class DActivityPartyEntity : DOOPEntity {

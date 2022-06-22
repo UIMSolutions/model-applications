@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.relationship_insights_unified_config;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // 
 class DAPLRelationshipInsightsUnifiedConfig : DOOPEntity {

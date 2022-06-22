@@ -1,7 +1,7 @@
 module models.applications.address;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Address and shipping information. Used to store additional addresses for an account or contact.
 class DAddressEntity : DOOPEntity {

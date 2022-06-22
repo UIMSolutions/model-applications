@@ -1,17 +1,11 @@
 module models.applications.user;
 
 @safe:
-import uim.entities;
+import models.applications;
 
-static this() {
-  createEntities[DAPLUser.namespace] = (Json json) => APLUser(json); 
-  createEntities["aplUser"] = (Json json) => APLUser(json); 
-  createEntities["user"] = (Json json) => APLUser(json); 
-}
-
-// Person with access to the Microsoft CRM system and who owns objects in the Microsoft CRM database.
-class DAPLUser : DOOPEntity {
-  mixin(EntityThis!("APLUser"));
+// Person with access to the system / application and who owns objects in the system / application database.
+class DUserEntity : DOOPEntity {
+  mixin(EntityThis!("UserEntity"));
   
   override void initialize() {
     super.initialize;
@@ -155,14 +149,14 @@ class DAPLUser : DOOPEntity {
       .registerPath("applications_users");
   }
 }
-mixin(EntityCalls!("APLUser"));
+mixin(EntityCalls!("UserEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLUser);
+    assert(UserEntity);
   
-  auto entity = APLUser;
+  auto entity = UserEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

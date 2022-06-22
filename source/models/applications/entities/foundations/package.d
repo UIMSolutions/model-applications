@@ -1,7 +1,7 @@
 module models.applications.foundations;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Packages
 public import models.applications.foundations.bookables;

@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.competitors;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.foundations.crm.sales.competitors.address;
 public import models.applications.foundations.crm.sales.competitors.competitor;

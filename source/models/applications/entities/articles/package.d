@@ -1,7 +1,7 @@
 module models.applications.articles;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.articles.article;
 

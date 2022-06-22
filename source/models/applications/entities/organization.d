@@ -1,7 +1,7 @@
 module models.applications.organization;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Person with whom a business unit has a relationship, such as customer, supplier, and colleague.
 class DOrganizationEntity : DOOPEntity {

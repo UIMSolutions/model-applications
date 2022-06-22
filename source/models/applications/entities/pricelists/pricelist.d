@@ -1,7 +1,7 @@
 module models.applications.pricelists.pricelist;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Entity that defines pricing levels.
 class DAPLPriceList : DOOPEntity {

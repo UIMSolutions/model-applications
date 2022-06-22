@@ -1,7 +1,7 @@
 module models.applications.position;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Position of a user in the hierarchy
 class DPositionEntity : DOOPEntity {

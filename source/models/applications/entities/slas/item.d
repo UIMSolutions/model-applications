@@ -1,7 +1,7 @@
 module models.applications.slas.item;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Contains information about a tracked support KPI for a specific customer.
 class DAPLSLAItem : DOOPEntity {

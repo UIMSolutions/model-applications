@@ -1,7 +1,7 @@
 module models.applications.social_activity;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // SocialActivity that is attached to one or more objects, including other notes.
 class DAPLSocialActivity : DOOPEntity {

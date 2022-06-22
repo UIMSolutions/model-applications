@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.discounts;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.foundations.crm.sales.discounts.discount;
 

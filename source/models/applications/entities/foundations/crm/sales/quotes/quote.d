@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.quotes.quote;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Formal offer for products and/or services, proposed at specific prices and related payment terms, which is sent to a prospective customer.
 class DAPLQuote : DOOPEntity {

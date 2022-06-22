@@ -1,7 +1,7 @@
 module models.applications.letter;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Group of undeleted system users and undeleted teams. Letters can be used to control access to specific objects.
 class DLetterEntity : DOOPEntity {

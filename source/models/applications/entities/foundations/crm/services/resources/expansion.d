@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.services.resources.expansion;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // 
 class DAPLResourceExpansion : DOOPEntity {

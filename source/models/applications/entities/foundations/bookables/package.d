@@ -1,6 +1,6 @@
 module models.applications.foundations.bookables;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.foundations.bookables.resources;

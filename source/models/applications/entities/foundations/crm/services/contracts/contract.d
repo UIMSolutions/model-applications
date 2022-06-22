@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.services.contracts.contract;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Agreement to provide customer service during a specified amount of time or number of cases.
 class DAPLContract : DOOPEntity {

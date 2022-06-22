@@ -1,7 +1,7 @@
 module models.applications.foundations.bookables.resources.bookings.booking;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Represents the line details of a resource booking.
 class DAPLBookableResourceBooking : DOOPEntity {

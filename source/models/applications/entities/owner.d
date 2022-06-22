@@ -1,7 +1,7 @@
 module models.applications.owner;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Group of undeleted system users and undeleted teams. Owners can be used to control access to specific objects.
 class DOwnerEntity : DOOPEntity {

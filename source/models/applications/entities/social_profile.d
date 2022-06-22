@@ -1,11 +1,11 @@
 module models.applications.social_profile;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // This entity is used to store social profile information of its associated account and contacts on different social channels.
-class DAPLSocialProfile : DOOPEntity {
-  mixin(EntityThis!("APLSocialProfile"));
+class DSocialProfileEntity : DOOPEntity {
+  mixin(EntityThis!("SocialProfileEntity"));
   
   override void initialize() {
     super.initialize;
@@ -44,14 +44,14 @@ class DAPLSocialProfile : DOOPEntity {
       .registerPath("applications_socialprofiles");
   }
 }
-mixin(EntityCalls!("APLSocialProfile"));
+mixin(EntityCalls!("SocialProfileEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLSocialProfile);
+    assert(SocialProfileEntity);
   
-  auto entity = APLSocialProfile;
+  auto entity = SocialProfileEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

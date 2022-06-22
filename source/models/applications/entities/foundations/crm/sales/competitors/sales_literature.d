@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.competitors.sales_literature;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Association between a competitor and a product offered by the competitor.
 class DAPLCompetitorSalesLiterature : DOOPEntity {

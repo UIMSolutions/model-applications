@@ -1,7 +1,7 @@
 module models.applications.teams.membership;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // TeamMembership that is attached to one or more objects, including other notes.
   class DAPLTeamMembership : DOOPEntity {

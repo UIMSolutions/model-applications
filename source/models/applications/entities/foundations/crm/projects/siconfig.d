@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.siconfig;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // 
 class DAPLSiconfig : DOOPEntity {

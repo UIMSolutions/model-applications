@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.expenses.receipt;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Table that contains expense receipt information.
 class DAPLExpenseReceipt : DOOPEntity {

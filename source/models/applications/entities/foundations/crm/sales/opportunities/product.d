@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.opportunities.product;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Association between an opportunity and a product.
 class DAPLOpportunityProduct : DOOPEntity {

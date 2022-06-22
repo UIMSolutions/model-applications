@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.orders.close;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Activity generated automatically when an order is closed.
 class DAPLOrderClose : DOOPEntity {

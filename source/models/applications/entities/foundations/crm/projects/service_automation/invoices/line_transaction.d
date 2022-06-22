@@ -1,6 +1,6 @@
 module models.applications.foundations.crm.projects.service_automation.invoices.line_transaction;
 @safe:
-import uim.entities;
+import models.applications;
 
 // Transactions that are associated to an invoice line.
 class DAPLInvoiceLineTransaction : DOOPEntity {

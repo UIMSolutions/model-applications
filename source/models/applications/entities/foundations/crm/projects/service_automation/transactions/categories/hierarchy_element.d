@@ -1,6 +1,6 @@
 module models.applications.foundations.crm.projects.service_automation.transactions.categories.hierarchy_element;
 @safe:
-import uim.entities;
+import models.applications;
 
 // Hierarchical relationship of the transaction category with a root node.
 class DAPLTransactionCategoryHierarchyElement : DOOPEntity {

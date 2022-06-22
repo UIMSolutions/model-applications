@@ -1,7 +1,7 @@
 module models.applications.teams;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.teams.team;
 

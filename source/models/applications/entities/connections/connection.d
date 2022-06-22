@@ -1,7 +1,7 @@
 module models.applications.connections.connection;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 /* static this() {
   jsonToEntity["applications.connections.connection"] = (Json json) => APLConnection(json); }

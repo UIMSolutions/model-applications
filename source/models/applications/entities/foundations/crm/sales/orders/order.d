@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.orders.order;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Quote that has been accepted.
 class DAPLOrder : DOOPEntity {

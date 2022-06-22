@@ -1,11 +1,11 @@
 module models.applications.task;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Task that is attached to one or more objects, including other notes.
-class DAPLTask : DOOPEntity {
-  mixin(EntityThis!("APLTask"));
+class DTaskEntity : DOOPEntity {
+  mixin(EntityThis!("TaskEntity"));
   
   override void initialize() {
     super.initialize;
@@ -62,14 +62,14 @@ class DAPLTask : DOOPEntity {
       .registerPath("applications_tasks");
   }
 }
-mixin(EntityCalls!("APLTask"));
+mixin(EntityCalls!("TaskEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLTask);
+    assert(TaskEntity);
   
-  auto entity = APLTask;
+  auto entity = TaskEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

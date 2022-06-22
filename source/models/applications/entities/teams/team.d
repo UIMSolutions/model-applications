@@ -1,7 +1,7 @@
 module models.applications.teams.team;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
 class DAPLTeam : DOOPEntity {

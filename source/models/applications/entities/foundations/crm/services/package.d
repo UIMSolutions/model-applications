@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.services;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.foundations.crm.services.contracts;
 public import models.applications.foundations.crm.services.entitlements;

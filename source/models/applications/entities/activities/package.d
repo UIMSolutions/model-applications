@@ -1,7 +1,7 @@
 module models.applications.activities;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 /* public import models.applications.activities.activity;
 

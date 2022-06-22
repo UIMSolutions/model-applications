@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.solutions.customers.segments.segment;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Defines a group of members that exhibit common traits.
 class DAPLSegment : DOOPEntity {

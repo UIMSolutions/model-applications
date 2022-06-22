@@ -1,7 +1,7 @@
 module models.applications.customer_relationship;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Relationship between a customer and a partner in which either can be an account or contact.
 class DCustomerRelationshipEntity : DOOPEntity {

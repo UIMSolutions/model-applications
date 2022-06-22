@@ -1,7 +1,7 @@
 module models.applications.recurring_appointment;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // The Master appointment of a recurring appointment series.
 class DRecurringAppointmentEntity : DOOPEntity {

@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.services.entitlements.contract;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // 
 class DAPLEntitlementContact : DOOPEntity {

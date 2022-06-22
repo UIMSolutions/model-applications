@@ -1,7 +1,7 @@
 module models.applications.currency;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Currency in which a financial transaction is carried out.
 class DCurrencyEntity : DOOPEntity {

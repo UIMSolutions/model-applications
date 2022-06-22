@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.sales.attachment;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Item in the sales literature collection.
 class DAPLSalesAttachment : DOOPEntity {

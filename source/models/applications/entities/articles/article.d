@@ -1,7 +1,7 @@
 module models.applications.articles.article;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 static this() {
   createEntities[DAPLArticle.namespace] = (Json json) => APLArticle(json); 

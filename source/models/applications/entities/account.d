@@ -1,7 +1,7 @@
 module models.applications.account;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Business that represents a customer or potential customer. The company that is billed in business transactions.
 class DAccountEntity : DOOPEntity {

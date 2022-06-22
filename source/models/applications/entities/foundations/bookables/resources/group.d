@@ -1,7 +1,7 @@
 module models.applications.foundations.bookables.resources.group;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Associates resources with resource groups that they are a member of.
 class DAPLBookableResourceGroup : DOOPEntity {

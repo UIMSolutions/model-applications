@@ -1,7 +1,7 @@
 module models.applications.business_unit;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Business, division, or department in the Microsoft Dynamics 365 database.
 class DBusinessUnitEntity : DOOPEntity {

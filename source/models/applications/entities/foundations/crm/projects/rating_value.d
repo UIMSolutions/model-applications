@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.rating_value;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // A unique value associated with a rating model that allows providing a user friendly rating value..
 class DAPLRatingValue : DOOPEntity {

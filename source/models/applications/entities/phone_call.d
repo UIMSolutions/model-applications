@@ -1,7 +1,7 @@
 module models.applications.phone_call;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Activity to track a telephone call.
 class DPhoneCallEntity : DOOPEntity {

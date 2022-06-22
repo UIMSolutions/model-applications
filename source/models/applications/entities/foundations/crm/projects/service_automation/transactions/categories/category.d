@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.transactions.categories.category;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Business transaction categories to classify costs and revenue.
 class DAPLTransactionCategory : DOOPEntity {

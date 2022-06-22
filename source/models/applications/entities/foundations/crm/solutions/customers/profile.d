@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.solutions.customers.profile;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // A person or organization that either performed or has the potential to engage in a business activity.
 class DAPLCustomerProfile : DOOPEntity {

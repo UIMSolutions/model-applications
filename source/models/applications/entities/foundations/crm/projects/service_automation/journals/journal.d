@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.journals.journal;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Unposted business transactions, for example, time and expense.
 class DAPLJournal : DOOPEntity {

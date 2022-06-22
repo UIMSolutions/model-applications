@@ -1,7 +1,7 @@
 module models.applications;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Subpackages
 public import models.applications.foundations;

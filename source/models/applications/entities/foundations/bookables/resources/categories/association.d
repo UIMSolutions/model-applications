@@ -1,7 +1,7 @@
 module models.applications.foundations.bookables.resources.categories.association;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Association entity to model the categorization of resources.
 class DAPLBookableResourceCategoryAssociation : DOOPEntity {

@@ -1,7 +1,7 @@
 module models.applications.slas;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Main module
 public import models.applications.slas.sla;

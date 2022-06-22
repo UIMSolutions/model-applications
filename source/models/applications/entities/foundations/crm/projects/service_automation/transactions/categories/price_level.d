@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.transactions.categories.price_level;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // List of prices by category on a price list.
 class DAPLTransactionCategoryPriceLevel : DOOPEntity {

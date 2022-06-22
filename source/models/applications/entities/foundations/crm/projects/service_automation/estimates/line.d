@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.estimates.line;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Estimates on a per day timescale.
 class DAPLEstimateLine : DOOPEntity {

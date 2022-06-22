@@ -1,7 +1,7 @@
 module models.applications.pricelists;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 public import models.applications.pricelists.pricelist;
 

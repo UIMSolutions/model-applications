@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.lead;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Prospect or potential sales opportunity. Leads are converted into accounts, contacts, or opportunities when they are qualified.
 class DAPLLead : DOOPEntity {

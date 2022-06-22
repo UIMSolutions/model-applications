@@ -1,7 +1,7 @@
 module models.applications.goals.goal;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 static this() {
   createEntities[DAPLGoal.namespace] = (Json json) => APLGoal(json); 

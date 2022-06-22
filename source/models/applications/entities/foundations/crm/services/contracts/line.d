@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.services.contracts.line;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Line item in a contract that specifies the type of service a customer is entitled to.
 class DAPLContractLine : DOOPEntity {

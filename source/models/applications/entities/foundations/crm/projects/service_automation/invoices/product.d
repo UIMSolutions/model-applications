@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.invoices.product;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Line item in an invoice containing detailed billing information for a product.
 class DAPLInvoiceProduct : DOOPEntity {

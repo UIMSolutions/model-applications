@@ -1,7 +1,7 @@
 module models.applications.queues.item;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // A specific item in a queue, such as a case record or an activity record.
 class DAPLQueueItem : DOOPEntity {

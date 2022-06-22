@@ -1,7 +1,7 @@
 module models.applications.foundations.crm.projects.service_automation.expenses.category;
 
 @safe:
-import uim.entities;
+import models.applications;
 
 // Main container that holds expense category information.
 class DAPLExpenseCategory : DOOPEntity {
