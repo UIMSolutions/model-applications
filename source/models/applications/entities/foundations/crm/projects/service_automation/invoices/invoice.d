@@ -108,14 +108,14 @@ class DAPLInvoice : DOOPEntity {
         "billToStateOrProvince": StringAttribute, //Type the state or province for the billing address.
         "billToTelephone": StringAttribute, //Type the phone number for the customer's billing address.
       ])    
-      .registerPath("apl_invoices");
+      .registerPath("applications_invoices");
   }
 }
 mixin(EntityCalls!("APLInvoice"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLInvoice);
 
   auto entity = APLInvoice;

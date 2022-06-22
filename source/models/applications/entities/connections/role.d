@@ -48,7 +48,7 @@ auto APLConnectionRole(Json json) { return new DAPLConnectionRole(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLConnectionRole);
   
   auto entity = APLConnectionRole;

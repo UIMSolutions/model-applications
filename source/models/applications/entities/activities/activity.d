@@ -70,14 +70,14 @@ class DActivityEntity : DOOPEntity {
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold."]),
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time."]),
       ])
-      .registerPath("apl_activities");
+      .registerPath("applications_activities");
   }
 }
 mixin(EntityCalls!("ActivityEntity"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(ActivityEntity);
 
   auto entity = ActivityEntity;

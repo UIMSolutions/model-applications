@@ -34,14 +34,14 @@ class DAPLCustomerRelationship : DOOPEntity {
         "modifiedOnBehalfBy": UserIdAttribute, // Shows who created the record on behalf of another user."]),
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team who owns the customer relationship."]),
       ])
-      .registerPath("apl_customerrelationships");
+      .registerPath("applications_customerrelationships");
   }
 }
 mixin(EntityCalls!("APLCustomerRelationship"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCustomerRelationship);
   
   auto entity = APLCustomerRelationship;

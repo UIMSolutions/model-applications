@@ -36,7 +36,7 @@ auto APLEntitlementContact(Json json) { return new DAPLEntitlementContact(json);
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLEntitlementContact);
   
   auto entity = APLEntitlementContact;

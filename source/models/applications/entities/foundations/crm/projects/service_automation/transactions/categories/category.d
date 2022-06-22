@@ -46,7 +46,7 @@ auto APLTransactionCategory(Json json) { return new DAPLTransactionCategory(json
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLTransactionCategory);
 
   auto entity = APLTransactionCategory;

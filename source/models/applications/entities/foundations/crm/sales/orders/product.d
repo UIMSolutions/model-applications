@@ -86,14 +86,14 @@ class DAPLOrderProduct : DOOPEntity {
         "salesOrderDetailName": StringAttribute, // Sales Order Detail Name. Added for 1:n Referential relationship"]),
         "parentBundleIdRef": StringAttribute, // Choose the parent bundle associated with this product"]),
       ])
-      .registerPath("apl_orderproduct");
+      .registerPath("applications_orderproduct");
   }
 }
 mixin(EntityCalls!("APLOrderProduct"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOrderProduct);
 
   auto entity = APLOrderProduct;

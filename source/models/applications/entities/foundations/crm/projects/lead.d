@@ -177,7 +177,7 @@ auto APLLead(Json json) { return new DAPLLead(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLLead);
   
   auto entity = APLLead;

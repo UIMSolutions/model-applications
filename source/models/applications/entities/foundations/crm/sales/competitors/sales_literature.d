@@ -32,7 +32,7 @@ auto APLCompetitorSalesLiterature(Json json) { return new DAPLCompetitorSalesLit
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCompetitorSalesLiterature);
 
   auto entity = APLCompetitorSalesLiterature;

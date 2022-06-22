@@ -27,14 +27,14 @@ class DAPLPosition : DOOPEntity {
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the position with respect to the base currency."]),
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the position."]),
       ])
-      .registerPath("apl_positions");
+      .registerPath("applications_positions");
   }
 }
 mixin(EntityCalls!("APLPosition"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLPosition);
 
   auto entity = APLPosition;

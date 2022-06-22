@@ -30,7 +30,7 @@ class DAPLSLAKpiInstance : DOOPEntity {
       "warningTimeReached": StringAttribute, // Shows information about whether the case has reached its warning time."]),
       "warningTimeReached_display": StringAttribute, // 
       ])
-      .registerPath("apl_slakpiinstances");
+      .registerPath("applications_slakpiinstances");
   }
 
   override string entityClass() { return "aplSLAKpiInstance"; }
@@ -50,7 +50,7 @@ auto APLSLAKpiInstance(Json json) { return new DAPLSLAKpiInstance(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSLAKpiInstance);
   
   auto entity = APLSLAKpiInstance;

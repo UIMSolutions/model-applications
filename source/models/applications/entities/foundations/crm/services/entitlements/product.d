@@ -35,7 +35,7 @@ auto APLEntitlementProduct(Json json) { return new DAPLEntitlementProduct(json);
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLEntitlementProduct);
   
   auto entity = APLEntitlementProduct;

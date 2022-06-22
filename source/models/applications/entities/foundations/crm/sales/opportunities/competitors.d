@@ -34,7 +34,7 @@ auto APLOpportunityCompetitors(Json json) { return new DAPLOpportunityCompetitor
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOpportunityCompetitors);
 
   auto entity = APLOpportunityCompetitors;

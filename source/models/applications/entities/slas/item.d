@@ -49,7 +49,7 @@ auto APLSLAItem(Json json) { return new DAPLSLAItem(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSLAItem);
   
   auto entity = APLSLAItem;

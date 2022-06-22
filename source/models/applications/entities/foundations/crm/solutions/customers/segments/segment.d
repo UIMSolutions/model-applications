@@ -51,7 +51,7 @@ auto APLSegment(Json json) { return new DAPLSegment(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSegment);
 
   auto entity = APLSegment;

@@ -45,7 +45,7 @@ auto APLCompany(Json json) { return new DAPLCompany(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCompany);
 
   auto entity = APLCompany;  

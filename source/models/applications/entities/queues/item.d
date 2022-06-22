@@ -61,7 +61,7 @@ auto APLQueueItem(Json json) { return new DAPLQueueItem(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLQueueItem);
 
   auto entity = APLQueueItem;

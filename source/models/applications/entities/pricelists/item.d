@@ -58,7 +58,7 @@ auto APLPriceListItem(Json json) { return new DAPLPriceListItem(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLPriceListItem);
   
   auto entity = APLPriceListItem;

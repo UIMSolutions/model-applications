@@ -35,14 +35,14 @@ class DAPLTransactionConnection : DOOPEntity {
         "transaction2Role": StringAttribute, // 
         "transaction2Type": StringAttribute, // 
       ])
-      .registerPath("apl_transactionconnections");
+      .registerPath("applications_transactionconnections");
   }
 }
 mixin(EntityCalls!("APLTransactionConnection"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLTransactionConnection);
 
   auto entity = APLTransactionConnection;

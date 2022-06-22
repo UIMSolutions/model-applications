@@ -45,7 +45,7 @@ auto APLOpportunityRelationship(Json json) { return new DAPLOpportunityRelations
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOpportunityRelationship);
   
   auto entity = APLOpportunityRelationship;

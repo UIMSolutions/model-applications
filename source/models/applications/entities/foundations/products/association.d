@@ -50,7 +50,7 @@ auto APLProductAssociation(Json json) { return new DAPLProductAssociation(json);
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLProductAssociation);
   
   auto entity = APLProductAssociation;

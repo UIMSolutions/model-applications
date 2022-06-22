@@ -29,7 +29,7 @@ auto APLTeamMembership(Json json) { return new DAPLTeamMembership(json); }  */
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
   /* // auto entity = APLTeamMembership;
   // auto repository = OOPFileRepository("./tests");
   repository.create("entities", entity.entityClasses, entity.toJson);

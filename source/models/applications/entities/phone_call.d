@@ -62,14 +62,14 @@ class DAPLPhoneCall : DOOPEntity {
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time."]),
         "SLAId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Phone Call record."]),
       ])
-      .registerPath("apl_phonecalls");
+      .registerPath("applications_phonecalls");
   }
 }
 mixin(EntityCalls!("APLPhoneCall"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLPhoneCall);
 
   auto entity = APLPhoneCall;

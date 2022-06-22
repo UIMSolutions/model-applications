@@ -70,14 +70,14 @@ class DAPLFax : DOOPEntity {
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold."]),
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time."]),
       ])
-      .registerPath("apl_faxes");
+      .registerPath("applications_faxes");
   }
 }
 mixin(EntityCalls!("APLFax"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLFax);
   
   auto entity = APLFax;

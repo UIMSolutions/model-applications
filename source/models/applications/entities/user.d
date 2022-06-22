@@ -152,14 +152,14 @@ class DAPLUser : DOOPEntity {
         "identityId": UUIDAttribute, // For internal use only"]),
         "territoryId": UUIDAttribute, // Unique identifier of the territory to which the user is assigned"]),
       ])
-      .registerPath("apl_users");
+      .registerPath("applications_users");
   }
 }
 mixin(EntityCalls!("APLUser"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLUser);
   
   auto entity = APLUser;

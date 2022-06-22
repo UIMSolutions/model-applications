@@ -116,7 +116,7 @@ auto APLGoal(Json json) { return new DAPLGoal(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLGoal);
   
   auto entity = APLGoal;

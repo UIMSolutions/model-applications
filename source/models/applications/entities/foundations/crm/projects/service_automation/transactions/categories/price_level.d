@@ -53,7 +53,7 @@ auto APLTransactionCategoryPriceLevel(Json json) { return new DAPLTransactionCat
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLTransactionCategoryPriceLevel);
 
   auto entity = APLTransactionCategoryPriceLevel;

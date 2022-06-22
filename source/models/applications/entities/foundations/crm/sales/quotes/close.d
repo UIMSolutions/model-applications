@@ -107,7 +107,7 @@ auto APLQuoteClose(Json json) { return new DAPLQuoteClose(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLQuoteClose);
   
   auto entity = APLQuoteClose;

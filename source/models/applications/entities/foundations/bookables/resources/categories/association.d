@@ -33,7 +33,7 @@ class DAPLBookableResourceCategoryAssociation : DOOPEntity {
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the bookableresourcecategoryassn with respect to the base currency."]),
         "transactionCurrencyId": CurrencyIdAttribute, // Exchange rate for the currency associated with the BookableResourceCategoryAssn with respect to the base currency."]),
       ])
-      .registerPath("apl_bookableresourcecategoryassociation");
+      .registerPath("applications_bookableresourcecategoryassociation");
   }
 }
 mixin(EntityCalls!("APLBookableResourceCategoryAssociation"));

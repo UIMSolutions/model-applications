@@ -90,14 +90,14 @@ class DAPLBusinessUnit : DOOPEntity {
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the businessunit."]),
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the businessunit with respect to the base currency."]),
       ])
-      .registerPath("apl_businessunits");
+      .registerPath("applications_businessunits");
   }
 }
 mixin(EntityCalls!("APLBusinessUnit"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLBusinessUnit);
 
   auto entity = APLBusinessUnit;

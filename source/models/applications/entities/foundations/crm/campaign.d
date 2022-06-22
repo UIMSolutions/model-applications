@@ -59,7 +59,7 @@ class DAPLCampaign : DOOPEntity {
         "priceListId": UUIDAttribute, // Choose the price list associated with this item to make sure the products associated with the campaign are offered at the correct prices."]), 
         "entityImageId": UUIDAttribute, //  
       ])
-      .registerPath("apl_campaigns");
+      .registerPath("applications_campaigns");
   }
 }
 mixin(EntityCalls!("APLCampaign"));

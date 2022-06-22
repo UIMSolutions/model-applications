@@ -3,15 +3,9 @@ module models.applications.activities.party;
 @safe:
 import uim.entities;
 
-static this() {
-  createEntities[DAPLActivityParty.namespace] = (Json json) => APLActivityParty(json); 
-  createEntities["aplActivityParty"] = (Json json) => APLActivityParty(json); 
-  createEntities["activityParty"] = (Json json) => APLActivityParty(json); 
-}
-
 // ActivityParty that is attached to one or more objects, including other notes.
-class DAPLActivityParty : DOOPEntity {
-  mixin(EntityThis!("APLActivityParty"));
+class DActivityPartyEntity : DOOPEntity {
+  mixin(EntityThis!("ActivityPartyEntity"));
   
   override void initialize() {
     super.initialize;
@@ -42,17 +36,16 @@ class DAPLActivityParty : DOOPEntity {
         "isPartyDeleted": StringAttribute, // Information about whether the underlying entity record is deleted"]),
         "addressUsedEmailColumnNumber": NumberAttribute, // Email address column number from associated party"]),
       ])
-      .registerPath("apl_activityparties");
+      .registerPath("applications_activityparties");
   }
 }
-mixin(EntityCalls!("APLActivityParty"));
+mixin(EntityCalls!("ActivityPartyEntity"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
-    assert(APLActivityParty);
+    assert(ActivityPartyEntity);
   
-  auto entity = APLActivityParty;
+  auto entity = ActivityPartyEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

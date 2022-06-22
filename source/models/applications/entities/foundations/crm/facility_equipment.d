@@ -46,7 +46,7 @@ auto APLFacilityEquipment(Json json) { return new DAPLFacilityEquipment(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLFacilityEquipment);
 
   auto entity = APLFacilityEquipment;

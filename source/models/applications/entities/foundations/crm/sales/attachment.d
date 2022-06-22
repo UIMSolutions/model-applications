@@ -52,7 +52,7 @@ auto APLSalesAttachment(Json json) { return new DAPLSalesAttachment(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSalesAttachment);
   
   auto entity = APLSalesAttachment;

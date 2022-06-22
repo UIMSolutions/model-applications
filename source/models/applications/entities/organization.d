@@ -347,14 +347,14 @@ class DAPLOrganization : DOOPEntity {
         "allowLegacyDialogsEmbedding": StringAttribute, // Enable embedding of certain legacy dialogs in Unified Interface browser client"]),
         "appointmentRichEditorExperience": StringAttribute, // Information on whether rich editing experience for Appointment is enabled."]),
       ])
-      .registerPath("apl_organizations");
+      .registerPath("applications_organizations");
   }
 }
 mixin(EntityCalls!("APLOrganization"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOrganization);
 
   auto entity = APLOrganization;

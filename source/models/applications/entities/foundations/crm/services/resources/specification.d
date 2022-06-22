@@ -45,7 +45,7 @@ auto APLResourceSpecification(Json json) { return new DAPLResourceSpecification(
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLResourceSpecification);
   
   auto entity = APLResourceSpecification;

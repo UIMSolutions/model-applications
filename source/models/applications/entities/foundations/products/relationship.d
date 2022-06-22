@@ -49,7 +49,7 @@ auto APLProductRelationship(Json json) { return new DAPLProductRelationship(json
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLProductRelationship);
   
   auto entity = APLProductRelationship;

@@ -59,7 +59,7 @@ auto APLSLA(Json json) { return new DAPLSLA(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSLA);
   
   auto entity = APLSLA;

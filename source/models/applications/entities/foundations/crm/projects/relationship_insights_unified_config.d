@@ -31,7 +31,7 @@ class DAPLRelationshipInsightsUnifiedConfig : DOOPEntity {
         "newName": StringAttribute, // The name of the custom entity."]),
         "useNewConfigExperience": StringAttribute, // 
       ])
-      .registerPath("apl_relationshipinsightsunifiedconfig");
+      .registerPath("applications_relationshipinsightsunifiedconfig");
   }
 }
 mixin(EntityCalls!("APLRelationshipInsightsUnifiedConfig"));

@@ -108,7 +108,7 @@ auto APLOpportunityClose(Json json) { return new DAPLOpportunityClose(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOpportunityClose);
   
   auto entity = APLOpportunityClose;

@@ -58,7 +58,7 @@ auto APLCompetitorAddress(Json json) { return new DAPLCompetitorAddress(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCompetitorAddress);
   
   auto entity = APLCompetitorAddress;

@@ -227,14 +227,14 @@ class DAPLContact : DOOPEntity {
         "modifiedByExternalParty": StringAttribute, // Shows the external party who modified the record."]),
         "marketingOnly": StringAttribute, // Whether is only for marketing"]),
       ])
-      .registerPath("apl_contacts");
+      .registerPath("applications_contacts");
   }
 }
 mixin(EntityCalls!("APLContact"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLContact);
   
   auto entity = APLContact;

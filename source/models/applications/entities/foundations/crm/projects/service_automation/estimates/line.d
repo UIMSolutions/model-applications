@@ -90,7 +90,7 @@ auto APLEstimateLine(Json json) { return new DAPLEstimateLine(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLEstimateLine);
 
   auto entity = APLEstimateLine;

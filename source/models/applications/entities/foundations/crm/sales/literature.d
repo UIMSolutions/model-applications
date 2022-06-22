@@ -51,7 +51,7 @@ auto APLSalesLiterature(Json json) { return new DAPLSalesLiterature(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSalesLiterature);
   
   auto entity = APLSalesLiterature;

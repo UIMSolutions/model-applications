@@ -43,14 +43,14 @@ class DAPLBookableResourceCharacteristic : DOOPEntity {
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the bookableresourcecharacteristic with respect to the base currency."]),
         "transactionCurrencyId": CurrencyIdAttribute, // Exchange rate for the currency associated with the BookableResourceCharacteristic with respect to the base currency."]),
       ])
-      .registerPath("apl_bookableresourcecharacteristics");
+      .registerPath("applications_bookableresourcecharacteristics");
   }
 }
 mixin(EntityCalls!("APLBookableResourceCharacteristic"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLBookableResourceCharacteristic);
   
   auto entity = APLBookableResourceCharacteristic;
@@ -67,7 +67,7 @@ version(test_library) {
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     auto script = crudScripts();
   }
 }

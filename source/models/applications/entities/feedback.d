@@ -42,7 +42,7 @@ class DAPLFeedback : DOOPEntity {
         "createdByContact": StringAttribute, // Shows the contact who created the record."]),
         "createdOnBehalfByContact": StringAttribute, // Shows the contact who created the record on behalf of another user."]),
       ])
-      .registerPath("apl_feedbacks");
+      .registerPath("applications_feedbacks");
   }
 }
 mixin(EntityCalls!("APLFeedback"));

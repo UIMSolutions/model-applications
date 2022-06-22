@@ -164,7 +164,7 @@ class DAccountEntity : DOOPEntity {
         "followEmail": StringAttribute, // Information about whether to allow following email activity like opens, attachment views and link clicks for emails sent to the account."]),
         "marketingOnly": StringAttribute, // Whether is only for marketing"])
       ])
-      .registerPath("apl_accounts");
+      .registerPath("applications_accounts");
   }
 }
 mixin(EntityCalls!("AccountEntity"));

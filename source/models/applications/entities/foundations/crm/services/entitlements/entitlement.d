@@ -73,7 +73,7 @@ auto APLEntitlement(Json json) { return new DAPLEntitlement(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLEntitlement);
   
   auto entity = APLEntitlement;

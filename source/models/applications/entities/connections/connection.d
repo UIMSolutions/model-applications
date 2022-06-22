@@ -7,7 +7,7 @@ import uim.entities;
   jsonToEntity["applications.connections.connection"] = (Json json) => APLConnection(json); }
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     auto entity = jsonToEntity["applications.connections.connection"](Json.emptyObject); }} */
 
 // Role describing a relationship between a two records.
@@ -39,14 +39,14 @@ class DAPLConnection : DOOPEntity {
         StateCodeAttribute, // Status of the connection role.
         StatusCodeAttribute // Reason for the status of the connection role.
       ])
-      .registerPath("apl_connections");
+      .registerPath("applications_connections");
   }
 }
 mixin(EntityCalls!("APLConnection"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLConnection);
   
   auto entity = APLConnection;

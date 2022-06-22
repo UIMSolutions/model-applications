@@ -92,7 +92,7 @@ auto APLQuoteProduct(Json json) { return new DAPLQuoteProduct(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLQuoteProduct);
   
   auto entity = APLQuoteProduct;

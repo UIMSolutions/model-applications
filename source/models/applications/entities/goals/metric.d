@@ -50,7 +50,7 @@ auto APLGoalMetric(Json json) { return new DAPLGoalMetric(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLGoalMetric);
   
   auto entity = APLGoalMetric;

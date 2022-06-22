@@ -64,7 +64,7 @@ auto APLBookableResource(Json json) { return new DAPLBookableResource(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLBookableResource);
   
   auto entity = APLBookableResource;

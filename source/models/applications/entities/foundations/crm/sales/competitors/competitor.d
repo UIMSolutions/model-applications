@@ -106,7 +106,7 @@ auto APLCompetitor(Json json) { return new DAPLCompetitor(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCompetitor);
 
   auto entity = APLCompetitor;

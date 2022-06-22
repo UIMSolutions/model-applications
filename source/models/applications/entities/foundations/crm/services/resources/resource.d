@@ -42,7 +42,7 @@ auto APLResource(Json json) { return new DAPLResource(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLResource);
   
   auto entity = APLResource;

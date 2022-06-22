@@ -76,7 +76,7 @@ auto APLOpportunityProduct(Json json) { return new DAPLOpportunityProduct(json);
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOpportunityProduct);
   
   auto entity = APLOpportunityProduct;

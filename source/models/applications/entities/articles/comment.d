@@ -10,7 +10,7 @@ import uim.entities;
   jsonToEntity["applications.articles.comment"] = (Json json) => APLArticleComment(json); }
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     auto entity = jsonToEntity["applications.articles.comment"](Json.emptyObject); }} */
 
 // Comment on a knowledge base article.
@@ -30,7 +30,7 @@ class DAPLArticleComment : DOOPEntity {
         "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the kbarticlecomment."]),
         "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the kbarticlecomment."]),
       ])
-      .registerPath("apl_articlecomments");
+      .registerPath("applications_articlecomments");
   }
 }
 mixin(EntityCalls!("APLArticleComment"));
@@ -38,7 +38,7 @@ mixin(EntityCalls!("APLArticleComment"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLArticleComment);
   
   auto entity = APLArticleComment;

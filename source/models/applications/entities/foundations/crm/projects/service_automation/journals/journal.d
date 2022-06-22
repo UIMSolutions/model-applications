@@ -48,7 +48,7 @@ auto APLJournal(Json json) { return new DAPLJournal(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLJournal);
 
   auto entity = APLJournal;

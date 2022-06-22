@@ -49,7 +49,7 @@ auto APLSegmentMembership(Json json) { return new DAPLSegmentMembership(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSegmentMembership);
 
   auto entity = APLSegmentMembership;

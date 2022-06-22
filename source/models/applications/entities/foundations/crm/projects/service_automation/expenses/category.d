@@ -45,7 +45,7 @@ auto APLExpenseCategory(Json json) { return new DAPLExpenseCategory(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLExpenseCategory);
 
   auto entity = APLExpenseCategory;

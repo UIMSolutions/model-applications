@@ -60,7 +60,7 @@ auto APLCustomerActivity(Json json) { return new DAPLCustomerActivity(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCustomerActivity);
 
   auto entity = APLCustomerActivity;

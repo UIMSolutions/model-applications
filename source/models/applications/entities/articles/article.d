@@ -12,7 +12,7 @@ static this() {
   jsonToEntity["applications.articles.article"] = (Json json) => APLArticle(json); }
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     auto entity = jsonToEntity["applications.articles.article"](Json.emptyObject); }} */
 
 // Structured content that is part of the knowledge base.
@@ -47,14 +47,14 @@ class DAPLArticle : DOOPEntity {
           "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency."]),
           "entityImageId": UUIDAttribute, // For internal use only."]),
       ])
-      .registerPath("apl_articles");
+      .registerPath("applications_articles");
   }
 }
 mixin(EntityCalls!("APLArticle"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLArticle);
   
   auto entity = APLArticle;

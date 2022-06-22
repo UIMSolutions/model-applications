@@ -57,7 +57,7 @@ class DAPLExpense : DOOPEntity {
         "totalAmount": StringAttribute, // Shows the total amount of the expense entry."]),
         "totalAmountBase": StringAttribute, // Enter the value of the total amount in the base currency."]),
       ])
-      .registerPath("apl_expenses");
+      .registerPath("applications_expenses");
   }
 }
 mixin(EntityCalls!("APLExpense"));

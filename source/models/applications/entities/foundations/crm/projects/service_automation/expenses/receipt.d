@@ -46,7 +46,7 @@ auto APLExpenseReceipt(Json json) { return new DAPLExpenseReceipt(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLExpenseReceipt);
 
   auto entity = APLExpenseReceipt;

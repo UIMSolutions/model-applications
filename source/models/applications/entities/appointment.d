@@ -75,14 +75,14 @@ class DAPLAppointment : DOOPEntity {
         "isUnsafe": BooleanAttribute, // For internal use only."]),
         "isDraft": BooleanAttribute, // Information regarding whether the appointment is a draft."]),
       ])
-      .registerPath("apl_appointments");
+      .registerPath("applications_appointments");
   }
 }
 mixin(EntityCalls!("APLAppointment"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLAppointment);
   
   auto entity = APLAppointment;

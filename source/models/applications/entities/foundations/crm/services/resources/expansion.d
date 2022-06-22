@@ -37,7 +37,7 @@ auto APLResourceExpansion(Json json) { return new DAPLResourceExpansion(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLResourceExpansion);
   
   auto entity = APLResourceExpansion;

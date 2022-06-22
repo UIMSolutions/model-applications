@@ -91,14 +91,14 @@ class DAPLRecurringAppointment : DOOPEntity {
         "traversedPath": StringAttribute, // For internal use only."]),
         "isUnsafe": BooleanAttribute, // For internal use only."]),
       ])
-      .registerPath("apl_recurringappointments");
+      .registerPath("applications_recurringappointments");
   }
 }
 mixin(EntityCalls!("APLRecurringAppointment"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLRecurringAppointment);
 
   auto entity = APLRecurringAppointment;

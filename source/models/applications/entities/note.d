@@ -38,14 +38,14 @@ class DAPLNote : DOOPEntity {
         "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the annotation."]),
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team who owns the note."]),
       ])
-      .registerPath("apl_notes");
+      .registerPath("applications_notes");
   }
 }
 mixin(EntityCalls!("APLNote"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLNote);
   
   auto entity = APLNote;

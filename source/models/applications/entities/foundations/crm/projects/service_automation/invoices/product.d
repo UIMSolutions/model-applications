@@ -111,7 +111,7 @@ auto APLInvoiceProduct(Json json) { return new DAPLInvoiceProduct(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLInvoiceProduct);
 
   auto entity = APLInvoiceProduct;

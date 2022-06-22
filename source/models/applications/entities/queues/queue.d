@@ -71,7 +71,7 @@ auto APLQueue(Json json) { return new DAPLQueue(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     auto entity = APLQueue;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);

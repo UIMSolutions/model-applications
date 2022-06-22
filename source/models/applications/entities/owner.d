@@ -18,14 +18,14 @@ class DAPLOwner : DOOPEntity {
         "ownerIdType": StringAttribute, // 
         "yomiName": StringAttribute, // Pronunciation of the name of the owner, written in phonetic hiragana or katakana characters."]),
       ])
-      .registerPath("apl_owners");
+      .registerPath("applications_owners");
   }
 }
 mixin(EntityCalls!("APLOwner"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOwner);
   
   auto entity = APLOwner;

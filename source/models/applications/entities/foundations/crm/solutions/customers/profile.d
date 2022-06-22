@@ -149,7 +149,7 @@ auto APLCustomerProfile(Json json) { return new DAPLCustomerProfile(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCustomerProfile);
 
   auto entity = APLCustomerProfile;

@@ -24,14 +24,14 @@ class DAPLTerritory : DOOPEntity {
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the territory with respect to the base currency."]),
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the territory."]),
       ])
-      .registerPath("apl_territories");
+      .registerPath("applications_territories");
   }
 }
 mixin(EntityCalls!("APLTerritory"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLTerritory);
   
   auto entity = APLTerritory;

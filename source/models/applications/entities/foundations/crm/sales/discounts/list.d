@@ -44,7 +44,7 @@ auto APLDiscountList(Json json) { return new DAPLDiscountList(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLDiscountList);
   
   auto entity = APLDiscountList;

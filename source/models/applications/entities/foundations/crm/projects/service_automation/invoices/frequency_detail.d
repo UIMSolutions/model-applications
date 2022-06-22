@@ -48,7 +48,7 @@ auto APLInvoiceFrequencyDetail(Json json) { return new DAPLInvoiceFrequencyDetai
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLInvoiceFrequencyDetail);
 
   auto entity = APLInvoiceFrequencyDetail;

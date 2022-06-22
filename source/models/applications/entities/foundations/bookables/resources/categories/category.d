@@ -45,7 +45,7 @@ auto APLBookableResourceCategory(Json json) { return new DAPLBookableResourceCat
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLBookableResourceCategory);
   
   auto entity = APLBookableResourceCategory;

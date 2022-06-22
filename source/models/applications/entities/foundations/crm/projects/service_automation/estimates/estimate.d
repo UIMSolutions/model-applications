@@ -32,7 +32,7 @@ class DAPLEstimate : DOOPEntity {
         "estimateHeaderType_display": StringAttribute, // 
         "project": StringAttribute, // Select the name of the project."]),
       ])
-      .registerPath("apl_estimates");
+      .registerPath("applications_estimates");
   }
 }
 mixin(EntityCalls!("APLEstimate"));

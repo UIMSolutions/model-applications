@@ -100,7 +100,7 @@ auto APLInvoiceLineTransaction(Json json) { return new DAPLInvoiceLineTransactio
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLInvoiceLineTransaction);
 
   auto entity = APLInvoiceLineTransaction;

@@ -7,7 +7,7 @@ import uim.entities;
   jsonToEntity["applications.articles.template"] = (Json json) => APLArticleTemplate(json); }
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     auto entity = jsonToEntity["applications.articles.template"](Json.emptyObject); }} */
 
 // Template for a knowledge base article that contains the standard attributes of an article.
@@ -56,7 +56,7 @@ auto APLArticleTemplate(Json json) { return new DAPLArticleTemplate(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLArticleTemplate);
   
   auto entity = APLArticleTemplate;

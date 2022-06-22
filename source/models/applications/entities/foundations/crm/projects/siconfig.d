@@ -45,7 +45,7 @@ auto APLSiconfig(Json json) { return new DAPLSiconfig(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLSiconfig);
   
   auto entity = APLSiconfig;

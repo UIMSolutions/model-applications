@@ -132,7 +132,7 @@ auto APLOrder(Json json) { return new DAPLOrder(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLOrder);
 
   auto entity = APLOrder;

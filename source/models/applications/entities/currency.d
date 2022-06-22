@@ -31,14 +31,14 @@ class DAPLCurrency : DOOPEntity {
         StateCodeAttribute, // Status of the transaction currency.
         StatusCodeAttribute // Reason for the status of the transaction currency.
       ])        
-      .registerPath("apl_currencies");
+      .registerPath("applications_currencies");
   }
 }
 mixin(EntityCalls!("APLCurrency"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLCurrency);
 
   auto entity = APLCurrency;

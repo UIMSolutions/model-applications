@@ -42,7 +42,7 @@ auto APLTransactionCategoryHierarchyElement(Json json) { return new DAPLTransact
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLTransactionCategoryHierarchyElement);
 
   auto entity = APLTransactionCategoryHierarchyElement;

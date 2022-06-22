@@ -86,7 +86,7 @@ auto APLContract(Json json) { return new DAPLContract(json); }
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    
     assert(APLContract);
   
   auto entity = APLContract;
