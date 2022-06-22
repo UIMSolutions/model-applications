@@ -3,15 +3,9 @@ module models.applications.contact;
 @safe:
 import uim.entities;
 
-static this() {
-  createEntities[DAPLContact.namespace] = (Json json) => APLContact(json); 
-  createEntities["aplContact"] = (Json json) => APLContact(json); 
-  createEntities["contact"] = (Json json) => APLContact(json); 
-}
-
 // Person with whom a business unit has a relationship, such as customer, supplier, and colleague.
-class DAPLContact : DOOPEntity {
-  mixin(EntityThis!("APLContact"));
+class DContactEntity : DOOPEntity {
+  mixin(EntityThis!("ContactEntity"));
   
   override void initialize() {
     super.initialize;
@@ -230,14 +224,14 @@ class DAPLContact : DOOPEntity {
       .registerPath("applications_contacts");
   }
 }
-mixin(EntityCalls!("APLContact"));
+mixin(EntityCalls!("ContactEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLContact);
+    assert(ContactEntity);
   
-  auto entity = APLContact;
+  auto entity = ContactEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

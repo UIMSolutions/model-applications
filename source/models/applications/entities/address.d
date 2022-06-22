@@ -4,8 +4,8 @@ module models.applications.address;
 import uim.entities;
 
 // Address and shipping information. Used to store additional addresses for an account or contact.
-class DAPLAddress : DOOPEntity {
-  mixin(EntityThis!("APLAddress"));
+class DAddressEntity : DOOPEntity {
+  mixin(EntityThis!("AddressEntity"));
   
   override void initialize() {
     super.initialize;
@@ -61,14 +61,14 @@ class DAPLAddress : DOOPEntity {
       .registerPath("applications_addresses");
   }
 }
-mixin(EntityCalls!("APLAddress"));
+mixin(EntityCalls!("AddressEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLAddress);
+    assert(AddressEntity);
   
-  auto entity = APLAddress;
+  auto entity = AddressEntity;
   // auto repository = OOPFileRepository("./tests");
  /*/*  repository.create("entities", entity.entityClasses, entity.toJson);
 

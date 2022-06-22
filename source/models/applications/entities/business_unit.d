@@ -3,15 +3,9 @@ module models.applications.business_unit;
 @safe:
 import uim.entities;
 
-static this() {
-  createEntities[DAPLBusinessUnit.namespace] = (Json json) => APLBusinessUnit(json); 
-  createEntities["aplBusinessUnit"] = (Json json) => APLBusinessUnit(json); 
-  createEntities["businessUnit"] = (Json json) => APLBusinessUnit(json); 
-}
-
 // Business, division, or department in the Microsoft Dynamics 365 database.
-class DAPLBusinessUnit : DOOPEntity {
-  mixin(EntityThis!("APLBusinessUnit"));
+class DBusinessUnitEntity : DOOPEntity {
+  mixin(EntityThis!("BusinessUnitEntity"));
   
   override void initialize() {
     super.initialize;
@@ -93,14 +87,14 @@ class DAPLBusinessUnit : DOOPEntity {
       .registerPath("applications_businessunits");
   }
 }
-mixin(EntityCalls!("APLBusinessUnit"));
+mixin(EntityCalls!("BusinessUnitEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLBusinessUnit);
+    assert(BusinessUnitEntity);
 
-  auto entity = APLBusinessUnit;
+  auto entity = BusinessUnitEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

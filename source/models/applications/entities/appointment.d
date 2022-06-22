@@ -4,8 +4,8 @@ module models.applications.appointment;
 import uim.entities;
 
 // Commitment representing a time interval with start/end times and duration.
-class DAPLAppointment : DOOPEntity {
-  mixin(EntityThis!("APLAppointment"));
+class DAppointmentEntity : DOOPEntity {
+  mixin(EntityThis!("AppointmentEntity"));
   
   override void initialize() {
     super.initialize;
@@ -78,14 +78,14 @@ class DAPLAppointment : DOOPEntity {
       .registerPath("applications_appointments");
   }
 }
-mixin(EntityCalls!("APLAppointment"));
+mixin(EntityCalls!("AppointmentEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLAppointment);
+    assert(AppointmentEntity);
   
-  auto entity = APLAppointment;
+  auto entity = AppointmentEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
