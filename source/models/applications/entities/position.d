@@ -4,8 +4,8 @@ module models.applications.position;
 import uim.entities;
 
 // Position of a user in the hierarchy
-class DAPLPosition : DOOPEntity {
-  mixin(EntityThis!("APLPosition"));
+class DPositionEntity : DOOPEntity {
+  mixin(EntityThis!("PositionEntity"));
   
   override void initialize() {
     super.initialize;
@@ -30,14 +30,14 @@ class DAPLPosition : DOOPEntity {
       .registerPath("applications_positions");
   }
 }
-mixin(EntityCalls!("APLPosition"));
+mixin(EntityCalls!("PositionEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLPosition);
+    assert(PositionEntity);
 
-  auto entity = APLPosition;
+  auto entity = PositionEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

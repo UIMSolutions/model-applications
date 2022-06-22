@@ -4,8 +4,8 @@ module models.applications.feedback;
 import uim.entities;
 
 // Feedback that is attached to one or more objects, including other notes.
-class DAPLFeedback : DOOPEntity {
-  mixin(EntityThis!("APLFeedback"));
+class DFeedbackEntity : DOOPEntity {
+  mixin(EntityThis!("FeedbackEntity"));
   
   override void initialize() {
     super.initialize;
@@ -45,13 +45,13 @@ class DAPLFeedback : DOOPEntity {
       .registerPath("applications_feedbacks");
   }
 }
-mixin(EntityCalls!("APLFeedback"));
+mixin(EntityCalls!("FeedbackEntity"));
 
 version(test_library) {
   unittest {
-    assert(APLFeedback);
+    assert(FeedbackEntity);
   
-  auto entity = APLFeedback;
+  auto entity = FeedbackEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

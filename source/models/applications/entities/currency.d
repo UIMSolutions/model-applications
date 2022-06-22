@@ -4,8 +4,8 @@ module models.applications.currency;
 import uim.entities;
 
 // Currency in which a financial transaction is carried out.
-class DAPLCurrency : DOOPEntity {
-  mixin(EntityThis!("APLCurrency"));
+class DCurrencyEntity : DOOPEntity {
+  mixin(EntityThis!("CurrencyEntity"));
   
   override void initialize() {
     super.initialize;
@@ -14,6 +14,8 @@ class DAPLCurrency : DOOPEntity {
       .addValues([
         CreatedOnBehalfByAttribute, // Unique identifier of the delegate user who created the transactioncurrency."]),
         ModifiedOnBehalfByAttribute, // Unique identifier of the delegate user who last modified the transactioncurrency."]),
+        StateCodeAttribute, // Status of the transaction currency.
+        StatusCodeAttribute // Reason for the status of the transaction currency.
       ])
       .addValues([
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record."]),
@@ -27,21 +29,17 @@ class DAPLCurrency : DOOPEntity {
         "currencyPrecisiOn": DatetimeAttribute, // Number of decimal places that can be used for currency."]),
         "entityImageId": UUIDAttribute, // For internal use only."]),
       ])
-      .addValues([
-        StateCodeAttribute, // Status of the transaction currency.
-        StatusCodeAttribute // Reason for the status of the transaction currency.
-      ])        
       .registerPath("applications_currencies");
   }
 }
-mixin(EntityCalls!("APLCurrency"));
+mixin(EntityCalls!("CurrencyEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLCurrency);
+    assert(CurrencyEntity);
 
-  auto entity = APLCurrency;
+  auto entity = CurrencyEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

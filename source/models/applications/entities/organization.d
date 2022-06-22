@@ -4,8 +4,8 @@ module models.applications.organization;
 import uim.entities;
 
 // Person with whom a business unit has a relationship, such as customer, supplier, and colleague.
-class DAPLOrganization : DOOPEntity {
-  mixin(EntityThis!("APLOrganization"));
+class DOrganizationEntity : DOOPEntity {
+  mixin(EntityThis!("OrganizationEntity"));
   
   override void initialize() {
     super.initialize;
@@ -350,14 +350,14 @@ class DAPLOrganization : DOOPEntity {
       .registerPath("applications_organizations");
   }
 }
-mixin(EntityCalls!("APLOrganization"));
+mixin(EntityCalls!("OrganizationEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLOrganization);
+    assert(OrganizationEntity);
 
-  auto entity = APLOrganization;
+  auto entity = OrganizationEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

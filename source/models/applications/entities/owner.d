@@ -4,8 +4,8 @@ module models.applications.owner;
 import uim.entities;
 
 // Group of undeleted system users and undeleted teams. Owners can be used to control access to specific objects.
-class DAPLOwner : DOOPEntity {
-  mixin(EntityThis!("APLOwner"));
+class DOwnerEntity : DOOPEntity {
+  mixin(EntityThis!("OwnerEntity"));
   
   override void initialize() {
     super.initialize;
@@ -21,14 +21,14 @@ class DAPLOwner : DOOPEntity {
       .registerPath("applications_owners");
   }
 }
-mixin(EntityCalls!("APLOwner"));
+mixin(EntityCalls!("OwnerEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLOwner);
+    assert(OwnerEntity);
   
-  auto entity = APLOwner;
+  auto entity = OwnerEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

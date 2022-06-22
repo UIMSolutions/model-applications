@@ -88,6 +88,6 @@ version(test_library) {
   assert(json != Json(null), entity.id.toString~" not found");
 
   repository.cleanupConnections; */ 
-  }
   writeln("Activity Namespace = ", DActivityEntity.namespace);
+  }
 }

@@ -4,8 +4,8 @@ module models.applications.phone_call;
 import uim.entities;
 
 // Activity to track a telephone call.
-class DAPLPhoneCall : DOOPEntity {
-  mixin(EntityThis!("APLPhoneCall"));
+class DPhoneCallEntity : DOOPEntity {
+  mixin(EntityThis!("PhoneCallEntity"));
   
   override void initialize() {
     super.initialize;
@@ -65,14 +65,14 @@ class DAPLPhoneCall : DOOPEntity {
       .registerPath("applications_phonecalls");
   }
 }
-mixin(EntityCalls!("APLPhoneCall"));
+mixin(EntityCalls!("PhoneCallEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLPhoneCall);
+    assert(PhoneCallEntity);
 
-  auto entity = APLPhoneCall;
+  auto entity = PhoneCallEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

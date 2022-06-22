@@ -4,8 +4,8 @@ module models.applications.note;
 import uim.entities;
 
 // Note that is attached to one or more objects, including other notes.
-class DAPLNote : DOOPEntity {
-  mixin(EntityThis!("APLNote"));
+class DNoteEntity : DOOPEntity {
+  mixin(EntityThis!("NoteEntity"));
   
   override void initialize() {
     super.initialize;
@@ -41,14 +41,14 @@ class DAPLNote : DOOPEntity {
       .registerPath("applications_notes");
   }
 }
-mixin(EntityCalls!("APLNote"));
+mixin(EntityCalls!("NoteEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLNote);
+    assert(NoteEntity);
   
-  auto entity = APLNote;
+  auto entity = NoteEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

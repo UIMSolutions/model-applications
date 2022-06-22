@@ -4,8 +4,8 @@ module models.applications.recurring_appointment;
 import uim.entities;
 
 // The Master appointment of a recurring appointment series.
-class DAPLRecurringAppointment : DOOPEntity {
-  mixin(EntityThis!("APLRecurringAppointment"));
+class DRecurringAppointmentEntity : DOOPEntity {
+  mixin(EntityThis!("RecurringAppointmentEntity"));
   
   override void initialize() {
     super.initialize;
@@ -94,14 +94,14 @@ class DAPLRecurringAppointment : DOOPEntity {
       .registerPath("applications_recurringappointments");
   }
 }
-mixin(EntityCalls!("APLRecurringAppointment"));
+mixin(EntityCalls!("RecurringAppointmentEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLRecurringAppointment);
+    assert(RecurringAppointmentEntity);
 
-  auto entity = APLRecurringAppointment;
+  auto entity = RecurringAppointmentEntity;
   // auto repository = OOPFileRepository("./tests");
 /*   repository.create("entities", entity.entityClasses, entity.toJson);
   

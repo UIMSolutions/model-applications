@@ -4,8 +4,8 @@ module models.applications.letter;
 import uim.entities;
 
 // Group of undeleted system users and undeleted teams. Letters can be used to control access to specific objects.
-class DAPLLetter : DOOPEntity {
-  mixin(EntityThis!("APLLetter"));
+class DLetterEntity : DOOPEntity {
+  mixin(EntityThis!("LetterEntity"));
   
   override void initialize() {
     super.initialize;
@@ -65,14 +65,14 @@ class DAPLLetter : DOOPEntity {
       .registerPath("applications_letters");
   }
 }
-mixin(EntityCalls!("APLLetter"));
+mixin(EntityCalls!("LetterEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLLetter);
+    assert(LetterEntity);
   
-  auto entity = APLLetter;
+  auto entity = LetterEntity;
   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

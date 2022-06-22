@@ -3,15 +3,9 @@ module models.applications.fax;
 @safe:
 import uim.entities;
 
-static this() {
-  createEntities[DAPLFax.namespace] = (Json json) => APLFax(json); 
-  createEntities["aplFax"] = (Json json) => APLFax(json); 
-  createEntities["fax"] = (Json json) => APLFax(json); 
-}
-
 // Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document.  
-class DAPLFax : DOOPEntity {
-  mixin(EntityThis!("APLFax"));
+class DFaxEntity : DOOPEntity {
+  mixin(EntityThis!("FaxEntity"));
   
   override void initialize() {
     super.initialize;
@@ -73,14 +67,14 @@ class DAPLFax : DOOPEntity {
       .registerPath("applications_faxes");
   }
 }
-mixin(EntityCalls!("APLFax"));
+mixin(EntityCalls!("FaxEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLFax);
+    assert(FaxEntity);
   
-  auto entity = APLFax;
+  auto entity = FaxEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 

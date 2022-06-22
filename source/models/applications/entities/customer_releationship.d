@@ -4,8 +4,8 @@ module models.applications.customer_relationship;
 import uim.entities;
 
 // Relationship between a customer and a partner in which either can be an account or contact.
-class DAPLCustomerRelationship : DOOPEntity {
-  mixin(EntityThis!("APLCustomerRelationship"));
+class DCustomerRelationshipEntity : DOOPEntity {
+  mixin(EntityThis!("CustomerRelationshipEntity"));
   
   override void initialize() {
     super.initialize;
@@ -37,14 +37,14 @@ class DAPLCustomerRelationship : DOOPEntity {
       .registerPath("applications_customerrelationships");
   }
 }
-mixin(EntityCalls!("APLCustomerRelationship"));
+mixin(EntityCalls!("CustomerRelationshipEntity"));
 
 version(test_library) {
   unittest {
     
-    assert(APLCustomerRelationship);
+    assert(CustomerRelationshipEntity);
   
-  auto entity = APLCustomerRelationship;
+  auto entity = CustomerRelationshipEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
