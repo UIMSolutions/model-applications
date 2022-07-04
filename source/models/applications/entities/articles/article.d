@@ -3,18 +3,6 @@ module models.applications.articles.article;
 @safe:
 import models.applications;
 
-static this() {
-  createEntities[DAPLArticle.namespace] = (Json json) => APLArticle(json); 
-  createEntities["aplArticle"] = (Json json) => APLArticle(json); 
-}
-
-/* static this() {
-  jsonToEntity["applications.articles.article"] = (Json json) => APLArticle(json); }
-version(test_library) {
-  unittest {
-    
-    auto entity = jsonToEntity["applications.articles.article"](Json.emptyObject); }} */
-
 // Structured content that is part of the knowledge base.
 class DAPLArticle : DOOPEntity {
   mixin(EntityThis!("APLArticle"));
@@ -23,6 +11,10 @@ class DAPLArticle : DOOPEntity {
     super.initialize;
 
     this
+        .addValues([
+          StateCodeAttribute, // Shows whether the knowledge base article is in draft, unapproved, or published status. Published articles are read-only and can't be edited unless they are unpublished.
+          StatusCodeAttribute, // Select the article's status.
+        ])
         .addValues([
           "kbArticleId": UUIDAttribute, // Shows the ID of the article."]),
           "kbArticleTemplateId": UUIDAttribute, // Choose the template that you want to use as a base for creating the new article."]),
@@ -33,10 +25,6 @@ class DAPLArticle : DOOPEntity {
           "number": StringAttribute, // Knowledge base article number."]),
           "content": StringAttribute, // Description of the content of the knowledge base article."]),
           "comments": StringAttribute, // Comments regarding the knowledge base article."]),
-          "stateCode": IntegerAttribute, // Shows whether the knowledge base article is in draft, unapproved, or published status. Published articles are read-only and can't be edited unless they are unpublished."]),
-          "stateCode_display": StringAttribute, // 
-          "statusCode": IntegerAttribute, // Select the article's status."]),
-          "statusCode_display": StringAttribute, // 
           "keyWords": StringAttribute, // Keywords to be used for searches in knowledge base articles."]),
           "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record."]),
           "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
@@ -54,10 +42,8 @@ mixin(EntityCalls!("APLArticle"));
 
 version(test_library) {
   unittest {
-    
     assert(APLArticle);
-  
-  auto entity = APLArticle;
+    auto entity = APLArticle;
   
 /*   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);
