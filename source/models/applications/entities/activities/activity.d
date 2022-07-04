@@ -19,7 +19,6 @@ class DActivityEntity : DOOPEntity {
       .addValues([ // individual values
         "createdOnBehalfId": UUIDAttribute, // Shows who created the record on behalf of another user."]),
         "modifiedOnBehalfId": UUIDAttribute, // Shows who last updated the record on behalf of another user."]),
-        "ownerId": UUIDAttribute, // Owner Id"]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UserIdAttribute, // Unique identifier of the user that owns the activity."]),
@@ -65,8 +64,8 @@ class DActivityEntity : DOOPEntity {
         "traversedPath": StringAttribute, // For internal use only."]),
         "processId": UUIDAttribute, // Unique identifier of the Process."]),
         "stageId": UUIDAttribute, // Unique identifier of the Stage."]),
-        "SLAId": UUIDAttribute, //Choose the service level agreement (SLA) that you want to apply to the case record."]),
-        "SLAInvokedId": UUIDAttribute, // Last SLA that was applied to this case. This field is for internal use only."]),
+        "slaId": UUIDAttribute, //Choose the service level agreement (SLA) that you want to apply to the case record."]),
+        "slaInvokedId": UUIDAttribute, // Last SLA that was applied to this case. This field is for internal use only."]),
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold."]),
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time."]),
       ])
@@ -80,7 +79,7 @@ version(test_library) {
     
     assert(ActivityEntity);
 
-  auto entity = ActivityEntity;
+    auto entity = ActivityEntity;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
