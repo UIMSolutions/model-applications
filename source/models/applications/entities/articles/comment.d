@@ -3,16 +3,6 @@ module models.applications.articles.comment;
 @safe:
 import models.applications;
 
-@safe:
-import models.applications;
-
-/* static this() {
-  jsonToEntity["applications.articles.comment"] = (Json json) => APLArticleComment(json); }
-version(test_library) {
-  unittest {
-    
-    auto entity = jsonToEntity["applications.articles.comment"](Json.emptyObject); }} */
-
 // Comment on a knowledge base article.
 class DAPLArticleComment : DOOPEntity {
   mixin(EntityThis!("APLArticleComment"));
@@ -35,13 +25,12 @@ class DAPLArticleComment : DOOPEntity {
 }
 mixin(EntityCalls!("APLArticleComment"));
 
-
 version(test_library) {
   unittest {
     
     assert(APLArticleComment);
   
-  auto entity = APLArticleComment;
+    auto entity = APLArticleComment;
   // auto repository = OOPFileRepository("./tests");
 /*   repository.create("entities",  entity.entityClasses, entity.toJson);
 /*  */
