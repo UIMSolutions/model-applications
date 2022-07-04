@@ -4,9 +4,14 @@ module models.applications.queues.item;
 import models.applications;
 
 // A specific item in a queue, such as a case record or an activity record.
-class DAPLQueueItem : DOOPEntity {
-  this() { super();
-    this.addValues([
+class DAPLQueueItemEntity : DOOPEntity {
+  mixin(EntityThis!("APLQueueItemEntity"));
+
+  override void initialize() {
+    super.initialize;
+    
+    this
+      .addValues([
       "queueId": UUIDAttribute, // Choose the queue that the item is assigned to."]),
       "objectId": UUIDAttribute, // Choose the activity, case, or article assigned to the queue."]),
       "objectIdTypeCode": IntegerAttribute, // The name of the entity linked by objectId"]),
@@ -39,7 +44,8 @@ class DAPLQueueItem : DOOPEntity {
       "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency."]),
       "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency."]),
       "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record."]),
-    ]);
+    ])
+      .registerPath("applications.queues.items");
   }
 
   override string entityClass() { return "aplQueueItem"; }
