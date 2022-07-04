@@ -4,8 +4,8 @@ module models.applications.articles.template_;
 import models.applications;
 
 // Template for a knowledge base article that contains the standard attributes of an article.
-class DAPLArticleTemplate : DOOPEntity {
-  mixin(EntityThis!("APLArticleTemplate"));
+class DAPLArticleTemplateEntity : DOOPEntity {
+  mixin(EntityThis!("APLArticleTemplateEntity"));
   
   override void initialize() {
     super.initialize;
@@ -31,32 +31,17 @@ class DAPLArticleTemplate : DOOPEntity {
       "isCustomizable": BooleanAttribute, // Information that specifies whether this component can be customized."]),
       "introducedVersiOn": DatetimeAttribute, // Version in which the form is introduced."]),
     ]);
+      .registerPath("applications_articles.templates");
   }
-  
-  override string entityClass() { return "aplArticleTemplate"; }
-  override string entityClasses() { return "aplArticleTemplates"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
-
-  // mixin(GetEntity!("organization", "organizationId", "APLOrganization"));
-
 }
-auto APLArticleTemplate() { return new DAPLArticleTemplate; } 
-auto APLArticleTemplate(Json json) { return new DAPLArticleTemplate(json); } 
+mixin(EntityCalls!("APLArticleTemplateEntity"));
 
 version(test_library) {
   unittest {
     
     assert(APLArticleTemplate);
   
-  auto entity = APLArticleTemplate;
+    auto entity = APLArticleTemplate;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
