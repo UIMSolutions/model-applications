@@ -3,13 +3,6 @@ module models.applications.connections.connection;
 @safe:
 import models.applications;
 
-/* static this() {
-  jsonToEntity["applications.connections.connection"] = (Json json) => APLConnection(json); }
-version(test_library) {
-  unittest {
-    
-    auto entity = jsonToEntity["applications.connections.connection"](Json.emptyObject); }} */
-
 // Role describing a relationship between a two records.
 class DAPLConnection : DOOPEntity {
   mixin(EntityThis!("APLConnection"));
@@ -18,6 +11,10 @@ class DAPLConnection : DOOPEntity {
     super.initialize;
 
     this
+      .addValues([
+        StateCodeAttribute, // Status of the connection role.
+        StatusCodeAttribute // Reason for the status of the connection role.
+      ])
       .addValues([
         "connectionRoleId": UUIDAttribute, // Unique identifier of the connection role."]),
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record."]),
@@ -35,10 +32,6 @@ class DAPLConnection : DOOPEntity {
         "isCustomizable": BooleanAttribute, // Information that specifies whether this component can be customized."]),
         "introducedVersiOn": DatetimeAttribute, // Version in which the form is introduced."]),
       ])
-      .addValues([
-        StateCodeAttribute, // Status of the connection role.
-        StatusCodeAttribute // Reason for the status of the connection role.
-      ])
       .registerPath("applications_connections");
   }
 }
@@ -49,7 +42,7 @@ version(test_library) {
     
     assert(APLConnection);
   
-  auto entity = APLConnection;
+    auto entity = APLConnection;
   // auto repository = OOPFileRepository("./tests");
 /* /*  repository.create("entities", entity.entityClasses, entity.toJson);
 
