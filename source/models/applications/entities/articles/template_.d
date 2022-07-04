@@ -3,16 +3,13 @@ module models.applications.articles.template_;
 @safe:
 import models.applications;
 
-/* static this() {
-  jsonToEntity["applications.articles.template"] = (Json json) => APLArticleTemplate(json); }
-version(test_library) {
-  unittest {
-    
-    auto entity = jsonToEntity["applications.articles.template"](Json.emptyObject); }} */
-
 // Template for a knowledge base article that contains the standard attributes of an article.
 class DAPLArticleTemplate : DOOPEntity {
-  this() { super();
+  mixin(EntityThis!("APLArticleTemplate"));
+  
+  override void initialize() {
+    super.initialize;
+    
     this.addValues([
       "kbArticleTemplateId": UUIDAttribute, // Unique identifier of the knowledge base article template."]),
       "structureXml": StringAttribute, // XML structure of the knowledge base article."]),
