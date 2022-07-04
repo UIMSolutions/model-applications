@@ -4,8 +4,8 @@ module models.applications.connections.connection;
 import models.applications;
 
 // Role describing a relationship between a two records.
-class DAPLConnection : DOOPEntity {
-  mixin(EntityThis!("APLConnection"));
+class DAPLConnectionEntity : DOOPEntity {
+  mixin(EntityThis!("APLConnectionEntity"));
   
   override void initialize() {
     super.initialize;
@@ -35,7 +35,7 @@ class DAPLConnection : DOOPEntity {
       .registerPath("applications_connections");
   }
 }
-mixin(EntityCalls!("APLConnection"));
+mixin(EntityCalls!("APLConnectionEntity"));
 
 version(test_library) {
   unittest {
