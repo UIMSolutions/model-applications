@@ -55,7 +55,7 @@ class DAPLQueueEntity : DOOPEntity {
         "queueViewType": StringAttribute, // Select whether the queue is public or private. A public queue can be viewed by all. A private queue can be viewed only by the members added to the queue."]),
         "queueViewType_display": StringAttribute, // 
       ])
-      .registerPath();
+      .registerPath("applications.queues");
   }
 }
 mixin(EntityCalls!("APLQueueEntity"))
