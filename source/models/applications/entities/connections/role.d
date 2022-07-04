@@ -4,13 +4,13 @@ module models.applications.connections.role;
 import models.applications;
 
 // Role describing a relationship between a two records.
-  class DAPLConnectionRoleEntity : DOOPEntity {
-    mixin(EntityThis!("APLConnectionRoleEntity"));
+class DAPLConnectionRoleEntity : DOOPEntity {
+  mixin(EntityThis!("APLConnectionRoleEntity"));
     
-    override void initialize() {
-      super.initialize;
-      
-      this
+  override void initialize() {
+    super.initialize;
+
+    this
       .addValues([
         StateCodeAttribute, // Status of the connection role.
         StatusCodeAttribute // Reason for the status of the connection role.
