@@ -57,24 +57,8 @@ class DAPLQueueEntity : DOOPEntity {
       ])
       .registerPath();
   }
-
-  override string entityClass() { return "aplQueue"; }
-  override string entityClasses() { return "aplQueues"; }
-
-  this(UUID myId) { 
-    this(); this.id(myId); }
-  this(string myName) { 
-    this(); this.name(myName); }
-  this(UUID myId, string myName) { 
-    this(); this.id(myId).name(myName); }
-  this(Json aJson) { 
-    this(); this.fromJson(aJson); }
-
-  // mixin(GetEntity!("organization", "organizationId", "APLOrganization"));
 }
-auto APLQueue() { return new DAPLQueue; } 
-auto APLQueue(Json json) { return new DAPLQueue(json); } 
-
+mixin(EntityCalls!("APLQueueEntity"))
 version(test_library) {
   unittest {
     
