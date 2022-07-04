@@ -14,13 +14,13 @@ class DTaskEntity : DOOPEntity {
       .addValues([
         CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user."]),
         ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user."]),
+        OwnerIdAttribute, // Owner Id"]),
         StateCodeAttribute, // Shows whether the task is open, completed, or canceled. Completed and canceled tasks are read-only and can't be edited.
         StatusCodeAttribute // Select the task's status.
       ])       
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record."]),
-        "ownerId": UUIDAttribute, // Owner Id"]),
         "ownerIdType": StringAttribute, // The type of owner, either User or Team."]),
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record"]),
         "owningUserId": UserIdAttribute, // Unique identifier of the user that owns the activity."]),
