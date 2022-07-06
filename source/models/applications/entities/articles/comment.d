@@ -12,13 +12,13 @@ class DAPLArticleComment : DOOPEntity {
 
     this
       .addValues([
-        "kbArticleCommentId": UUIDAttribute, // Unique identifier of the knowledge base article comment."]),
-        "kbArticleId": UUIDAttribute, // Unique identifier of the knowledge base article to which the comment applies."]),
-        "title": StringAttribute, // Title of the knowledge base article comment."]),
-        "commentText": StringAttribute, // Comment text for the knowledge base article."]),
-        "organizationId": UUIDAttribute, // Unique identifier of the organization with which the article comment is associated."]),
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the kbarticlecomment."]),
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the kbarticlecomment."]),
+        "kbArticleCommentId": UUIDAttribute, // Unique identifier of the knowledge base article comment.
+        "kbArticleId": UUIDAttribute, // Unique identifier of the knowledge base article to which the comment applies.
+        "title": StringAttribute, // Title of the knowledge base article comment.
+        "commentText": StringAttribute, // Comment text for the knowledge base article.
+        "organizationId": UUIDAttribute, // Unique identifier of the organization with which the article comment is associated.
+        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the kbarticlecomment.
+        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the kbarticlecomment.
       ])
       .registerPath("applications_articlecomments");
   }
