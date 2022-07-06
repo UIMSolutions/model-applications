@@ -12,7 +12,6 @@ class DGoalEntity : DOOPEntity {
     super.initialize;
 
     this
-    this
       .addValues([ // fix values
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated.
