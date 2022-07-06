@@ -64,7 +64,7 @@ class DOrganizationEntity : DOOPEntity {
         "allowOutlookScheduledSyncs": StringAttribute, // Indicates whether scheduled synchronizations to Outlook are allowed.
         "allowMarketingEmailExecutiOn": DatetimeAttribute, // Indicates whether marketing emails execution is allowed.
         "sqlAccessGroupId": UUIDAttribute, // For internal use only.
-        "currencyFormatCode": IntegerAttribute, // Information about how currency symbols are placed throughout Microsoft Dynamics CRM.
+        "currencyFormatCode": IntegerAttribute, // Information about how currency symbols are placed throughout Server CRM.
         "currencyFormatCode_display": StringAttribute, // 
         "fiscalSettingsUpdated": StringAttribute, // Information that specifies whether the fiscal settings have been updated.
         "reportingGroupId": UUIDAttribute, // For internal use only.
@@ -106,7 +106,7 @@ class DOrganizationEntity : DOOPEntity {
         "localeId": UUIDAttribute, // Unique identifier of the locale of the organization.
         "parsedTableColumnPrefix": StringAttribute, // Prefix used for parsed table columns.
         "supportUserId": UserIdAttribute, // Unique identifier of the support user for the organization.
-        "AMDesignator": StringAttribute, // AM designator to use throughout Microsoft Dynamics CRM.
+        "AMDesignator": StringAttribute, // AM designator to use throughout Server CRM.
         "currencyDisplayOptiOn": DatetimeAttribute, // Indicates whether to display money fields with currency code or currency symbol.
         "currencyDisplayOption_display": StringAttribute, // 
         "minAddressBookSyncInterval": StringAttribute, // Normal polling frequency used for address book synchronization in Microsoft Office Outlook.

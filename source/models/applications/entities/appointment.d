@@ -56,7 +56,7 @@ class DAppointmentEntity : DOOPEntity {
         "isAllDayEvent": BooleanAttribute, // Select whether the appointment is an all-day event to make sure that the required resources are scheduled for the full day.
         "globalObjectId": UUIDAttribute, // Shows the ID of the appointment in Microsoft Office Outlook. The ID is used to synchronize the appointment between Server and the correct Exchange account.
         "outlookOwnerApptId": UUIDAttribute, // Unique identifier of the Microsoft Office Outlook appointment owner that correlates to the PR_OWNER_APPT_ID MAPI property.
-        "locatiOn": DatetimeAttribute, // Type the location where the appointment will take place, such as a conference room or customer office.
+        "location": DatetimeAttribute, // Type the location where the appointment will take place, such as a conference room or customer office.
         "traversedPath": StringAttribute, // For internal use only.
         "modifiedFieldsMask": StringAttribute, // For internal use only.
         "seriesId": UUIDAttribute, // Shows the ID of the recurring series of an instance.
@@ -68,8 +68,8 @@ class DAppointmentEntity : DOOPEntity {
         "attachmentErrors": StringAttribute, // Select the error code to identify issues with the outlook item recipients or attachments, such as blocked attachments.
         "attachmentErrors_display": StringAttribute, // 
         "attachmentCount": StringAttribute, // Shows the number of attachments on the appointment.
-        "SLAId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the appointment record.
-        "SLAInvokedId": UUIDAttribute, // Last SLA that was applied to this appointment. This field is for internal use only.
+        "slaId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the appointment record.
+        "slaInvokedId": UUIDAttribute, // Last SLA that was applied to this appointment. This field is for internal use only.
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
         "isUnsafe": BooleanAttribute, // For internal use only.

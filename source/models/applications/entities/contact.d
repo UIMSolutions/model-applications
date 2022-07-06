@@ -42,7 +42,7 @@ class DContactEntity : DOOPEntity {
         "shippingMethodCode_display": StringAttribute, // 
         "accountId": AccountIdAttribute, // Unique identifier of the account with which the contact is associated.
         "participatesInWorkflow": StringAttribute, // Shows whether the contact participates in workflow rules.
-        "isBackofficeCustomer": BooleanAttribute, // Select whether the contact exists in a separate accounting or other system, such as Microsoft Dynamics GP or another ERP database, for use in integration processes.
+        "isBackofficeCustomer": BooleanAttribute, // Select whether the contact exists in a separate accounting or other system, such as Server GP or another ERP database, for use in integration processes.
         "salutatiOn": DatetimeAttribute, // Type the salutation of the contact to make sure the contact is addressed correctly in sales calls, email messages, and marketing campaigns.
         "jobTitle": StringAttribute, // Type the job title of the contact to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.
         "firstName": StringAttribute, // Type the contact's first name to make sure the contact is addressed correctly in sales calls, email, and marketing campaigns.

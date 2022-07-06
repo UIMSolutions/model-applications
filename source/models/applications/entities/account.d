@@ -45,7 +45,7 @@ class DAccountEntity : DOOPEntity {
         "shippingMethodCode": IntegerAttribute, // Select a shipping method for deliveries sent to the account's address to designate the preferred carrier or other delivery option.
         "shippingMethodCode_display": StringAttribute, // 
         "primaryContactId": ContactIdAttribute, // Choose the primary contact for the account to provide quick access to contact details.
-        "participatesInWorkflow": StringAttribute, // For system use only. Legacy Microsoft Dynamics CRM 3.0 workflow data.
+        "participatesInWorkflow": StringAttribute, // For system use only. Legacy Server CRM 3.0 workflow data.
         "accountNumber": NumberAttribute, // Type an ID number or code for the account to quickly search and identify the account in system views.
         "revenue": CurrencyAttribute, // Type the annual revenue for the account, used as an indicator in financial performance analysis.
         "numberOfEmployees": StringAttribute, // Type the number of employees that work at the account for use in marketing segmentation and demographic analysis.
