@@ -16,17 +16,17 @@ class DGoalMetricEntity : DOOPEntity {
         StatusCodeAttribute // Select the account's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the record."]),
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who modified the record."]),
-        "organizationId": UUIDAttribute, // Unique identifier of the organization."]),
-        "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record."]),
-        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated."]),
-        "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only."]),
-        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created."]),
-        "amountDataType": StringAttribute, // Data type of the amount."]),
+        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the record.
+        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who modified the record.
+        "organizationId": UUIDAttribute, // Unique identifier of the organization.
+        "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record.
+        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
+        "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
+        "utcConversionTimeZoneCode": StringAttribute, // Time zone code that was in use when the record was created.
+        "amountDataType": StringAttribute, // Data type of the amount.
         "amountDataType_display": StringAttribute, // 
-        "isAmount": BooleanAttribute, // Information that indicates whether the metric type is Count or Amount."]),
-        "isStretchTracked": BooleanAttribute, // Indicates whether the goal metric tracks stretch targets."]),
+        "isAmount": BooleanAttribute, // Information that indicates whether the metric type is Count or Amount.
+        "isStretchTracked": BooleanAttribute, // Indicates whether the goal metric tracks stretch targets.
       ])
       .registerPath("applications_goals.metrics");
   }
