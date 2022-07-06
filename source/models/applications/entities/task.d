@@ -54,8 +54,8 @@ class DTaskEntity : DOOPEntity {
         "stageId": UUIDAttribute, // Shows the ID of the stage.
         "traversedPath": StringAttribute, // For internal use only.
         "crmTaskAssignedUniqueId": UUIDAttribute, // Assigned Task Unique Id
-        "SLAId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Task record.
-        "SLAInvokedId": UUIDAttribute, // Last SLA that was applied to this Task. This field is for internal use only.
+        "slaId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Task record.
+        "slaInvokedId": UUIDAttribute, // Last SLA that was applied to this Task. This field is for internal use only.
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
       ])

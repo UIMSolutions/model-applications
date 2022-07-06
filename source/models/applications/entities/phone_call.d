@@ -57,10 +57,10 @@ class DPhoneCallEntity : DOOPEntity {
         "processId": UUIDAttribute, // Shows the ID of the process.
         "stageId": UUIDAttribute, // Shows the ID of the stage.
         "traversedPath": StringAttribute, // For internal use only.
-        "SLAInvokedId": UUIDAttribute, // Last SLA that was applied to this Phone Call. This field is for internal use only.
+        "slaInvokedId": UUIDAttribute, // Last SLA that was applied to this Phone Call. This field is for internal use only.
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
-        "SLAId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Phone Call record.
+        "slaId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Phone Call record.
       ])
       .registerPath("applications_phonecalls");
   }

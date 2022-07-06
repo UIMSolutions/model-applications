@@ -157,8 +157,8 @@ class DAccountEntity : DOOPEntity {
         "modifiedByExternalParty": StringAttribute, // Shows the external party who modified the record.
         "primarySatoriId": UUIDAttribute, // Primary Satori ID for Account
         "primaryTwitterId": UUIDAttribute, // Primary Twitter ID for Account
-        "SLAId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Account record.
-        "SLAInvokedId": UUIDAttribute, // Last SLA that was applied to this case. This field is for internal use only.
+        "slaId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Account record.
+        "slaInvokedId": UUIDAttribute, // Last SLA that was applied to this case. This field is for internal use only.
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
         "followEmail": StringAttribute, // Information about whether to allow following email activity like opens, attachment views and link clicks for emails sent to the account.

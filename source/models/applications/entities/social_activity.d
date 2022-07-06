@@ -74,7 +74,7 @@ class DAPLSocialActivity : DOOPEntity {
         "postAuthor": StringAttribute, // Shows the contact or account that authored the post.
         "postAuthorType": StringAttribute, // The type of post author, either Account or Contact.
         "socialAdditionalParams": StringAttribute, // For internal use only.
-        "SLAId": UUIDAttribute, //Choose the service level agreement (SLA) that you want to apply to the Social Activity record.
+        "slaId": UUIDAttribute, //Choose the service level agreement (SLA) that you want to apply to the Social Activity record.
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
       ])

@@ -207,8 +207,8 @@ class DContactEntity : DOOPEntity {
         "processId": UUIDAttribute, // Shows the ID of the process.
         "entityImageId": UUIDAttribute, // For internal use only.
         "traversedPath": StringAttribute, // For internal use only.
-        "SLAId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Contact record.
-        "SLAInvokedId": UUIDAttribute, // Last SLA that was applied to this case. This field is for internal use only.
+        "slaId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Contact record.
+        "slaInvokedId": UUIDAttribute, // Last SLA that was applied to this case. This field is for internal use only.
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
         "followEmail": StringAttribute, // Information about whether to allow following email activity like opens, attachment views and link clicks for emails sent to the contact.

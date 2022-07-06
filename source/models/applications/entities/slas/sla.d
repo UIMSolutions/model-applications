@@ -33,7 +33,7 @@ class DSLAEntity : DOOPEntity {
         "componentState_display": StringAttribute, // 
         "overwriteTime": TimeAttribute, // For internal use only.
         "isManaged": BooleanAttribute, // For internal use only.
-        "SLAIdUnique": StringAttribute, // For internal use only.
+        "slaIdUnique": StringAttribute, // For internal use only.
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "applicableFromPickList": StringAttribute, // Select the field that specifies the date and time from which the SLA items will be calculated. For example, if you select the Case Created On field, SLA calculation will begin from the time the case is created.
         "applicableFromPickList_display": StringAttribute, // 
