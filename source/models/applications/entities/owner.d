@@ -12,11 +12,11 @@ class DOwnerEntity : DOOPEntity {
 
     this
       .addValues([
-        OwnerIdAttribute, // Unique identifier for the Owner: systemuserid or teamid."]),
+        OwnerIdAttribute, // Unique identifier for the Owner: systemuserid or teamid.
       ])
       .addValues([
         "ownerIdType": StringAttribute, // 
-        "yomiName": StringAttribute, // Pronunciation of the name of the owner, written in phonetic hiragana or katakana characters."]),
+        "yomiName": StringAttribute, // Pronunciation of the name of the owner, written in phonetic hiragana or katakana characters.
       ])
       .registerPath("applications_owners");
   }
