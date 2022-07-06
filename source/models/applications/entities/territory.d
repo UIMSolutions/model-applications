@@ -11,9 +11,11 @@ class DTerritoryEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addValues([
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the territory.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the territory.
+      .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
+      ])
+      .addValues([ // individual values
         "organizationId": UUIDAttribute, // Unique identifier for the organization	applicationCommon
         "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
@@ -31,16 +33,8 @@ mixin(EntityCalls!("TerritoryEntity"));
 
 version(test_library) {
   unittest {
-    
     assert(TerritoryEntity);
   
-  auto entity = TerritoryEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TerritoryEntity;
   }
 }

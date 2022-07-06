@@ -12,6 +12,8 @@ class DConnectionEntity : DOOPEntity {
 
     this
       .addValues([
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         StateCodeAttribute, // Status of the connection role.
         StatusCodeAttribute // Reason for the status of the connection role.
       ])
@@ -26,8 +28,6 @@ class DConnectionEntity : DOOPEntity {
         "componentState_display": StringAttribute, // 
         "overwriteTime": TimeAttribute, // Date and time when the record was last overwritten.
         "connectionRoleIdUnique": StringAttribute, // Unique identifier of the published or unpublished connection role record.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who modified the relationship role.
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the relationship role.
         "isManaged": BooleanAttribute, // Indicates whether the solution component is part of a managed solution.
         "isCustomizable": BooleanAttribute, // Information that specifies whether this component can be customized.
         "introducedVersiOn": DatetimeAttribute, // Version in which the form is introduced.

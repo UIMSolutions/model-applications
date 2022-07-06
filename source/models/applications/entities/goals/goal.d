@@ -13,13 +13,13 @@ class DGoalEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated.
         StatusCodeAttribute // Select the account's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UserIdAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy": UserIdAttribute, // Shows who last updated the record on behalf of another user.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.

@@ -13,12 +13,12 @@ class DPriceListEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         StateCodeAttribute, // Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated.
         StatusCodeAttribute // Select the account's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": StringAttribute, // Unique identifier of the delegate user who created the pricelevel.
-        "modifiedOnBehalfBy": StringAttribute, // Unique identifier of the delegate user who last modified the pricelevel.
         "organizationId": StringAttribute, // Unique identifier for the organization
         "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record.
         "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated.

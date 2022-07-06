@@ -12,12 +12,12 @@ class DGoalMetricEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         StateCodeAttribute, // Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated.
         StatusCodeAttribute // Select the account's status.
       ])
       .addValues([ // individual values
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the record.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who modified the record.
         "organizationId": UUIDAttribute, // Unique identifier of the organization.
         "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.

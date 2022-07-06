@@ -12,6 +12,8 @@ class DNoteEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
       ])
       .addValues([ // individual values
@@ -34,8 +36,6 @@ class DNoteEntity : DOOPEntity {
         "stepId": UUIDAttribute, // workflow step id associated with the note.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the annotation.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the annotation.
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team who owns the note.
       ])
       .registerPath("applications_notes");

@@ -12,6 +12,8 @@ class DFeedbackEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Shows whether the feedback is open, rejected or closed.
         StatusCodeAttribute // Select the feedback's status.
@@ -26,8 +28,6 @@ class DFeedbackEntity : DOOPEntity {
         "source": StringAttribute, // Shows where the feedback was submitted from.
         "source_display": StringAttribute, // 
         "regardingObjectId": UUIDAttribute, // Shows the record that the feedback is associated with.
-        "createdOnBehalfBy": UserIdAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who modified the record.
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier of the business unit that owns the knowledge article views.
         "owningUserId": UserIdAttribute, // Unique identifier of the user who owns this feedback.
