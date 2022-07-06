@@ -173,7 +173,7 @@ version(uim_entities) {
   unittest {
     assert(AccountEntity);
   
-  auto entity = AccountEntity;
+    auto entity = AccountEntity;
   // // auto repository = OOPRepository("mongodb://127.0.0.1:27018/?safe=true").connect;
   // auto repository = OOPFileRepository("./tests");
   /* repository.create("entities", entity.entityClasses, entity.toJson);
