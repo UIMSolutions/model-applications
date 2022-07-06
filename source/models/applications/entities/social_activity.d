@@ -19,8 +19,6 @@ class DAPLSocialActivity : DOOPEntity {
         StatusCodeAttribute // Shows whether the social activity is completed, failed, or processing. This field is read-only.
       ])
       .addValues([ // individual values
-      ])
-      .addValues([ // individual values
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
