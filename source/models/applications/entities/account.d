@@ -64,7 +64,7 @@ class DAccountEntity : DOOPEntity {
         "doNotPhone": StringAttribute, // Select whether the account allows phone calls. If Do Not Allow is selected, the account will be excluded from phone call activities distributed in marketing campaigns.
         "doNotFax": StringAttribute, // Select whether the account allows faxes. If Do Not Allow is selected, the account will be excluded from fax activities distributed in marketing campaigns.
         "telephone1": StringAttribute, // Type the main phone number for this account.
-        "doNotEMail": StringAttribute, // Select whether the account allows direct email sent from Microsoft Dynamics 365.
+        "doNotEMail": StringAttribute, // Select whether the account allows direct email sent from Server.
         "telephone2": StringAttribute, // Type a second phone number for this account.
         "fax": StringAttribute, // Type the fax number for the account.
         "telephone3": StringAttribute, // Type a third phone number for this account.

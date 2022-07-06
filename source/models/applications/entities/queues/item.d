@@ -12,6 +12,7 @@ class DAPLQueueItemEntity : DOOPEntity {
     
     this
       .addValues([
+        OwnerIdAttribute, // Owner Id
         StatusCodeAttribute, // Select the item's status.
         StateCodeAttribute, // Shows whether the queue record is active or inactive. Inactive queue records are read-only and can't be edited unless they are reactivated.
       ])
@@ -33,7 +34,6 @@ class DAPLQueueItemEntity : DOOPEntity {
         "utcConversionTimeZoneCode": IntegerAttribute, // Time zone code that was in use when the record was created.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "workerIdModifiedOn": DatetimeAttribute, // Shows the date and time when the queue item was last assigned to a user.
-        "ownerId": UUIDAttribute, // Owner Id
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "owningUserId": UserIdAttribute, // Unique identifier of the user who owns the queue item.
         "workerId": UUIDAttribute, // Shows who is working on the queue item.

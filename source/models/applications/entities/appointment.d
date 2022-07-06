@@ -54,7 +54,7 @@ class DAppointmentEntity : DOOPEntity {
         "requiredAttendees": StringAttribute, // Enter the account, contact, lead, user, or other equipment resources that are required to attend the activity.
         "optionalAttendees": StringAttribute, // The account, contact, lead, user, or other equipment resources that are not needed at the activity, but can optionally attend.
         "isAllDayEvent": BooleanAttribute, // Select whether the appointment is an all-day event to make sure that the required resources are scheduled for the full day.
-        "globalObjectId": UUIDAttribute, // Shows the ID of the appointment in Microsoft Office Outlook. The ID is used to synchronize the appointment between Microsoft Dynamics 365 and the correct Exchange account.
+        "globalObjectId": UUIDAttribute, // Shows the ID of the appointment in Microsoft Office Outlook. The ID is used to synchronize the appointment between Server and the correct Exchange account.
         "outlookOwnerApptId": UUIDAttribute, // Unique identifier of the Microsoft Office Outlook appointment owner that correlates to the PR_OWNER_APPT_ID MAPI property.
         "locatiOn": DatetimeAttribute, // Type the location where the appointment will take place, such as a conference room or customer office.
         "traversedPath": StringAttribute, // For internal use only.

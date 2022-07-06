@@ -81,7 +81,7 @@ class DContactEntity : DOOPEntity {
         "managerName": StringAttribute, // Type the name of the contact's manager for use in escalating issues or other follow-up communications with the contact.
         "managerPhone": StringAttribute, // Type the phone number for the contact's manager.
         "doNotFax": StringAttribute, // Select whether the contact allows faxes. If Do Not Allow is selected, the contact will be excluded from any fax activities distributed in marketing campaigns.
-        "doNotEMail": StringAttribute, // Select whether the contact allows direct email sent from Microsoft Dynamics 365. If Do Not Allow is selected, Microsoft Dynamics 365 will not send the email.
+        "doNotEMail": StringAttribute, // Select whether the contact allows direct email sent from Server. If Do Not Allow is selected, Server will not send the email.
         "doNotPostalMail": StringAttribute, // Select whether the contact allows direct mail. If Do Not Allow is selected, the contact will be excluded from letter activities distributed in marketing campaigns.
         "doNotBulkEMail": StringAttribute, // Select whether the contact accepts bulk email sent through marketing campaigns or quick campaigns. If Do Not Allow is selected, the contact can be added to marketing lists, but will be excluded from the email.
         "doNotBulkPostalMail": StringAttribute, // Select whether the contact accepts bulk postal mail sent through marketing campaigns or quick campaigns. If Do Not Allow is selected, the contact can be added to marketing lists, but will be excluded from the letters.

@@ -12,6 +12,7 @@ class DAPLQueueEntity : DOOPEntity {
     
     this
       .addValues([
+        OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Status of the queue.
         StatusCodeAttribute, // Reason for the status of the queue.
        ])
@@ -34,7 +35,6 @@ class DAPLQueueEntity : DOOPEntity {
         "allowEmailCredentials": StringAttribute, // This attribute is no longer used. The data is now in the Mailbox.AllowEmailConnectorToUseCredentials attribute.
         "incomingEmailFilteringMethod": StringAttribute, // Convert Incoming Email To Activities
         "incomingEmailFilteringMethod_display": StringAttribute, // 
-        "ownerId": UUIDAttribute, // Owner Id
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier of the business unit that owns the queue.
@@ -51,7 +51,7 @@ class DAPLQueueEntity : DOOPEntity {
         "emailRouterAccessApproval_display": StringAttribute, // 
         "defaultMailbox": StringAttribute, // Select the mailbox associated with this queue.
         "entityImageId": UUIDAttribute, // For internal use only.
-        "isEmailAddressApprovedByO365Admin": StringAttribute, // Shows the status of approval of the email address by O365 Admin.
+        "isEmailAddressApprovedByO365Admin": BooleanAttribute, // Shows the status of approval of the email address by O365 Admin.
         "queueViewType": StringAttribute, // Select whether the queue is public or private. A public queue can be viewed by all. A private queue can be viewed only by the members added to the queue.
         "queueViewType_display": StringAttribute, // 
       ])

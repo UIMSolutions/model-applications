@@ -33,7 +33,7 @@ class DFeedbackEntity : DOOPEntity {
         "owningUserId": UserIdAttribute, // Unique identifier of the user who owns this feedback.
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team that owns the feedback.
         "closedBy": UserIdAttribute, // Shows who closed the record.
-        "closedOn": DatetimeAttribute, // Shows the date and time when the record was closed. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.
+        "closedOn": DatetimeAttribute, // Shows the date and time when the record was closed. The date and time are displayed in the time zone selected in Server options.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.

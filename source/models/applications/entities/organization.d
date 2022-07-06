@@ -17,45 +17,45 @@ class DOrganizationEntity : DOOPEntity {
         "privilegeUserGroupId": UUIDAttribute, // Unique identifier of the default privilege for users in the organization.
         "recurrenceExpansionJobBatchSize": StringAttribute, // Specifies the value for number of instances created in on demand job in one shot.
         "recurrenceExpansionJobBatchInterval": StringAttribute, // Specifies the interval (in seconds) for pausing expansion job.
-        "fiscalPeriodType": StringAttribute, // Type of fiscal period used throughout Microsoft CRM.
-        "fiscalCalendarStart": StringAttribute, // Start date for the fiscal period that is to be used throughout Microsoft CRM.
-        "dateFormatCode": IntegerAttribute, // Information about how the date is displayed throughout Microsoft CRM.
+        "fiscalPeriodType": StringAttribute, // Type of fiscal period used throughout Server CRM.
+        "fiscalCalendarStart": StringAttribute, // Start date for the fiscal period that is to be used throughout Server CRM.
+        "dateFormatCode": IntegerAttribute, // Information about how the date is displayed throughout Server CRM.
         "dateFormatCode_display": StringAttribute, // 
-        "timeFormatCode": IntegerAttribute, // Information that specifies how the time is displayed throughout Microsoft CRM.
+        "timeFormatCode": IntegerAttribute, // Information that specifies how the time is displayed throughout Server CRM.
         "timeFormatCode_display": StringAttribute, // 
-        "currencySymbol": StringAttribute, // Symbol used for currency throughout Microsoft Dynamics 365.
-        "weekStartDayCode": IntegerAttribute, // Designated first day of the week throughout Microsoft Dynamics 365.
+        "currencySymbol": StringAttribute, // Symbol used for currency throughout Server.
+        "weekStartDayCode": IntegerAttribute, // Designated first day of the week throughout Server.
         "weekStartDayCode_display": StringAttribute, // 
-        "dateSeparator": StringAttribute, // Character used to separate the month, the day, and the year in dates throughout Microsoft Dynamics 365.
-        "fullNameConventionCode": IntegerAttribute, // Order in which names are to be displayed throughout Microsoft CRM.
+        "dateSeparator": StringAttribute, // Character used to separate the month, the day, and the year in dates throughout Server.
+        "fullNameConventionCode": IntegerAttribute, // Order in which names are to be displayed throughout Server CRM.
         "fullNameConventionCode_display": StringAttribute, // 
-        "negativeFormatCode": IntegerAttribute, // Information that specifies how negative numbers are displayed throughout Microsoft CRM.
+        "negativeFormatCode": IntegerAttribute, // Information that specifies how negative numbers are displayed throughout Server CRM.
         "negativeFormatCode_display": StringAttribute, // 
-        "numberFormat": StringAttribute, // Specification of how numbers are displayed throughout Microsoft CRM.
+        "numberFormat": StringAttribute, // Specification of how numbers are displayed throughout Server CRM.
         "isDisabled": BooleanAttribute, // Information that specifies whether the organization is disabled.
         "disabledReasOn": DatetimeAttribute, // Reason for disabling the organization.
-        "kbPrefix": StringAttribute, // Prefix to use for all articles in Microsoft Dynamics 365.
+        "kbPrefix": StringAttribute, // Prefix to use for all articles in Server.
         "currentKbNumber": NumberAttribute, // First article number to use. Deprecated. Use SetAutoNumberSeed message.
-        "casePrefix": StringAttribute, // Prefix to use for all cases throughout Microsoft Dynamics 365.
+        "casePrefix": StringAttribute, // Prefix to use for all cases throughout Server.
         "currentCaseNumber": NumberAttribute, // First case number to use. Deprecated. Use SetAutoNumberSeed message.
-        "contractPrefix": StringAttribute, // Prefix to use for all contracts throughout Microsoft Dynamics 365.
+        "contractPrefix": StringAttribute, // Prefix to use for all contracts throughout Server.
         "currentContractNumber": NumberAttribute, // First contract number to use. Deprecated. Use SetAutoNumberSeed message.
-        "quotePrefix": StringAttribute, // Prefix to use for all quotes throughout Microsoft Dynamics 365.
+        "quotePrefix": StringAttribute, // Prefix to use for all quotes throughout Server.
         "currentQuoteNumber": NumberAttribute, // First quote number to use. Deprecated. Use SetAutoNumberSeed message.
-        "orderPrefix": StringAttribute, // Prefix to use for all orders throughout Microsoft Dynamics 365.
+        "orderPrefix": StringAttribute, // Prefix to use for all orders throughout Server.
         "currentOrderNumber": NumberAttribute, // First order number to use. Deprecated. Use SetAutoNumberSeed message.
-        "invoicePrefix": StringAttribute, // Prefix to use for all invoice numbers throughout Microsoft Dynamics 365.
+        "invoicePrefix": StringAttribute, // Prefix to use for all invoice numbers throughout Server.
         "currentInvoiceNumber": NumberAttribute, // First invoice number to use. Deprecated. Use SetAutoNumberSeed message.
         "uniqueSpecifierLength": StringAttribute, // Number of characters appended to invoice, quote, and order numbers.
-        "fiscalYearFormat": StringAttribute, // Information that specifies how the name of the fiscal year is displayed throughout Microsoft CRM.
-        "fiscalPeriodFormat": StringAttribute, // Information that specifies how the name of the fiscal period is displayed throughout Microsoft CRM.
+        "fiscalYearFormat": StringAttribute, // Information that specifies how the name of the fiscal year is displayed throughout Server CRM.
+        "fiscalPeriodFormat": StringAttribute, // Information that specifies how the name of the fiscal period is displayed throughout Server CRM.
         "fiscalYearPeriodConnect": StringAttribute, // Information that specifies how the names of the fiscal year and the fiscal period should be connected when displayed together.
         "languageCode": IntegerAttribute, // Preferred language for the organization.
         "sortId": UUIDAttribute, // For internal use only.
-        "dateFormatString": StringAttribute, // String showing how the date is displayed throughout Microsoft CRM.
-        "timeFormatString": StringAttribute, // Text for how time is displayed in Microsoft Dynamics 365.
+        "dateFormatString": StringAttribute, // String showing how the date is displayed throughout Server CRM.
+        "timeFormatString": StringAttribute, // Text for how time is displayed in Server.
         "pricingDecimalPrecisiOn": DatetimeAttribute, // Number of decimal places that can be used for prices.
-        "showWeekNumber": NumberAttribute, // Information that specifies whether to display the week number in calendar displays throughout Microsoft CRM.
+        "showWeekNumber": NumberAttribute, // Information that specifies whether to display the week number in calendar displays throughout Server CRM.
         "nextTrackingNumber": NumberAttribute, // Next token to be placed on the subject line of an email message.
         "tagMaxAggressiveCycles": StringAttribute, // Maximum number of aggressive polling cycles executed for email auto-tagging when a new email is received.
         "systemUserId": UserIdAttribute, // Unique identifier of the system user for the organization.
@@ -92,11 +92,11 @@ class DOrganizationEntity : DOOPEntity {
         "reportingGroupName": StringAttribute, // For internal use only.
         "currentBulkOperationNumber": NumberAttribute, // Current bulk operation number. Deprecated. Use SetAutoNumberSeed message.
         "schemaNamePrefix": StringAttribute, // Prefix used for custom entities and attributes.
-        "ignoreInternalEmail": StringAttribute, // Indicates whether incoming email sent by internal Microsoft Dynamics 365 users or queues should be tracked.
+        "ignoreInternalEmail": StringAttribute, // Indicates whether incoming email sent by internal Server users or queues should be tracked.
         "tagPollingPeriod": StringAttribute, // Normal polling frequency used for email receive auto-tagging in outlook.
         "trackingTokenIdDigits": StringAttribute, // Number of digits used to represent a tracking token identifier.
-        "numberGroupFormat": StringAttribute, // Specifies how numbers are grouped in Microsoft Dynamics 365.
-        "longDateFormatCode": IntegerAttribute, // Information that specifies how the Long Date format is displayed in Microsoft Dynamics 365.
+        "numberGroupFormat": StringAttribute, // Specifies how numbers are grouped in Server.
+        "longDateFormatCode": IntegerAttribute, // Information that specifies how the Long Date format is displayed in Server.
         "utcConversionTimeZoneCode": IntegerAttribute, // Time zone code that was in use when the record was created.
         "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
         "currentImportSequenceNumber": NumberAttribute, // Import sequence to use.
@@ -116,7 +116,7 @@ class DOrganizationEntity : DOOPEntity {
         "isDuplicateDetectionEnabledForOfflineSync": BooleanAttribute, // Indicates whether duplicate detection of records during offline synchronization is enabled.
         "allowOfflineScheduledSyncs": StringAttribute, // Indicates whether background offline synchronization in Microsoft Office Outlook is allowed.
         "allowUnresolvedPartiesOnEmailSend": StringAttribute, // Indicates whether users are allowed to send email to unresolved parties (parties must still have an email address).
-        "timeSeparator": StringAttribute, // Text for how the time separator is displayed throughout Microsoft Dynamics 365.
+        "timeSeparator": StringAttribute, // Text for how the time separator is displayed throughout Server.
         "currentParsedTableNumber": NumberAttribute, // First parsed table number to use.
         "minOfflineSyncInterval": StringAttribute, // Normal polling frequency used for background offline synchronization in Microsoft Office Outlook.
         "allowWebExcelExport": StringAttribute, // Indicates whether Web-based export of grids to Microsoft Office Excel is allowed.
@@ -124,26 +124,26 @@ class DOrganizationEntity : DOOPEntity {
         "isDuplicateDetectionEnabledForImport": BooleanAttribute, // Indicates whether duplicate detection of records during import is enabled.
         "calendarType": StringAttribute, // Calendar type for the system. Set to Gregorian US by default.
         "SQMEnabled": StringAttribute, // Setting for SQM data collection, 0 no, 1 yes enabled
-        "negativeCurrencyFormatCode": IntegerAttribute, // Information that specifies how negative currency numbers are displayed throughout Microsoft Dynamics 365.
+        "negativeCurrencyFormatCode": IntegerAttribute, // Information that specifies how negative currency numbers are displayed throughout Server.
         "allowAddressBookSyncs": StringAttribute, // Indicates whether background address book synchronization in Microsoft Office Outlook is allowed.
-        "ISVIntegrationCode": IntegerAttribute, // Indicates whether loading of Microsoft Dynamics 365 in a browser window that does not have address, tool, and menu bars is enabled.
+        "ISVIntegrationCode": IntegerAttribute, // Indicates whether loading of Server in a browser window that does not have address, tool, and menu bars is enabled.
         "ISVIntegrationCode_display": StringAttribute, // 
-        "decimalSymbol": StringAttribute, // Symbol used for decimal in Microsoft Dynamics 365.
+        "decimalSymbol": StringAttribute, // Symbol used for decimal in Server.
         "maxUploadFileSize": StringAttribute, // Maximum allowed size of an attachment.
-        "isAppMode": BooleanAttribute, // Indicates whether loading of Microsoft Dynamics 365 in a browser window that does not have address, tool, and menu bars is enabled.
+        "isAppMode": BooleanAttribute, // Indicates whether loading of Server in a browser window that does not have address, tool, and menu bars is enabled.
         "enablePricingOnCreate": StringAttribute, // Enable pricing calculations on a Create call.
         "isSOPIntegrationEnabled": BooleanAttribute, // Enable sales order processing integration.
-        "PMDesignator": StringAttribute, // PM designator to use throughout Microsoft Dynamics 365.
+        "PMDesignator": StringAttribute, // PM designator to use throughout Server.
         "currencyDecimalPrecisiOn": DatetimeAttribute, // Number of decimal places that can be used for currency.
         "maxAppointmentDurationDays": StringAttribute, // Maximum number of days an appointment can last.
         "emailSendPollingPeriod": StringAttribute, // Normal polling frequency used for sending email in Microsoft Office Outlook.
         "renderSecureIFrameForEmail": StringAttribute, // Flag to render the body of email in the Web form in an IFRAME with the security='restricted' attribute set. This is additional security but can cause a credentials prompt.
-        "numberSeparator": StringAttribute, // Symbol used for number separation in Microsoft Dynamics 365.
+        "numberSeparator": StringAttribute, // Symbol used for number separation in Server.
         "privReportingGroupId": UUIDAttribute, // For internal use only.
         "baseCurrencyId": CurrencyIdAttribute, // Unique identifier of the base currency of the organization.
         "maxRecordsForExportToExcel": StringAttribute, // Maximum number of records that will be exported to a static Microsoft Office Excel worksheet when exporting from the grid.
         "privReportingGroupName": StringAttribute, // For internal use only.
-        "yearStartWeekCode": IntegerAttribute, // Information that specifies how the first week of the year is specified in Microsoft Dynamics 365.
+        "yearStartWeekCode": IntegerAttribute, // Information that specifies how the first week of the year is specified in Server.
         "isPresenceEnabled": BooleanAttribute, // Information on whether IM presence is enabled.
         "isDuplicateDetectionEnabled": BooleanAttribute, // Indicates whether duplicate detection of records is enabled.
         "expireSubscriptionsInDays": StringAttribute, // Maximum number of days before deleting inactive subscriptions.
@@ -289,10 +289,10 @@ class DOrganizationEntity : DOOPEntity {
         "displayNavigationTour": StringAttribute, // Indicates whether or not navigation tour is displayed.
         "useLegacyRendering": StringAttribute, // Select whether to use legacy form rendering.
         "defaultMobileOfflineProfileId": UUIDAttribute, // Unique identifier of the default mobile offline profile.
-        "kaPrefix": StringAttribute, // Type the prefix to use for all knowledge articles in Microsoft Dynamics 365.
+        "kaPrefix": StringAttribute, // Type the prefix to use for all knowledge articles in Server.
         "currentKaNumber": NumberAttribute, // Enter the first number to use for knowledge articles. Deprecated. Use SetAutoNumberSeed message.
         "currentCategoryNumber": NumberAttribute, // Enter the first number to use for Categories. Deprecated. Use SetAutoNumberSeed message.
-        "categoryPrefix": StringAttribute, // Type the prefix to use for all categories in Microsoft Dynamics 365.
+        "categoryPrefix": StringAttribute, // Type the prefix to use for all categories in Server.
         "maximumEntitiesWithActiveSLA": StringAttribute, // Maximum number of active SLA allowed per entity in online
         "maximumSLAKPIPerEntityWithActiveSLA": StringAttribute, // Maximum number of SLA KPI per active SLA allowed for entity in online
         "isConflictDetectionEnabledForMobileClient": BooleanAttribute, // Information that specifies whether conflict detection for mobile client is enabled.

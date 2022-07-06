@@ -67,7 +67,7 @@ class DGoalEntity : DOOPEntity {
         "percentage": PercentageAttribute, // Shows the percentage achieved against the target goal.
         "isFiscalPeriodGoal": BooleanAttribute, // Select whether the goal period is a fiscal period or custom period.
         "considerOnlyGoalOwnersRecords": StringAttribute, // Select whether only the goal owner's records, or all records, should be rolled up for goal results.
-        "lastRolledupDate": DateAttribute, // Shows the date and time when the goal was last rolled up. The date and time are displayed in the time zone selected in Microsoft Dynamics 365 options.
+        "lastRolledupDate": DateAttribute, // Shows the date and time when the goal was last rolled up. The date and time are displayed in the time zone selected in Server options.
         "targetString": StringAttribute, // Target value of the goal.
         "stretchTargetString": StringAttribute, // Stretch target value for all data types.
         "actualString": StringAttribute, // Actual Value of the goal.

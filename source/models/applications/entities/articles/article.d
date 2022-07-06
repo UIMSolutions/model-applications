@@ -30,7 +30,7 @@ class DAPLArticle : DOOPEntity {
           "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
           "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the article.
           "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the kbarticle.
-          "languageCode": IntegerAttribute, // Select which language the article must be available in. This list is based on the list of language packs that are installed in your Microsoft Dynamics 365 environment.
+          "languageCode": IntegerAttribute, // Select which language the article must be available in. This list is based on the list of language packs that are installed in your Server environment.
           "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
           "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.
           "entityImageId": UUIDAttribute, // For internal use only.
