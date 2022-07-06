@@ -4,8 +4,8 @@ module models.applications.social_activity;
 import models.applications;
 
 // SocialActivity that is attached to one or more objects, including other notes.
-class DAPLSocialActivity : DOOPEntity {
-  mixin(EntityThis!("APLSocialActivity"));
+class DSocialActivityEntity : DOOPEntity {
+  mixin(EntityThis!("SocialActivityEntity"));
   
   override void initialize() {
     super.initialize;
@@ -79,12 +79,12 @@ class DAPLSocialActivity : DOOPEntity {
       .registerPath("applications_socialactivities");
   }
 }
-mixin(EntityCalls!("APLSocialActivity"));
+mixin(EntityCalls!("SocialActivityEntity"));
 
 version(test_library) {
   unittest {
-    assert(APLSocialActivity);
+    assert(SocialActivityEntity);
 
-    auto entity = APLSocialActivity;
+    auto entity = SocialActivityEntity;
   }
 }
