@@ -13,8 +13,8 @@ class DActivityEntity : DOOPEntity {
     this
       .addValues([ // fix values
         OwnerIdAttribute, // Owner Id
-        StateCodeAttribute, // Status of the activity.
-        StatusCodeAttribute // Reason for the status of the activity.
+        StateCodeAttribute, // Status of the entity
+        StatusCodeAttribute // Reason for the status of the entity
       ])
       .addValues([ // individual values
         "createdOnBehalfId": UUIDAttribute, // Shows who created the record on behalf of another user.
