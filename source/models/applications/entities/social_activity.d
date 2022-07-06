@@ -15,6 +15,10 @@ class DAPLSocialActivity : DOOPEntity {
         CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
         ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
+        StateCodeAttribute, // // Shows whether the social activity completed. This field is read-only.
+        StatusCodeAttribute // Shows whether the social activity is completed, failed, or processing. This field is read-only.
+      ])
+      .addValues([ // individual values
       ])
       .addValues([ // individual values
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
@@ -52,10 +56,6 @@ class DAPLSocialActivity : DOOPEntity {
         "traversedPath": StringAttribute, // For internal use only.
         "processId": UUIDAttribute, // Unique identifier of the Process.
         "stageId": UUIDAttribute, // Unique identifier of the Stage.
-        "stateCode": IntegerAttribute, // Shows whether the social activity completed. This field is read-only.
-        "stateCode_display": StringAttribute, // 
-        "statusCode": IntegerAttribute, // Shows whether the social activity is completed, failed, or processing. This field is read-only.
-        "statusCode_display": StringAttribute, // 
         "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
         "sentimentValue": StringAttribute, // Value derived after assessing words commonly associated with a negative, neutral, or positive sentiment that occurs in a social post. Sentiment information can also be reported as numeric values.
@@ -66,7 +66,7 @@ class DAPLSocialActivity : DOOPEntity {
         "postMessageType_display": StringAttribute, // 
         "postId": UUIDAttribute, // Unique identifier of the post. For internal use only.
         "threadId": UUIDAttribute, // Unique identifier of the social conversation. For internal use only.
-        "SLAInvokedId": UUIDAttribute, // Last SLA that was applied to this Social Activity. This field is for internal use only.
+        "slaInvokedId": UUIDAttribute, // Last SLA that was applied to this Social Activity. This field is for internal use only.
         "postFromProfileId": UUIDAttribute, // Shows the author of the post on the corresponding social channel.
         "postToProfileId": UUIDAttribute, // Shows the recipients of the social post.
         "postAuthorAccount": StringAttribute, // Shows the parent account of the author of the post.

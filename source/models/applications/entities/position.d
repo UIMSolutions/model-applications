@@ -11,14 +11,14 @@ class DPositionEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addValues([
+      .addValues([ // fix values
+        StateCodeAttribute, // Shows whether the entity is active or inactive. Inactive entities are read-only and can't be edited unless they are reactivated.
+        StatusCodeAttribute // Select the entity's status.
+      ])
+      .addValues([ // individual values
         "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the record.
         "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who modified the record.
         "organizationId": UUIDAttribute, // Unique identifier for the organization
-        "stateCode": IntegerAttribute, // Status of the Position
-        "stateCode_display": StringAttribute, // 
-        "statusCode": IntegerAttribute, // Reason for the status of the Position
-        "statusCode_display": StringAttribute, // 
         "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
@@ -33,17 +33,9 @@ class DPositionEntity : DOOPEntity {
 mixin(EntityCalls!("PositionEntity"));
 
 version(test_library) {
-  unittest {
-    
+  unittest {    
     assert(PositionEntity);
 
-  auto entity = PositionEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = PositionEntity;
   }
 }
