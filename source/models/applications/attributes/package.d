@@ -1,4 +1,4 @@
-module models.applications,attributes;
+module models.applications.attributes;
 
 public import models.applications.attributes.codes;
 public import models.applications.attributes.elements;

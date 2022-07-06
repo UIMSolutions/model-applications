@@ -3,8 +3,9 @@ module models.applications;
 @safe:
 import models.applications;
 
-// Subpackages
+/* // Subpackages
 public import models.applications.foundations;
+ */
 
 // Packages Applications
 public import models.applications.activities;

@@ -1,3 +1,3 @@
 module models.applications.attributes.uuids;
 
-public import applications.attributes.uuids.entities;
+public import models.applications.attributes.uuids.entities;
