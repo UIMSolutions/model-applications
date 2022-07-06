@@ -4,8 +4,8 @@ module models.applications.queues.queue;
 import models.applications;
 
 // A list of records that require action, such as accounts, activities, and cases.
-class DAPLQueueEntity : DOOPEntity {
-  mixin(EntityThis!("APLQueueEntity"));
+class DQueueEntity : DOOPEntity {
+  mixin(EntityThis!("QueueEntity"));
   
   override void initialize() {
     super.initialize;
@@ -58,17 +58,11 @@ class DAPLQueueEntity : DOOPEntity {
       .registerPath("applications.queues");
   }
 }
-mixin(EntityCalls!("APLQueueEntity"))
+mixin(EntityCalls!("QueueEntity"));
+
 version(test_library) {
   unittest {
-    
-    auto entity = APLQueue;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    assert(QueueEntity);
+    auto entity = QueueEntity;
   }
 }

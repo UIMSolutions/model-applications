@@ -4,8 +4,8 @@ module models.applications.queues.item;
 import models.applications;
 
 // A specific item in a queue, such as a case record or an activity record.
-class DAPLQueueItemEntity : DOOPEntity {
-  mixin(EntityThis!("APLQueueItemEntity"));
+class DQueueItemEntity : DOOPEntity {
+  mixin(EntityThis!("QueueItemEntity"));
 
   override void initialize() {
     super.initialize;
@@ -48,20 +48,12 @@ class DAPLQueueItemEntity : DOOPEntity {
       .registerPath("applications.queues.items");
   }
 }
-mixin(EntityCalls!("APLQueueItemEntity"));
+mixin(EntityCalls!("QueueItemEntity"));
 
 version(test_library) {
-  unittest {
-    
-    assert(APLQueueItem);
+  unittest {    
+    assert(QueueItemEntity);
 
-    auto entity = APLQueueItem;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = QueueItemEntity;
   }
 }

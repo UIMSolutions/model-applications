@@ -4,8 +4,8 @@ module models.applications.connections.connection;
 import models.applications;
 
 // Role describing a relationship between a two records.
-class DAPLConnectionEntity : DOOPEntity {
-  mixin(EntityThis!("APLConnectionEntity"));
+class DConnectionEntity : DOOPEntity {
+  mixin(EntityThis!("ConnectionEntity"));
   
   override void initialize() {
     super.initialize;
@@ -35,20 +35,12 @@ class DAPLConnectionEntity : DOOPEntity {
       .registerPath("applications_connections");
   }
 }
-mixin(EntityCalls!("APLConnectionEntity"));
+mixin(EntityCalls!("ConnectionEntity"));
 
 version(test_library) {
-  unittest {
-    
-    assert(APLConnection);
+  unittest {    
+    assert(ConnectionEntity);
   
-    auto entity = APLConnection;
-  // auto repository = OOPFileRepository("./tests");
-/* /*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */ 
+    auto entity = ConnectionEntity;
   }
 }

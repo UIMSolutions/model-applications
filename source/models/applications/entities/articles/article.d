@@ -4,8 +4,8 @@ module models.applications.articles.article;
 import models.applications;
 
 // Structured content that is part of the knowledge base.
-class DAPLArticle : DOOPEntity {
-  mixin(EntityThis!("APLArticle"));
+class DArticleEntity : DOOPEntity {
+  mixin(EntityThis!("ArticleEntity"));
   
   override void initialize() {
     super.initialize;
@@ -38,12 +38,12 @@ class DAPLArticle : DOOPEntity {
       .registerPath("applications_articles");
   }
 }
-mixin(EntityCalls!("APLArticle"));
+mixin(EntityCalls!("ArticleEntity"));
 
 version(test_library) {
   unittest {
-    assert(APLArticle);
-    auto entity = APLArticle;
+    assert(ArticleEntity);
+    auto entity = ArticleEntity;
   
 /*   // auto repository = OOPFileRepository("./tests");
 /*  repository.create("entities", entity.entityClasses, entity.toJson);

@@ -4,8 +4,8 @@ module models.applications.articles.comment;
 import models.applications;
 
 // Comment on a knowledge base article.
-class DAPLArticleComment : DOOPEntity {
-  mixin(EntityThis!("APLArticleComment"));
+class DArticleCommentEntity : DOOPEntity {
+  mixin(EntityThis!("ArticleCommentEntity"));
   
   override void initialize() {
     super.initialize;
@@ -20,23 +20,15 @@ class DAPLArticleComment : DOOPEntity {
         "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the kbarticlecomment.
         "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the kbarticlecomment.
       ])
-      .registerPath("applications_articlecomments");
+      .registerPath("applications_articles.comments");
   }
 }
-mixin(EntityCalls!("APLArticleComment"));
+mixin(EntityCalls!("ArticleCommentEntity"));
 
 version(test_library) {
-  unittest {
-    
-    assert(APLArticleComment);
+  unittest {    
+    assert(ArticleCommentEntity);
   
-    auto entity = APLArticleComment;
-  // auto repository = OOPFileRepository("./tests");
-/*   repository.create("entities",  entity.entityClasses, entity.toJson);
-/*  */
-/*   auto json = repository.findOne ("entities", entity.entityClasses, ["id":entity.id.toString]);
-/*   assert(json != Json(null), entity.id.toString~" not found");
-/*  */
-/*   repository.cleanupConnections; */
+    auto entity = ArticleCommentEntity;
   }
 }
