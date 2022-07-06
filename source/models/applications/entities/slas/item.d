@@ -12,6 +12,8 @@ class DSLAItemEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
       ])
       .addValues([ // individual values
@@ -34,8 +36,6 @@ class DSLAItemEntity : DOOPEntity {
         "owningUserId": UserIdAttribute, // Unique identifier of the user who owns the SLA Item record.
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "workflowId": UUIDAttribute, // Workflow associated with the SLA Item.
-        "createdOnBehalfBy": UserIdAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy": UserIdAttribute, // Shows who created the record on behalf of another user.
       ])
       .registerPath("applications_sla.items");
   }

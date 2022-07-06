@@ -11,7 +11,11 @@ class DOrganizationEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addValues([
+      .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
+       ])
+      .addValues([ // individual values
         "organizationId": UUIDAttribute, // Unique identifier of the organization.
         "userGroupId": UUIDAttribute, // Unique identifier of the default group of users in the organization.
         "privilegeUserGroupId": UUIDAttribute, // Unique identifier of the default privilege for users in the organization.
@@ -158,8 +162,6 @@ class DOrganizationEntity : DOOPEntity {
         "pastExpansionWindow": StringAttribute, // Specifies the maximum number of months in past for which the recurring activities can be created.
         "recurrenceExpansionSynchCreateMax": StringAttribute, // Specifies the maximum number of instances to be created synchronously after creating a recurring appointment.
         "recurrenceDefaultNumberOfOccurrences": StringAttribute, // Specifies the default value for number of occurrences field in the recurrence dialog.
-        "createdOnBehalfId": UUIDAttribute, // Unique identifier of the delegate user who created the organization.
-        "modifiedOnBehalfId": UUIDAttribute, // Unique identifier of the delegate user who last modified the organization.
         "getStartedPaneContentEnabled": StringAttribute, // Indicates whether Get Started content is enabled for this organization.
         "useReadForm": StringAttribute, // Indicates whether the read-optimized form should be enabled for this organization.
         "initialVersiOn": DatetimeAttribute, // Initial version of the organization.

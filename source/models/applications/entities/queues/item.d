@@ -12,6 +12,8 @@ class DQueueItemEntity : DOOPEntity {
     
     this
       .addValues([
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
         StatusCodeAttribute, // Select the item's status.
         StateCodeAttribute, // Shows whether the queue record is active or inactive. Inactive queue records are read-only and can't be edited unless they are reactivated.
@@ -39,8 +41,6 @@ class DQueueItemEntity : DOOPEntity {
         "workerId": UUIDAttribute, // Shows who is working on the queue item.
         "workerIdType": StringAttribute, // The name of the entity linked by workerId
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier of the business unit that owns the queue item.
-        "createdOnBehalfBy": UserIdAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the queueitem.
         "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.

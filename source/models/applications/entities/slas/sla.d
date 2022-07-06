@@ -12,6 +12,8 @@ class DSLAEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Status of the entity
         StatusCodeAttribute // Reason for the status of the entity
@@ -41,8 +43,6 @@ class DSLAEntity : DOOPEntity {
         "allowPauseResume": StringAttribute, // Select whether this SLA will allow pausing and resuming during the time calculation.
         "SLAType": StringAttribute, // Select the type of service level agreement (SLA).
         "SLAType_display": StringAttribute, // 
-        "createdOnBehalfBy":UserIdAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy":UserIdAttribute, // Shows who created the record on behalf of another user.
         "primaryEntityOTC": StringAttribute, // Shows the primary entity that the SLA has been created for.
       ])
       .registerPath("applications_slas");

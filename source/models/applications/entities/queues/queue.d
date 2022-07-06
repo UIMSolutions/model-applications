@@ -11,12 +11,14 @@ class DQueueEntity : DOOPEntity {
     super.initialize;
     
     this
-      .addValues([
+      .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Status of the queue.
         StatusCodeAttribute, // Reason for the status of the queue.
        ])
-      .addValues([
+      .addValues([ // individual values
         "businessUnitId": BusinessUnitIdAttribute, // Unique identifier of the business unit with which the queue is associated.
         "organizationId": UUIDAttribute, // Unique identifier of the organization associated with the queue.
         "emailAddress": StringAttribute, // Email address that is associated with the queue.
@@ -39,8 +41,6 @@ class DQueueEntity : DOOPEntity {
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier of the business unit that owns the queue.
         "owningUserId": UserIdAttribute, // Unique identifier of the user who owns the queue.
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the queue.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the queue.
         "numberOfItems": StringAttribute, // Number of Queue items associated with the queue.
         "numberOfMembers": StringAttribute, // Number of Members associated with the queue.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.

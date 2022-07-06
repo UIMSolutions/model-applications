@@ -12,13 +12,13 @@ class DActivityEntity : DOOPEntity {
 
     this
       .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
         OwnerIdAttribute, // Owner Id
         StateCodeAttribute, // Status of the entity
         StatusCodeAttribute // Reason for the status of the entity
       ])
       .addValues([ // individual values
-        "createdOnBehalfId": UUIDAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfId": UUIDAttribute, // Shows who last updated the record on behalf of another user.
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record
         "owningUserId": UserIdAttribute, // Unique identifier of the user that owns the activity.

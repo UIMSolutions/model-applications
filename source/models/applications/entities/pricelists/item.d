@@ -11,10 +11,12 @@ class DPriceListItemEntity : DOOPEntity {
     super.initialize;
 
     this
+      .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
+       ])
       .addValues([ // individual values
         "productPriceLevelId": StringAttribute, // Unique identifier of the price list.
-        "createdOnBehalfBy": StringAttribute, // Shows who created the record on behalf of another user.
-        "modifiedOnBehalfBy": StringAttribute, // Shows who last updated the record on behalf of another user.
         "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record.
         "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
@@ -48,7 +50,6 @@ class DPriceListItemEntity : DOOPEntity {
   }
 }
 mixin(EntityCalls!("PriceListItemEntity"));
-auto PriceListItemEntity(Json json) { return new DPriceListItemEntity(json); } 
 
 version(test_library) {
   unittest {

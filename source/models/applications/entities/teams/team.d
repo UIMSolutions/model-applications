@@ -11,7 +11,11 @@ class DTeamEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addValues([
+      .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
+      ])
+      .addValues([ // individual values
         "teamId": TeamIdAttribute, // , // Unique identifier for the team.
         "organizationId": UUIDAttribute, // Unique identifier of the organization associated with the team.
         "businessUnitId": BusinessUnitIdAttribute, // Unique identifier of the business unit with which the team is associated.
@@ -21,8 +25,6 @@ class DTeamEntity : DOOPEntity {
         "administratorId": UUIDAttribute, // Unique identifier of the user primary responsible for the team.
         "isDefault": BooleanAttribute, // Information about whether the team is a default business unit team.
         "yomiName": StringAttribute, // Pronunciation of the full name of the team, written in phonetic hiragana or katakana characters.
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the team.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the team.
         "traversedPath": StringAttribute, // For internal use only.
         "queueId": UUIDAttribute, // Unique identifier of the default queue for the team.
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the team.
@@ -35,7 +37,7 @@ class DTeamEntity : DOOPEntity {
         "stageId": UUIDAttribute, // Shows the ID of the stage.
         "processId": UUIDAttribute, // Shows the ID of the process.
       ])
-      .registerPath("applications_tasks");
+      .registerPath("applications_teams");
   }
 }
 mixin(EntityCalls!("TeamEntity"));

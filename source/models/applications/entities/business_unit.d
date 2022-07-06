@@ -11,7 +11,11 @@ class DBusinessUnitEntity : DOOPEntity {
     super.initialize;
 
     this
-      .addValues([
+      .addValues([ // fix values
+        CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
+        ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
+       ])
+      .addValues([ // individual values
         "businessUnitId": BusinessUnitIdAttribute, // Unique identifier of the business unit.
         "organizationId": UUIDAttribute, // Unique identifier of the organization associated with the business unit.
         "divisionName": StringAttribute, // Name of the division to which the business unit belongs.
@@ -79,8 +83,6 @@ class DBusinessUnitEntity : DOOPEntity {
         "calendarId": UUIDAttribute, // Fiscal calendar associated with the business unit.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
-        "createdOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who created the businessunit.
-        "modifiedOnBehalfBy": UserIdAttribute, // Unique identifier of the delegate user who last modified the businessunit.
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the businessunit.
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the businessunit with respect to the base currency.
       ])
