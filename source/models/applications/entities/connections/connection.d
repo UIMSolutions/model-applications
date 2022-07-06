@@ -1,4 +1,4 @@
-module models.applications.connections.connection;
+module models.applications.entities.connections.connection;
 
 @safe:
 import models.applications;

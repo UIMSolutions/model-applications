@@ -1,1 +1,1 @@
-module models.applications.attributes.relationsships;
+module models.applications.attributes.relationships;

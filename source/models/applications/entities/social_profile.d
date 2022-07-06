@@ -1,4 +1,4 @@
-module models.applications.social_profile;
+module models.applications.entities.social_profile;
 
 @safe:
 import models.applications;

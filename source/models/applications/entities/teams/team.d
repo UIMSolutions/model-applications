@@ -1,4 +1,4 @@
-module models.applications.teams.team;
+module models.applications.entities.teams.team;
 
 @safe:
 import models.applications;

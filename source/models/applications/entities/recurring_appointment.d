@@ -1,4 +1,4 @@
-module models.applications.recurring_appointment;
+module models.applications.entities.recurring_appointment;
 
 @safe:
 import models.applications;

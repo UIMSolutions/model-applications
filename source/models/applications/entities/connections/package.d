@@ -1,8 +1,8 @@
-module models.applications.connections;
+module models.applications.entities.connections;
 
 @safe:
 import models.applications;
 
-public import models.applications.connections.connection;
+public import models.applications.entities.connections.connection;
 
-public import models.applications.connections.role;
+public import models.applications.entities.connections.role;

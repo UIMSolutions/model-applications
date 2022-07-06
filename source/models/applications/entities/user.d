@@ -1,4 +1,4 @@
-module models.applications.user;
+module models.applications.entities.user;
 
 @safe:
 import models.applications;

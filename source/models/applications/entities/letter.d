@@ -1,4 +1,4 @@
-module models.applications.letter;
+module models.applications.entities.letter;
 
 @safe:
 import models.applications;

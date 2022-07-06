@@ -1,10 +1,10 @@
-module models.applications.articles;
+module models.applications.entities.articles;
 
 @safe:
 import models.applications;
 
-public import models.applications.articles.article;
+public import models.applications.entities.articles.article;
 
-public import models.applications.articles.comment;
-public import models.applications.articles.template_;
+public import models.applications.entities.articles.comment;
+public import models.applications.entities.articles.template_;
 

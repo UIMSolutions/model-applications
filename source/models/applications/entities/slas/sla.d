@@ -1,4 +1,4 @@
-module models.applications.slas.sla;
+module models.applications.entities.slas.sla;
 
 @safe:
 import models.applications;

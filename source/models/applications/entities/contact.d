@@ -1,4 +1,4 @@
-module models.applications.contact;
+module models.applications.entities.contact;
 
 @safe:
 import models.applications;

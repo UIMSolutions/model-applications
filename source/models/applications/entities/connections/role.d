@@ -1,4 +1,4 @@
-module models.applications.connections.role;
+module models.applications.entities.connections.role;
 
 @safe:
 import models.applications;

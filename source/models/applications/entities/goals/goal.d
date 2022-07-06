@@ -1,4 +1,4 @@
-module models.applications.goals.goal;
+module models.applications.entities.goals.goal;
 
 @safe:
 import models.applications;

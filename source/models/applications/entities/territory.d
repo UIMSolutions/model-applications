@@ -1,4 +1,4 @@
-module models.applications.territory;
+module models.applications.entities.territory;
 
 @safe:
 import models.applications;

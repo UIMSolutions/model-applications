@@ -1,4 +1,4 @@
-module models.applications.slas.kpi_instance;
+module models.applications.entities.slas.kpi_instance;
 
 @safe:
 import models.applications;

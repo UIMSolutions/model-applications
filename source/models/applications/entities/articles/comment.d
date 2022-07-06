@@ -1,4 +1,4 @@
-module models.applications.articles.comment;
+module models.applications.entities.articles.comment;
 
 @safe:
 import models.applications;

@@ -1,4 +1,4 @@
-module models.applications.note;
+module models.applications.entities.note;
 
 @safe:
 import models.applications;

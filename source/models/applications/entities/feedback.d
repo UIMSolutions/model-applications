@@ -1,4 +1,4 @@
-module models.applications.feedback;
+module models.applications.entities.feedback;
 
 @safe:
 import models.applications;

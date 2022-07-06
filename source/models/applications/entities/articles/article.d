@@ -1,4 +1,4 @@
-module models.applications.articles.article;
+module models.applications.entities.articles.article;
 
 @safe:
 import models.applications;

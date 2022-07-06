@@ -1,11 +1,11 @@
-module models.applications.activities;
+module models.applications.entities.activities;
 
 @safe:
 import models.applications;
 
-/* public import models.applications.activities.activity;
+/* public import models.applications.entities.activities.activity;
 
-public import models.applications.activities.party; */
+public import models.applications.entities.activities.party; */
 
 unittest {
   auto activity = createEntities["aplActivity"](Json.emptyObject);

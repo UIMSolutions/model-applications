@@ -1,4 +1,4 @@
-module models.applications.queues.item;
+module models.applications.entities.queues.item;
 
 @safe:
 import models.applications;

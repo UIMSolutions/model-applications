@@ -1,4 +1,4 @@
-module models.applications.currency;
+module models.applications.entities.currency;
 
 @safe:
 import models.applications;

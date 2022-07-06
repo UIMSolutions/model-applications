@@ -1,4 +1,4 @@
-module models.applications.appointment;
+module models.applications.entities.appointment;
 
 @safe:
 import models.applications;

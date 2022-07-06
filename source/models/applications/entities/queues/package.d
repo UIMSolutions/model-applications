@@ -1,8 +1,8 @@
-module models.applications.queues;
+module models.applications.entities.queues;
 
 @safe:
 import models.applications;
 
-public import models.applications.queues.queue;
+public import models.applications.entities.queues.queue;
 
-public import models.applications.queues.item;
+public import models.applications.entities.queues.item;

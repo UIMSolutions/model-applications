@@ -1,4 +1,4 @@
-module models.applications.phone_call;
+module models.applications.entities.phone_call;
 
 @safe:
 import models.applications;

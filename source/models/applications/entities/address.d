@@ -1,4 +1,4 @@
-module models.applications.address;
+module models.applications.entities.address;
 
 @safe:
 import models.applications;

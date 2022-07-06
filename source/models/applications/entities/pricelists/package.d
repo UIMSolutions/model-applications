@@ -1,8 +1,8 @@
-module models.applications.pricelists;
+module models.applications.entities.pricelists;
 
 @safe:
 import models.applications;
 
-public import models.applications.pricelists.pricelist;
+public import models.applications.entities.pricelists.pricelist;
 
-public import models.applications.pricelists.item;
+public import models.applications.entities.pricelists.item;

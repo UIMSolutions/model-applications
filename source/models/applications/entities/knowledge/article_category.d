@@ -1,2 +1,2 @@
-module models.applications.knowledge.article_category;
+module models.applications.entities.knowledge.article_category;
 

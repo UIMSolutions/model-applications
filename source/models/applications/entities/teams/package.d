@@ -1,8 +1,8 @@
-module models.applications.teams;
+module models.applications.entities.teams;
 
 @safe:
 import models.applications;
 
-public import models.applications.teams.team;
+public import models.applications.entities.teams.team;
 
-public import models.applications.teams.membership;
+public import models.applications.entities.teams.membership;

@@ -1,4 +1,4 @@
-module models.applications.activities.party;
+module models.applications.entities.activities.party;
 
 @safe:
 import models.applications;

@@ -1,4 +1,4 @@
-module models.applications.knowledge.base_record;
+module models.applications.entities.knowledge.base_record;
 
 @safe:
 import models.applications;

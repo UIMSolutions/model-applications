@@ -1,4 +1,4 @@
-module models.applications.knowledge.knowledge_article;
+module models.applications.entities.knowledge.knowledge_article;
 
 @safe:
 import models.applications;

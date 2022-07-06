@@ -1,4 +1,4 @@
-module models.applications.task;
+module models.applications.entities.task;
 
 @safe:
 import models.applications;

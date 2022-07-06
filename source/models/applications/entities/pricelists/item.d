@@ -1,4 +1,4 @@
-module models.applications.pricelists.item;
+module models.applications.entities.pricelists.item;
 
 @safe:
 import models.applications;

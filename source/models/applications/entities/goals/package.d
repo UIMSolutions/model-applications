@@ -1,7 +1,7 @@
-module models.applications.goals;
+module models.applications.entities.goals;
 
 @safe:
 import models.applications;
 
-public import models.applications.goals.goal;
-public import models.applications.goals.metric;
+public import models.applications.entities.goals.goal;
+public import models.applications.entities.goals.metric;

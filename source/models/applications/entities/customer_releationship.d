@@ -1,4 +1,4 @@
-module models.applications.customer_relationship;
+module models.applications.entities.customer_relationship;
 
 @safe:
 import models.applications;
