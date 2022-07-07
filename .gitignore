@@ -13,3 +13,5 @@ model-applications-test-*
 *.o
 *.obj
 *.lst
+dub.selections.json
+libmodel-applications.a
