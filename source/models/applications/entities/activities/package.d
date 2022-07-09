@@ -4,4 +4,6 @@ module models.applications.entities.activities;
 import models.applications;
 
 public import models.applications.entities.activities.activity;
+
+public import models.applications.entities.activities.fax;
 public import models.applications.entities.activities.party; 

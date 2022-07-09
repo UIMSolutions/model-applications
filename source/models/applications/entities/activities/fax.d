@@ -1,4 +1,4 @@
-module models.applications.entities.fax;
+module models.applications.entities.activities.fax;
 
 @safe:
 import models.applications;

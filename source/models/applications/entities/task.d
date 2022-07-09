@@ -66,16 +66,8 @@ mixin(EntityCalls!("TaskEntity"));
 
 version(test_library) {
   unittest {
-    
     assert(TaskEntity);
   
-  auto entity = TaskEntity;
-  // auto repository = OOPFileRepository("./tests");
-/*  repository.create("entities", entity.entityClasses, entity.toJson);
-
-  auto json = repository.findOne("entities", entity.entityClasses, ["id":entity.id.toString]);
-  assert(json != Json(null), entity.id.toString~" not found");
-
-  repository.cleanupConnections; */
+    auto entity = TaskEntity;
   }
 }

@@ -26,7 +26,6 @@ public import models.applications.entities.business_unit;
 public import models.applications.entities.contact;
 public import models.applications.entities.currency;
 public import models.applications.entities.customer_relationship;
-public import models.applications.entities.fax;
 public import models.applications.entities.feedback;
 public import models.applications.entities.letter;
 public import models.applications.entities.note;
