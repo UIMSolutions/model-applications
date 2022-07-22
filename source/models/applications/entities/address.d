@@ -14,7 +14,7 @@ class DAddressEntity : DOOPEntity {
       .addValues([ // fix values
         CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
         ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
-        OwnerIdAttribute, // Owner Id
+        OwnerAttribute, // Owner Id
       ])
       .addValues([ // individual values
         "parentId": UUIDAttribute, // Choose the customer's address.
@@ -47,13 +47,10 @@ class DAddressEntity : DOOPEntity {
         "telephone2": StringAttribute, // Type a second phone number for the customer's address.
         "telephone3": StringAttribute, // Type a third phone number for the customer's address.
         "fax": StringAttribute, // Type the fax number associated with the customer's address.
-        "owningBusinessUnitId": BusinessUnitIdAttribute, // Shows the business unit that the record owner belongs to.
-        "owningUserId": UserIdAttribute, // Unique identifier of the user who owns the customer address.
         "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "utcConversionTimeZoneCode": IntegerAttribute, // Time zone code that was in use when the record was created.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
-        "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
         "composite": StringAttribute, // Shows the complete address.

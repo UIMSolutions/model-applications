@@ -14,17 +14,13 @@ class DAccountEntity : DOOPEntity {
       .addValues([ // fix values
         CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
         ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
-        OwnerIdAttribute, // Owner Id
+        OwnerAttribute, // Object Owner
         StateCodeAttribute, // Shows whether the account is active or inactive. Inactive accounts are read-only and can't be edited unless they are reactivated.
         StatusCodeAttribute // Select the account's status.
       ])
       .addValues([ // individual values
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
-        "ownerIdType": StringAttribute, // The type of owner, either User or Team.
-        "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record
-        "owningUserId": UserIdAttribute, // Unique identifier for the user that owns the record.
-        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
         "utcConversionTimeZoneCode": IntegerAttribute, // Time zone code that was in use when the record was created.
         "accountId": AccountIdAttribute, // Unique identifier of the account.

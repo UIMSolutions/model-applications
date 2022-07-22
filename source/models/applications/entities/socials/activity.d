@@ -1,4 +1,4 @@
-module models.applications.entities.social_activity;
+module models.applications.entities.socials.activity;
 
 @safe:
 import models.applications;

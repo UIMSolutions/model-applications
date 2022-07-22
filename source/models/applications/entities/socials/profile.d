@@ -1,4 +1,4 @@
-module models.applications.entities.social_profile;
+module models.applications.entities.socials.profile;
 
 @safe:
 import models.applications;
@@ -14,17 +14,13 @@ class DSocialProfileEntity : DOOPEntity {
       .addValues([
         CreatedOnBehalfByAttribute, // Shows who created the record on behalf of another user.
         ModifiedOnBehalfByAttribute, // Shows who last updated the record on behalf of another user.
-        OwnerIdAttribute, // Owner Id
+        OwnerAttribute, // Owner Id
         StateCodeAttribute, // Status of the Social Profile
         StatusCodeAttribute // Reason for the status of the Social Profile
       ])
       .addValues([
         "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
-        "ownerIdType": StringAttribute, // The type of owner, either User or Team.
-        "owningBusinessUnitId": BusinessUnitIdAttribute, // Unique identifier for the business unit that owns the record
-        "owningUserId": UserIdAttribute, // Unique identifier of the user that owns the activity.
-        "owningTeamId": TeamIdAttribute, // , // Unique identifier for the team that owns the record.
         "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
         "utcConversionTimeZoneCode": IntegerAttribute, // Time zone code that was in use when the record was created.
         "socialProfileId": UUIDAttribute, // Unique Identifier of the social profile name.
