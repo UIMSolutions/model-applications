@@ -7,7 +7,7 @@ import models.applications;
 class DPhoneCallEntity : DOOPEntity {
   mixin(EntityThis!("PhoneCallEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

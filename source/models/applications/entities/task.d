@@ -7,7 +7,7 @@ import models.applications;
 class DTaskEntity : DOOPEntity {
   mixin(EntityThis!("TaskEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
