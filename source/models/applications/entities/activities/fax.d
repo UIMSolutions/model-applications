@@ -69,8 +69,7 @@ class DFaxEntity : DOOPEntity {
 }
 mixin(EntityCalls!("FaxEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(FaxEntity);
   

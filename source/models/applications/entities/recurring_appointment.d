@@ -96,8 +96,7 @@ class DRecurringAppointmentEntity : DOOPEntity {
 }
 mixin(EntityCalls!("RecurringAppointmentEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(RecurringAppointmentEntity);
 

@@ -32,8 +32,7 @@ class DPositionEntity : DOOPEntity {
 }
 mixin(EntityCalls!("PositionEntity"));
 
-version(test_library) {
-  unittest {    
+version(test_model_applications) { unittest {    
     assert(PositionEntity);
 
     auto entity = PositionEntity;

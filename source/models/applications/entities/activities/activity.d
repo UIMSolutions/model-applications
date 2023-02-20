@@ -74,8 +74,7 @@ class DActivityEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ActivityEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(ActivityEntity);
 

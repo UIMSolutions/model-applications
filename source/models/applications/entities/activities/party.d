@@ -41,8 +41,7 @@ class DActivityPartyEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ActivityPartyEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(ActivityPartyEntity);
   
   auto entity = ActivityPartyEntity;

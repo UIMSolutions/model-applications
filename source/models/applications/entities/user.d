@@ -151,8 +151,7 @@ class DUserEntity : DOOPEntity {
 }
 mixin(EntityCalls!("UserEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(UserEntity);
   

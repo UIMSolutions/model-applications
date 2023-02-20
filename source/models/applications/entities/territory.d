@@ -31,8 +31,7 @@ class DTerritoryEntity : DOOPEntity {
 }
 mixin(EntityCalls!("TerritoryEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(TerritoryEntity);
   
     auto entity = TerritoryEntity;

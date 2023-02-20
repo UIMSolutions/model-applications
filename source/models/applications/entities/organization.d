@@ -354,8 +354,7 @@ class DOrganizationEntity : DOOPEntity {
 }
 mixin(EntityCalls!("OrganizationEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(OrganizationEntity);
 

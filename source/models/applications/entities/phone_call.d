@@ -67,8 +67,7 @@ class DPhoneCallEntity : DOOPEntity {
 }
 mixin(EntityCalls!("PhoneCallEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(PhoneCallEntity);
 
