@@ -6,7 +6,7 @@ import models.applications;
 class DOwnerValue : DElementValue {
   mixin(ValueThis!("OwnerValue", "DOOPElement"));  
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -7,7 +7,7 @@ import models.applications;
 class DTeamEntity : DOOPEntity {
   mixin(EntityThis!("TeamEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
