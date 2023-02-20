@@ -37,8 +37,7 @@ class DConnectionRoleEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ConnectionRoleEntity")); 
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(ConnectionRoleEntity);
   
     auto entity = ConnectionRoleEntity;

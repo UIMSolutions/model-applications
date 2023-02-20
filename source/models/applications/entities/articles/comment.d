@@ -27,8 +27,7 @@ class DArticleCommentEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ArticleCommentEntity"));
 
-version(test_library) {
-  unittest {    
+version(test_model_applications) { unittest {    
     assert(ArticleCommentEntity);
   
     auto entity = ArticleCommentEntity;

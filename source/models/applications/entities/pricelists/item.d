@@ -51,8 +51,7 @@ class DPriceListItemEntity : DOOPEntity {
 }
 mixin(EntityCalls!("PriceListItemEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(PriceListItemEntity);
   

@@ -39,8 +39,7 @@ class DArticleTemplateEntity : DOOPEntity {
 }
 mixin(EntityCalls!("ArticleTemplateEntity"));
 
-version(test_library) {
-  unittest {  
+version(test_model_applications) { unittest {  
     assert(ArticleTemplateEntity);
   
     auto entity = ArticleTemplateEntity;

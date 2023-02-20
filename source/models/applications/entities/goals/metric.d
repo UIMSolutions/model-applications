@@ -33,8 +33,7 @@ class DGoalMetricEntity : DOOPEntity {
 }
 mixin(EntityCalls!("GoalMetricEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(GoalMetricEntity);
   
