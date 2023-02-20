@@ -8,7 +8,7 @@ class DQueueItemEntity : DOOPEntity {
   mixin(EntityThis!("QueueItemEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
     
     this
       .addValues([

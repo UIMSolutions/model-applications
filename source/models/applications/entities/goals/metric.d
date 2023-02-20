@@ -8,7 +8,7 @@ class DGoalMetricEntity : DOOPEntity {
   mixin(EntityThis!("GoalMetricEntity"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values

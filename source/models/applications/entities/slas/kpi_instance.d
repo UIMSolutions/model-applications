@@ -8,7 +8,7 @@ class DSLAKpiInstanceEntity : DOOPEntity {
   mixin(EntityThis!("SLAKpiInstanceEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values

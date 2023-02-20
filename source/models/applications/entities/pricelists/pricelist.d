@@ -9,7 +9,7 @@ class DPriceListEntity : DOOPEntity {
   mixin(EntityThis!("PriceListEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values
@@ -19,7 +19,7 @@ class DPriceListEntity : DOOPEntity {
         StatusCodeAttribute // Select the account's status.
       ])
       .addValues([ // individual values
-        "organizationId": StringAttribute, // Unique identifier for the organization
+        "organizationId": UUIDAttribute, // Unique identifier for the organization
         "importSequenceNumber": NumberAttribute, // Sequence number of the import that created this record.
         "overriddenCreatedOn": StringAttribute, // Date and time that the record was migrated.
         "timeZoneRuleVersionNumber": NumberAttribute, // For internal use only.
@@ -34,7 +34,7 @@ class DPriceListEntity : DOOPEntity {
         "shippingMethodCode": StringAttribute, // Method of shipment for products in the price list.
         "shippingMethodCode_display": StringAttribute, // 
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
-        "transactionCurrencyId": StringAttribute, // Unique identifier of the currency associated with the price level.
+        "transactionCurrencyId": UUIDAttribute, // Unique identifier of the currency associated with the price level.
         "copiedFromPriceLevel": StringAttribute, // Shows the price level that this price level was copied from.
         "entity": StringAttribute, // Select the entity for this price level.
         "entity_display": StringAttribute, // 
