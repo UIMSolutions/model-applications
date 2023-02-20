@@ -22,7 +22,7 @@ class DOwnerElement : DOOPElement {
   mixin(ElementThis!("OwnerElement"));  
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // individual values

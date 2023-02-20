@@ -8,7 +8,7 @@ class DCurrencyEntity : DOOPEntity {
   mixin(EntityThis!("CurrencyEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

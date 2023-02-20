@@ -8,7 +8,7 @@ class DAddressEntity : DOOPEntity {
   mixin(EntityThis!("AddressEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values

@@ -7,7 +7,7 @@ class DOwnerAttribute : DElementAttribute {
   mixin(AttributeThis!("OwnerAttribute"));
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
   }
 
   override DValue createValue() {
