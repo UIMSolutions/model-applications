@@ -8,7 +8,7 @@ class DArticleTemplateEntity : DOOPEntity {
   mixin(EntityThis!("ArticleTemplateEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
     
     this
       .addValues([ // fix values

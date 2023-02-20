@@ -8,7 +8,7 @@ class DFaxEntity : DOOPEntity {
   mixin(EntityThis!("FaxEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

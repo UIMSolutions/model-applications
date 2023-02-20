@@ -8,7 +8,7 @@ class DPhoneCallEntity : DOOPEntity {
   mixin(EntityThis!("PhoneCallEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

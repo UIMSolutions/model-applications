@@ -8,7 +8,7 @@ class DConnectionRoleEntity : DOOPEntity {
   mixin(EntityThis!("ConnectionRoleEntity"));
     
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
