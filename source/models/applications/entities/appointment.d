@@ -80,8 +80,7 @@ class DAppointmentEntity : DOOPEntity {
 }
 mixin(EntityCalls!("AppointmentEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(AppointmentEntity);
   

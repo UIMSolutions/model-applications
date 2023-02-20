@@ -47,8 +47,7 @@ class DFeedbackEntity : DOOPEntity {
 }
 mixin(EntityCalls!("FeedbackEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(FeedbackEntity);
   
   auto entity = FeedbackEntity;

@@ -43,8 +43,7 @@ class DNoteEntity : DOOPEntity {
 }
 mixin(EntityCalls!("NoteEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(NoteEntity);
   

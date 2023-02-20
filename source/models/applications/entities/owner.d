@@ -20,8 +20,7 @@ class DOwnerEntity : DOOPEntity {
 }
 mixin(EntityCalls!("OwnerEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(OwnerEntity);
   

@@ -91,8 +91,7 @@ class DBusinessUnitEntity : DOOPEntity {
 }
 mixin(EntityCalls!("BusinessUnitEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(BusinessUnitEntity);
 

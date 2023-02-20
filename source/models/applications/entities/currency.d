@@ -34,8 +34,7 @@ class DCurrencyEntity : DOOPEntity {
 }
 mixin(EntityCalls!("CurrencyEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(CurrencyEntity);
 
