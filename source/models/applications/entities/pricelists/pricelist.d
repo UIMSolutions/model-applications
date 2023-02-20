@@ -8,7 +8,7 @@ import models.applications;
 class DPriceListEntity : DOOPEntity {
   mixin(EntityThis!("PriceListEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -7,7 +7,7 @@ import models.applications;
 class DQueueItemEntity : DOOPEntity {
   mixin(EntityThis!("QueueItemEntity"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
     
     this

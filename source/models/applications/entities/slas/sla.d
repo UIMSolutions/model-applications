@@ -7,7 +7,7 @@ import models.applications;
 class DSLAEntity : DOOPEntity {
   mixin(EntityThis!("SLAEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

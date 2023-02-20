@@ -7,7 +7,7 @@ import models.applications;
 class DSLAKpiInstanceEntity : DOOPEntity {
   mixin(EntityThis!("SLAKpiInstanceEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -7,7 +7,7 @@ import models.applications;
 class DSocialActivityEntity : DOOPEntity {
   mixin(EntityThis!("SocialActivityEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
