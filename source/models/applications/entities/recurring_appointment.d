@@ -8,7 +8,7 @@ class DRecurringAppointmentEntity : DOOPEntity {
   mixin(EntityThis!("RecurringAppointmentEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

@@ -8,7 +8,7 @@ class DActivityEntity : DOOPEntity {
   mixin(EntityThis!("ActivityEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values

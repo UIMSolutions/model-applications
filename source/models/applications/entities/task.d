@@ -8,7 +8,7 @@ class DTaskEntity : DOOPEntity {
   mixin(EntityThis!("TaskEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([

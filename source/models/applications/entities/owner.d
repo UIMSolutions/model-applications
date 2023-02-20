@@ -8,7 +8,7 @@ class DOwnerEntity : DOOPEntity {
   mixin(EntityThis!("OwnerEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([
