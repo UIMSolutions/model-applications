@@ -81,8 +81,7 @@ class DSocialActivityEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SocialActivityEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(SocialActivityEntity);
 
     auto entity = SocialActivityEntity;

@@ -50,8 +50,7 @@ class DSLAEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SLAEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(SLAEntity);
   
     auto entity = SLAEntity;

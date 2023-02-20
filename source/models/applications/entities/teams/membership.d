@@ -20,8 +20,7 @@ import models.applications;
 }
 mixin(EntityCalls!("TeamMembershipEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(TeamMembershipEntity);
   

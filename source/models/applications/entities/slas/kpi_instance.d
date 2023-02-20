@@ -39,8 +39,7 @@ class DSLAKpiInstanceEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SLAKpiInstanceEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(SLAKpiInstanceEntity);
   
     auto entity = SLAKpiInstanceEntity;

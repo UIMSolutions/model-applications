@@ -60,8 +60,7 @@ class DQueueEntity : DOOPEntity {
 }
 mixin(EntityCalls!("QueueEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(QueueEntity);
     auto entity = QueueEntity;
   }

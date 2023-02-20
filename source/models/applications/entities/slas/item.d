@@ -42,8 +42,7 @@ class DSLAItemEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SLAItemEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     assert(SLAItemEntity);
   
     auto entity = SLAItemEntity;

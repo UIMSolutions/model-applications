@@ -42,8 +42,7 @@ class DSocialProfileEntity : DOOPEntity {
 }
 mixin(EntityCalls!("SocialProfileEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(SocialProfileEntity);
   

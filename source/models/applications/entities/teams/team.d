@@ -42,8 +42,7 @@ class DTeamEntity : DOOPEntity {
 }
 mixin(EntityCalls!("TeamEntity"));
 
-version(test_library) {
-  unittest {
+version(test_model_applications) { unittest {
     
     assert(TeamEntity);
 
