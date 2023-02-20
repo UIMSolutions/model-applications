@@ -7,7 +7,7 @@ import models.applications;
 class DFeedbackEntity : DOOPEntity {
   mixin(EntityThis!("FeedbackEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

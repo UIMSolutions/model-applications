@@ -7,7 +7,7 @@ import models.applications;
 class DBusinessUnitEntity : DOOPEntity {
   mixin(EntityThis!("BusinessUnitEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

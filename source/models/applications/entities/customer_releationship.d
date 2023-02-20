@@ -7,7 +7,7 @@ import models.applications;
 class DCustomerRelationshipEntity : DOOPEntity {
   mixin(EntityThis!("CustomerRelationshipEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -7,7 +7,7 @@ import models.applications;
 class DAppointmentEntity : DOOPEntity {
   mixin(EntityThis!("AppointmentEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

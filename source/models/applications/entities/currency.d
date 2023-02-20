@@ -7,7 +7,7 @@ import models.applications;
 class DCurrencyEntity : DOOPEntity {
   mixin(EntityThis!("CurrencyEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this

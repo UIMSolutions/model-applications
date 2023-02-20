@@ -6,7 +6,7 @@ import models.applications;
 class DOwnerAttribute : DElementAttribute {
   mixin(AttributeThis!("OwnerAttribute"));
 
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
   }
 
