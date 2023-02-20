@@ -7,7 +7,7 @@ class DOwnerValue : DElementValue {
   mixin(ValueThis!("OwnerValue", "DOOPElement"));  
 
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .value(OwnerElement);

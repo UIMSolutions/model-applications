@@ -8,7 +8,7 @@ class DSocialActivityEntity : DOOPEntity {
   mixin(EntityThis!("SocialActivityEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values

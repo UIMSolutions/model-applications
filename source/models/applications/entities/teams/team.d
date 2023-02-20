@@ -8,7 +8,7 @@ class DTeamEntity : DOOPEntity {
   mixin(EntityThis!("TeamEntity"));
   
   override void initialize() {
-    super.initialize;
+    super.initialize(configSettings);
 
     this
       .addValues([ // fix values
