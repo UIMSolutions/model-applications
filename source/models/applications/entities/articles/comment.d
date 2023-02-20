@@ -7,7 +7,7 @@ import models.applications;
 class DArticleCommentEntity : DOOPEntity {
   mixin(EntityThis!("ArticleCommentEntity"));
   
-  override void initialize() {
+  override void initialize(DConfigurationValue configSettings = null) {
     super.initialize(configSettings);
 
     this
