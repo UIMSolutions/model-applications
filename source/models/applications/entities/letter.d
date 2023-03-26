@@ -7,7 +7,7 @@ import models.applications;
 class DLetterEntity : DEntity {
   mixin(EntityThis!("LetterEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

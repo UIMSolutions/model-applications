@@ -7,7 +7,7 @@ import models.applications;
 class DFeedbackEntity : DEntity {
   mixin(EntityThis!("FeedbackEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
