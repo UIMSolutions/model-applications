@@ -4,7 +4,7 @@ module models.applications.entities.activities.fax;
 import models.applications;
 
 // Activity that tracks call outcome and number of pages for a fax and optionally stores an electronic copy of the document.  
-class DFaxEntity : DOOPEntity {
+class DFaxEntity : DEntity {
   mixin(EntityThis!("FaxEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

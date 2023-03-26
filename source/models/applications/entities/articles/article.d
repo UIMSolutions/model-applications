@@ -4,7 +4,7 @@ module models.applications.entities.articles.article;
 import models.applications;
 
 // Structured content that is part of the knowledge base.
-class DArticleEntity : DOOPEntity {
+class DArticleEntity : DEntity {
   mixin(EntityThis!("ArticleEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

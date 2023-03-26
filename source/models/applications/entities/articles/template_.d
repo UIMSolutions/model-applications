@@ -4,7 +4,7 @@ module models.applications.entities.articles.template_;
 import models.applications;
 
 // Template for a knowledge base article that contains the standard attributes of an article.
-class DArticleTemplateEntity : DOOPEntity {
+class DArticleTemplateEntity : DEntity {
   mixin(EntityThis!("ArticleTemplateEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

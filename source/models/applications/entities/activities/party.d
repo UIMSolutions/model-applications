@@ -4,7 +4,7 @@ module models.applications.entities.activities.party;
 import models.applications;
 
 // ActivityParty that is attached to one or more objects, including other notes.
-class DActivityPartyEntity : DOOPEntity {
+class DActivityPartyEntity : DEntity {
   mixin(EntityThis!("ActivityPartyEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

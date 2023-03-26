@@ -4,7 +4,7 @@ module models.applications.entities.connections.connection;
 import models.applications;
 
 // Role describing a relationship between a two records.
-class DConnectionEntity : DOOPEntity {
+class DConnectionEntity : DEntity {
   mixin(EntityThis!("ConnectionEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

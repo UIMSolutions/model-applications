@@ -4,7 +4,7 @@ module models.applications.entities.territory;
 import models.applications;
 
 // Territory represents sales regions.
-class DTerritoryEntity : DOOPEntity {
+class DTerritoryEntity : DEntity {
   mixin(EntityThis!("TerritoryEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

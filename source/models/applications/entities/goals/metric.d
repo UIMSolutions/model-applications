@@ -4,7 +4,7 @@ module models.applications.entities.goals.metric;
 import models.applications;
 
 // GoalMetric that is attached to one or more objects, including other notes.
-class DGoalMetricEntity : DOOPEntity {
+class DGoalMetricEntity : DEntity {
   mixin(EntityThis!("GoalMetricEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

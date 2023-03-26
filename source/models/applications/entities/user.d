@@ -4,7 +4,7 @@ module models.applications.entities.user;
 import models.applications;
 
 // Person with access to the system / application and who owns objects in the system / application database.
-class DUserEntity : DOOPEntity {
+class DUserEntity : DEntity {
   mixin(EntityThis!("UserEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

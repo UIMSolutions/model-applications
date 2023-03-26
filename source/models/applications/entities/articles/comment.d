@@ -4,7 +4,7 @@ module models.applications.entities.articles.comment;
 import models.applications;
 
 // Comment on a knowledge base article.
-class DArticleCommentEntity : DOOPEntity {
+class DArticleCommentEntity : DEntity {
   mixin(EntityThis!("ArticleCommentEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
