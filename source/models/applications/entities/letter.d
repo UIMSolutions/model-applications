@@ -4,7 +4,7 @@ module models.applications.entities.letter;
 import models.applications;
 
 // Group of undeleted system users and undeleted teams. Letters can be used to control access to specific objects.
-class DLetterEntity : DOOPEntity {
+class DLetterEntity : DEntity {
   mixin(EntityThis!("LetterEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

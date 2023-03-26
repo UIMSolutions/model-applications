@@ -4,7 +4,7 @@ module models.applications.entities.note;
 import models.applications;
 
 // Note that is attached to one or more objects, including other notes.
-class DNoteEntity : DOOPEntity {
+class DNoteEntity : DEntity {
   mixin(EntityThis!("NoteEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

@@ -4,7 +4,7 @@ module models.applications.entities.task;
 import models.applications;
 
 // Task that is attached to one or more objects, including other notes.
-class DTaskEntity : DOOPEntity {
+class DTaskEntity : DEntity {
   mixin(EntityThis!("TaskEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

@@ -4,7 +4,7 @@ module models.applications.entities.recurring_appointment;
 import models.applications;
 
 // The Master appointment of a recurring appointment series.
-class DRecurringAppointmentEntity : DOOPEntity {
+class DRecurringAppointmentEntity : DEntity {
   mixin(EntityThis!("RecurringAppointmentEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

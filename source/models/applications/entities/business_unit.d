@@ -4,7 +4,7 @@ module models.applications.entities.business_unit;
 import models.applications;
 
 // Business, division, or department in the Server database.
-class DBusinessUnitEntity : DOOPEntity {
+class DBusinessUnitEntity : DEntity {
   mixin(EntityThis!("BusinessUnitEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

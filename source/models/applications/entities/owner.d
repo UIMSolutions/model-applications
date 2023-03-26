@@ -4,7 +4,7 @@ module models.applications.entities.owner;
 import models.applications;
 
 // Group of undeleted system users and undeleted teams. Owners can be used to control access to specific objects.
-class DOwnerEntity : DOOPEntity {
+class DOwnerEntity : DEntity {
   mixin(EntityThis!("OwnerEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

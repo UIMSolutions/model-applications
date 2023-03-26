@@ -4,7 +4,7 @@ module models.applications.entities.phone_call;
 import models.applications;
 
 // Activity to track a telephone call.
-class DPhoneCallEntity : DOOPEntity {
+class DPhoneCallEntity : DEntity {
   mixin(EntityThis!("PhoneCallEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

@@ -16,6 +16,7 @@ public import models.applications.entities.knowledge;
 public import models.applications.entities.pricelists;
 public import models.applications.entities.queues;
 public import models.applications.entities.slas;
+public import models.applications.entities.socials;
 public import models.applications.entities.teams;
 
 // Modules Applications
@@ -34,8 +35,6 @@ public import models.applications.entities.owner;
 public import models.applications.entities.phone_call;
 public import models.applications.entities.position;
 public import models.applications.entities.recurring_appointment;
-public import models.applications.entities.social_activity;
-public import models.applications.entities.social_profile;
 public import models.applications.entities.task;
 public import models.applications.entities.territory;
 public import models.applications.entities.user;

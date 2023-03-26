@@ -4,7 +4,7 @@ module models.applications.entities.position;
 import models.applications;
 
 // Position of a user in the hierarchy
-class DPositionEntity : DOOPEntity {
+class DPositionEntity : DEntity {
   mixin(EntityThis!("PositionEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
