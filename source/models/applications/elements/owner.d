@@ -36,8 +36,7 @@ class DOwnerElement : DOOPElement {
 }
 mixin(ElementCalls!("OwnerElement"));  
 
-version(test_models_applications) {
-  unittest {  
+version(test_models_applications) version(test_models_applications) { unittest {  
     assert(OwnerElement);
 
     writeln(OwnerElement);

@@ -4,7 +4,7 @@ module models.applications.entities.customer_relationship;
 import models.applications;
 
 // Relationship between a customer and a partner in which either can be an account or contact.
-class DCustomerRelationshipEntity : DOOPEntity {
+class DCustomerRelationshipEntity : DEntity {
   mixin(EntityThis!("CustomerRelationshipEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

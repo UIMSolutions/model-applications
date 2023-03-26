@@ -4,7 +4,7 @@ module models.applications.entities.currency;
 import models.applications;
 
 // Currency in which a financial transaction is carried out.
-class DCurrencyEntity : DOOPEntity {
+class DCurrencyEntity : DEntity {
   mixin(EntityThis!("CurrencyEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

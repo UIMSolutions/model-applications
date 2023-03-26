@@ -4,7 +4,7 @@ module models.applications.entities.appointment;
 import models.applications;
 
 // Commitment representing a time interval with start/end times and duration.
-class DAppointmentEntity : DOOPEntity {
+class DAppointmentEntity : DEntity {
   mixin(EntityThis!("AppointmentEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

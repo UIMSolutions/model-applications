@@ -5,8 +5,8 @@
 	"license": "Apache-2.0",
 	"name": "model-applications",
 	"dependencies": {
-		"colored": "~>0.0.23",
-		"vibe-d": "~>0.9.5"
+		"colored": "~>0.0.29",
+		"vibe-d": "~>0.9.6"
 	},	
 	"sourcePaths": [
 			"../../LIBS/uim-core",
@@ -15,7 +15,10 @@
 			"../../LIBS/uim-jsonbase",
 			"../../LIBS/uim-entities",
 			"../../LIBS/uim-entitybase",
-			"./"
+
+    "../../MODELS/model-systems",
+
+		"./"
 	],
 	"importPaths": [
 			"../../LIBS/uim-core",
@@ -24,6 +27,9 @@
 			"../../LIBS/uim-jsonbase",
 			"../../LIBS/uim-entities",
 			"../../LIBS/uim-entitybase",
+
+			"../../MODELS/model-systems",
+
 			"./"
 	],
 	"configurations": [

@@ -4,7 +4,7 @@ module models.applications.entities.address;
 import models.applications;
 
 // Address and shipping information. Used to store additional addresses for an account or contact.
-class DAddressEntity : DOOPEntity {
+class DAddressEntity : DEntity {
   mixin(EntityThis!("AddressEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

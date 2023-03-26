@@ -9,7 +9,9 @@ public import vibe.d;
 
 public import uim.core;
 public import uim.oop;
-public import uim.entities;
+public import uim.models;
+
+public import models.systems;
 
 public import models.applications.attributes;
 public import models.applications.classes;

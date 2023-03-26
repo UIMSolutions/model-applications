@@ -4,7 +4,7 @@ module models.applications.entities.feedback;
 import models.applications;
 
 // Feedback that is attached to one or more objects, including other notes.
-class DFeedbackEntity : DOOPEntity {
+class DFeedbackEntity : DEntity {
   mixin(EntityThis!("FeedbackEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
