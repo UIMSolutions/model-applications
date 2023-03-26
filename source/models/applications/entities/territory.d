@@ -7,7 +7,7 @@ import models.applications;
 class DTerritoryEntity : DEntity {
   mixin(EntityThis!("TerritoryEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

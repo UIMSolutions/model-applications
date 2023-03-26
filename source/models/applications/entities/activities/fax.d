@@ -7,7 +7,7 @@ import models.applications;
 class DFaxEntity : DEntity {
   mixin(EntityThis!("FaxEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

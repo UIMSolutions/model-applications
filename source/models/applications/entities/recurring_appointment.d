@@ -7,7 +7,7 @@ import models.applications;
 class DRecurringAppointmentEntity : DEntity {
   mixin(EntityThis!("RecurringAppointmentEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
