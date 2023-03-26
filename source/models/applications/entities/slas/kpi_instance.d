@@ -4,7 +4,7 @@ module models.applications.entities.slas.kpi_instance;
 import models.applications;
 
 // Service level agreement (SLA) key performance indicator (KPI) instance that is tracked for an individual case
-class DSLAKpiInstanceEntity : DOOPEntity {
+class DSLAKpiInstanceEntity : DEntity {
   mixin(EntityThis!("SLAKpiInstanceEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

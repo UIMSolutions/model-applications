@@ -5,7 +5,7 @@ import models.applications;
 
 
 // Target objective for a user or a team for a specified time period.
-class DGoalEntity : DOOPEntity {
+class DGoalEntity : DEntity {
   mixin(EntityThis!("GoalEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

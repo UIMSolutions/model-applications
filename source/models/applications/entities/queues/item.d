@@ -4,7 +4,7 @@ module models.applications.entities.queues.item;
 import models.applications;
 
 // A specific item in a queue, such as a case record or an activity record.
-class DQueueItemEntity : DOOPEntity {
+class DQueueItemEntity : DEntity {
   mixin(EntityThis!("QueueItemEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

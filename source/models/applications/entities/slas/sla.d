@@ -4,7 +4,7 @@ module models.applications.entities.slas.sla;
 import models.applications;
 
 // Contains information about the tracked service-level KPIs for cases that belong to different customers.
-class DSLAEntity : DOOPEntity {
+class DSLAEntity : DEntity {
   mixin(EntityThis!("SLAEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

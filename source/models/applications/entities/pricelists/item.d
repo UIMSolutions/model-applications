@@ -4,7 +4,7 @@ module models.applications.entities.pricelists.item;
 import models.applications;
 
 // Information about how to price a product in the specified price level, including pricing method, rounding option, and discount type based on a specified product unit.
-class DPriceListItemEntity : DOOPEntity {
+class DPriceListItemEntity : DEntity {
   mixin(EntityThis!("PriceListItemEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

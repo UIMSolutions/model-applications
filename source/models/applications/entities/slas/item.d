@@ -4,7 +4,7 @@ module models.applications.entities.slas.item;
 import models.applications;
 
 // Contains information about a tracked support KPI for a specific customer.
-class DSLAItemEntity : DOOPEntity {
+class DSLAItemEntity : DEntity {
   mixin(EntityThis!("SLAItemEntity"));
 
   override void initialize(DConfigurationValue configSettings = null) {

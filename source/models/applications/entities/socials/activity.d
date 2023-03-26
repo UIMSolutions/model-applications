@@ -4,7 +4,7 @@ module models.applications.entities.socials.activity;
 import models.applications;
 
 // SocialActivity that is attached to one or more objects, including other notes.
-class DSocialActivityEntity : DOOPEntity {
+class DSocialActivityEntity : DEntity {
   mixin(EntityThis!("SocialActivityEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

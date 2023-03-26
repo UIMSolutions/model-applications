@@ -4,7 +4,7 @@ module models.applications.entities.queues.queue;
 import models.applications;
 
 // A list of records that require action, such as accounts, activities, and cases.
-class DQueueEntity : DOOPEntity {
+class DQueueEntity : DEntity {
   mixin(EntityThis!("QueueEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {

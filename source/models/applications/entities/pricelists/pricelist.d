@@ -5,7 +5,7 @@ import models.applications;
 
 // Entity that defines pricing levels.
 // name = Name of the price list.
-class DPriceListEntity : DOOPEntity {
+class DPriceListEntity : DEntity {
   mixin(EntityThis!("PriceListEntity"));
   
   override void initialize(DConfigurationValue configSettings = null) {
