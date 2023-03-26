@@ -18,10 +18,10 @@ New:
   Owner.userId
   Owner.teamId
  */
-class DOwnerElement : DOOPElement {
+class DOwnerElement : DElement {
   mixin(ElementThis!("OwnerElement"));  
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

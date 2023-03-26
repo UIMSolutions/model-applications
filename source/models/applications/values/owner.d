@@ -4,16 +4,16 @@ module models.applications.values.owner;
 import models.applications;
 
 class DOwnerValue : DElementValue {
-  mixin(ValueThis!("OwnerValue", "DOOPElement"));  
+  mixin(ValueThis!("OwnerValue", "DElement"));  
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
       .value(OwnerElement);
   }
 }
-mixin(ValueCalls!("OwnerValue", "DOOPElement"));  
+mixin(ValueCalls!("OwnerValue", "DElement"));  
 
 version(test_models_applications) version(test_models_applications) { unittest {  
     assert(OwnerValue);
