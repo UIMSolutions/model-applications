@@ -7,7 +7,7 @@ import models.applications;
 class DSocialActivityEntity : DEntity {
   mixin(EntityThis!("SocialActivityEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

@@ -4,10 +4,10 @@ module models.applications.entities.teams.team;
 import models.applications;
 
 // Collection of system users that routinely collaborate. Teams can be used to simplify record sharing and provide team members with common access to organization data when team members belong to different Business Units.
-class DTeamEntity : DOOPEntity {
+class DTeamEntity : DEntity {
   mixin(EntityThis!("TeamEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

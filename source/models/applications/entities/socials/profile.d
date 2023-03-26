@@ -4,10 +4,10 @@ module models.applications.entities.socials.profile;
 import models.applications;
 
 // This entity is used to store social profile information of its associated account and contacts on different social channels.
-class DSocialProfileEntity : DOOPEntity {
+class DSocialProfileEntity : DEntity {
   mixin(EntityThis!("SocialProfileEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

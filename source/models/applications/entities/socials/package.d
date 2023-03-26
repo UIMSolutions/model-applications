@@ -1,2 +1,6 @@
-module source.models.applications.entities.socials;
+module models.applications.entities.socials;
 
+public {
+  import models.applications.entities.socials.activity;
+  import models.applications.entities.socials.profile;
+}

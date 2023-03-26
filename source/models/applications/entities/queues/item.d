@@ -7,7 +7,7 @@ import models.applications;
 class DQueueItemEntity : DEntity {
   mixin(EntityThis!("QueueItemEntity"));
 
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
     
     this

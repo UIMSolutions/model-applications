@@ -4,10 +4,10 @@ module models.applications.entities.teams.membership;
 import models.applications;
 
 // TeamMembership that is attached to one or more objects, including other notes.
-  class DTeamMembershipEntity : DOOPEntity {
+  class DTeamMembershipEntity : DEntity {
   mixin(EntityThis!("TeamMembershipEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
