@@ -8,7 +8,7 @@ import models.applications;
 class DPriceListEntity : DEntity {
   mixin(EntityThis!("PriceListEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

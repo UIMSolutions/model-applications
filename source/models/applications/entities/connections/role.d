@@ -7,7 +7,7 @@ import models.applications;
 class DConnectionRoleEntity : DEntity {
   mixin(EntityThis!("ConnectionRoleEntity"));
     
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this

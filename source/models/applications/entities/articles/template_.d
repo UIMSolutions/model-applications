@@ -7,7 +7,7 @@ import models.applications;
 class DArticleTemplateEntity : DEntity {
   mixin(EntityThis!("ArticleTemplateEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
     
     this

@@ -8,7 +8,7 @@ import models.applications;
 class DGoalEntity : DEntity {
   mixin(EntityThis!("GoalEntity"));
   
-  override void initialize(DConfigurationValue configSettings = null) {
+  override void initialize(Json configSettings = null) {
     super.initialize(configSettings);
 
     this
