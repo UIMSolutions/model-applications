@@ -5,5 +5,6 @@ The definitions are divided into the following packages:
 - classes
 - elements
 - entities
+- interfaces
 - usecases
 - values
