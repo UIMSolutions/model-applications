@@ -37,7 +37,7 @@ class DActivityPartyEntity : DEntity {
         "addressUsedEmailColumnNumber": NumberAttribute, // Email address column number from associated party
       ])
       .registerPath("applications_activityparties")
-      .routingPath("/applications");
+      .routingPath("/applications/activityparties");
   }
 }
 mixin(EntityCalls!("ActivityPartyEntity"));

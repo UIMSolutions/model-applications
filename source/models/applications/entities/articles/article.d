@@ -36,7 +36,7 @@ class DArticleEntity : DEntity {
         "entityImageId": UUIDAttribute, // For internal use only.
       ])
       .registerPath("applications_articles")
-      .routingPath("/applications");
+      .routingPath("/applications/articles");
   }
 }
 mixin(EntityCalls!("ArticleEntity"));

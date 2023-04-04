@@ -35,7 +35,7 @@ class DArticleTemplateEntity : DEntity {
         "introducedVersiOn": DatetimeAttribute, // Version in which the form is introduced.
       ])
       .registerPath("applications_articles.templates")
-      .routingPath("/applications");
+      .routingPath("/applications/articletemplates");
   }
 }
 mixin(EntityCalls!("ArticleTemplateEntity"));

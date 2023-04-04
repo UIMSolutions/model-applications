@@ -161,7 +161,7 @@ class DAccountEntity : DEntity {
         "marketingOnly": StringAttribute, // Whether is only for marketing"])
       ])
       .registerPath("applications_accounts")
-      .routingPath("/applications");
+      .routingPath("/applications/accounts");
   }
 }
 mixin(EntityCalls!("AccountEntity"));

@@ -23,7 +23,7 @@ class DArticleCommentEntity : DEntity {
         "organizationId": UUIDAttribute, // Unique identifier of the organization with which the article comment is associated.
       ])
       .registerPath("applications_articles.comments")
-      .routingPath("/applications");
+      .routingPath("/applications/articlecomments");
   }
 }
 mixin(EntityCalls!("ArticleCommentEntity"));
