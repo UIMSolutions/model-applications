@@ -62,7 +62,8 @@ class DLetterEntity : DEntity {
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.	applicationCommon
       ])
-      .registerPath("applications_letters");
+      .registerPath("applications_letters")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("LetterEntity"));

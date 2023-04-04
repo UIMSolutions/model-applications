@@ -34,7 +34,8 @@ class DCustomerRelationshipEntity : DEntity {
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team who owns the customer relationship.
       ])
-      .registerPath("applications_customerrelationships");
+      .registerPath("applications_customerrelationships")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("CustomerRelationshipEntity"));

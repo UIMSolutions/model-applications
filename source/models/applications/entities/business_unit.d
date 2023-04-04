@@ -86,7 +86,8 @@ class DBusinessUnitEntity : DEntity {
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the businessunit.
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the businessunit with respect to the base currency.
       ])
-      .registerPath("applications_businessunits");
+      .registerPath("applications_businessunits")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("BusinessUnitEntity"));

@@ -160,7 +160,8 @@ class DAccountEntity : DEntity {
         "followEmail": StringAttribute, // Information about whether to allow following email activity like opens, attachment views and link clicks for emails sent to the account.
         "marketingOnly": StringAttribute, // Whether is only for marketing"])
       ])
-      .registerPath("applications_accounts");
+      .registerPath("applications_accounts")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("AccountEntity"));

@@ -29,7 +29,8 @@ class DCurrencyEntity : DEntity {
         "currencyPrecisiOn": DatetimeAttribute, // Number of decimal places that can be used for currency.
         "entityImageId": UUIDAttribute, // For internal use only.
       ])
-      .registerPath("applications_currencies");
+      .registerPath("applications_currencies")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("CurrencyEntity"));

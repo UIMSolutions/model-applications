@@ -38,7 +38,8 @@ class DNoteEntity : DEntity {
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team who owns the note.
       ])
-      .registerPath("applications_notes");
+      .registerPath("applications_notes")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("NoteEntity"));

@@ -221,7 +221,8 @@ class DContactEntity : DEntity {
         "modifiedByExternalParty": StringAttribute, // Shows the external party who modified the record.
         "marketingOnly": StringAttribute, // Whether is only for marketing
       ])
-      .registerPath("applications_contacts");
+      .registerPath("applications_contacts")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("ContactEntity"));

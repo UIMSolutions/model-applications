@@ -75,7 +75,8 @@ class DAppointmentEntity : DEntity {
         "isUnsafe": BooleanAttribute, // For internal use only.
         "isDraft": BooleanAttribute, // Information regarding whether the appointment is a draft.
       ])
-      .registerPath("applications_appointments");
+      .registerPath("applications_appointments")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("AppointmentEntity"));
