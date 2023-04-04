@@ -350,7 +350,7 @@ class DOrganizationEntity : DEntity {
         "appointmentRichEditorExperience": StringAttribute, // Information on whether rich editing experience for Appointment is enabled.
       ])
       .registerPath("applications_organizations")
-      .routingPath("/applications");
+      .routingPath("/applications/organizations");
   }
 }
 mixin(EntityCalls!("OrganizationEntity"));

@@ -63,7 +63,7 @@ class DLetterEntity : DEntity {
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.	applicationCommon
       ])
       .registerPath("applications_letters")
-      .routingPath("/applications");
+      .routingPath("/applications/letters");
   }
 }
 mixin(EntityCalls!("LetterEntity"));

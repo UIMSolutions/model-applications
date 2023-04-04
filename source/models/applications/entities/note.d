@@ -39,7 +39,7 @@ class DNoteEntity : DEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team who owns the note.
       ])
       .registerPath("applications_notes")
-      .routingPath("/applications");
+      .routingPath("/applications/notes");
   }
 }
 mixin(EntityCalls!("NoteEntity"));

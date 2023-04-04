@@ -1,7 +1,6 @@
 module models.applications.entities.articles;
 
-@safe:
-import models.applications;
+
 
 public import models.applications.entities.articles.article;
 

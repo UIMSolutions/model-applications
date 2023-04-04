@@ -1,7 +1,6 @@
 module models.applications.entities;
 
-@safe:
-import models.applications;
+
 
 /* // Subpackages
 public import models.applications.entities.foundations;

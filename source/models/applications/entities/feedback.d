@@ -43,7 +43,7 @@ class DFeedbackEntity : DEntity {
         "createdOnBehalfByContact": StringAttribute, // Shows the contact who created the record on behalf of another user.
       ])
       .registerPath("applications_feedbacks")
-      .routingPath("/applications");
+      .routingPath("/applications/feedbacks");
   }
 }
 mixin(EntityCalls!("FeedbackEntity"));
