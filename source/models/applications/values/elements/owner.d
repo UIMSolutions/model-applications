@@ -1,4 +1,4 @@
-module models.applications.values.owner;
+module models.applications.values.elements.owner;
 
 @safe:
 import models.applications;

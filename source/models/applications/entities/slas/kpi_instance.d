@@ -34,7 +34,8 @@ class DSLAKpiInstanceEntity : DEntity {
         "warningTimeReached": StringAttribute, // Shows information about whether the case has reached its warning time.
         "warningTimeReached_display": StringAttribute, // 
       ])
-      .registerPath("applications_slas.kpi_instance");
+      .registerPath("applications_slas.kpi_instance")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("SLAKpiInstanceEntity"));

@@ -76,7 +76,8 @@ class DSocialActivityEntity : DEntity {
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
       ])
-      .registerPath("applications_socialactivities");
+      .registerPath("applications_socialactivities")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("SocialActivityEntity"));

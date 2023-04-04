@@ -15,7 +15,8 @@ import models.applications;
         "systemUserId":UUIDAttribute, // 
         "teamId":UUIDAttribute, // 
       ])
-      .registerPath("applications_teammemberships");
+      .registerPath("applications_teammemberships")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("TeamMembershipEntity"));

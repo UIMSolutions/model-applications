@@ -45,7 +45,8 @@ class DQueueItemEntity : DEntity {
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
       ])
-      .registerPath("applications.queues.items");
+      .registerPath("applications.queues.items")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("QueueItemEntity"));

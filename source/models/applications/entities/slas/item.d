@@ -37,7 +37,8 @@ class DSLAItemEntity : DEntity {
         "ownerIdType": StringAttribute, // The type of owner, either User or Team.
         "workflowId": UUIDAttribute, // Workflow associated with the SLA Item.
       ])
-      .registerPath("applications_sla.items");
+      .registerPath("applications_sla.items")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("SLAItemEntity"));

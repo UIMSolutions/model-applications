@@ -37,7 +37,8 @@ class DSocialProfileEntity : DEntity {
         "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.
         "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
       ])
-      .registerPath("applications_socialprofiles");
+      .registerPath("applications_socialprofiles")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("SocialProfileEntity"));
