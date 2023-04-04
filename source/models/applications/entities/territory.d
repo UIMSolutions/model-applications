@@ -26,7 +26,8 @@ class DTerritoryEntity : DEntity {
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the territory with respect to the base currency.
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the territory.
       ])
-      .registerPath("applications_territories");
+      .registerPath("applications_territories")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("TerritoryEntity"));

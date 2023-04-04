@@ -27,7 +27,8 @@ class DPositionEntity : DEntity {
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the position with respect to the base currency.
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the position.
       ])
-      .registerPath("applications_positions");
+      .registerPath("applications_positions")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("PositionEntity"));

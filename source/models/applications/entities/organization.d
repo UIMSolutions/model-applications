@@ -349,7 +349,8 @@ class DOrganizationEntity : DEntity {
         "allowLegacyDialogsEmbedding": StringAttribute, // Enable embedding of certain legacy dialogs in Unified Interface browser client
         "appointmentRichEditorExperience": StringAttribute, // Information on whether rich editing experience for Appointment is enabled.
       ])
-      .registerPath("applications_organizations");
+      .registerPath("applications_organizations")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("OrganizationEntity"));

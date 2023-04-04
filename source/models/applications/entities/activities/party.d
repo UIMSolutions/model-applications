@@ -36,7 +36,8 @@ class DActivityPartyEntity : DEntity {
         "isPartyDeleted": StringAttribute, // Information about whether the underlying entity record is deleted
         "addressUsedEmailColumnNumber": NumberAttribute, // Email address column number from associated party
       ])
-      .registerPath("applications_activityparties");
+      .registerPath("applications_activityparties")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("ActivityPartyEntity"));

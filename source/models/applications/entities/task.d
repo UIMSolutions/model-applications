@@ -59,7 +59,8 @@ class DTaskEntity : DEntity {
         "onHoldTime": TimeAttribute, // Shows how long, in minutes, that the record was on hold.
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
       ])
-      .registerPath("applications_tasks");
+      .registerPath("applications_tasks")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("TaskEntity"));

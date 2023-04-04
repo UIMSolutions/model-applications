@@ -146,7 +146,8 @@ class DUserEntity : DEntity {
         "identityId": UUIDAttribute, // For internal use only
         "territoryId": UUIDAttribute, // Unique identifier of the territory to which the user is assigned
       ])
-      .registerPath("applications_users");
+      .registerPath("applications_users")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("UserEntity"));

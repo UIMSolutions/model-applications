@@ -62,7 +62,8 @@ class DPhoneCallEntity : DEntity {
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
         "slaId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Phone Call record.
       ])
-      .registerPath("applications_phonecalls");
+      .registerPath("applications_phonecalls")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("PhoneCallEntity"));
