@@ -98,7 +98,7 @@ class DGoalEntity : DEntity {
         "entityImageId": UUIDAttribute, // For internal use only.
       ])
       .registerPath("applications_goals")
-      .routingPath("/applications");
+      .routingPath("/applications/goals");
   }
 }
 mixin(EntityCalls!("GoalEntity"));

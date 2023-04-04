@@ -1,7 +1,6 @@
 module models.applications.entities.slas;
 
-@safe:
-import models.applications;
+
 
 // Main module
 public import models.applications.entities.slas.sla;

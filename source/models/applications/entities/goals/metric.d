@@ -29,7 +29,7 @@ class DGoalMetricEntity : DEntity {
         "isStretchTracked": BooleanAttribute, // Indicates whether the goal metric tracks stretch targets.
       ])
       .registerPath("applications_goals.metrics")
-      .routingPath("/applications");
+      .routingPath("/applications/goalmetrics");
   }
 }
 mixin(EntityCalls!("GoalMetricEntity"));

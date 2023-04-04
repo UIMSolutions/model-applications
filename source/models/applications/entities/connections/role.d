@@ -33,7 +33,7 @@ class DConnectionRoleEntity : DEntity {
         "introducedVersiOn": DatetimeAttribute, // Version in which the form is introduced.
       ])
       .registerPath("applications_connections.roles")
-      .routingPath("/applications");
+      .routingPath("/applications/connectionroles");
   }
 }
 mixin(EntityCalls!("ConnectionRoleEntity")); 
