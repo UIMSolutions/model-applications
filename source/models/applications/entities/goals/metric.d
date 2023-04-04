@@ -28,7 +28,8 @@ class DGoalMetricEntity : DEntity {
         "isAmount": BooleanAttribute, // Information that indicates whether the metric type is Count or Amount.
         "isStretchTracked": BooleanAttribute, // Indicates whether the goal metric tracks stretch targets.
       ])
-      .registerPath("applications_goals.metrics");
+      .registerPath("applications_goals.metrics")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("GoalMetricEntity"));

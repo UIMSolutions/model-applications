@@ -32,7 +32,8 @@ class DConnectionRoleEntity : DEntity {
         "isCustomizable": BooleanAttribute, // Information that specifies whether this component can be customized.
         "introducedVersiOn": DatetimeAttribute, // Version in which the form is introduced.
       ])
-      .registerPath("applications_connections.roles");
+      .registerPath("applications_connections.roles")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("ConnectionRoleEntity")); 

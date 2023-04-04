@@ -97,7 +97,8 @@ class DGoalEntity : DEntity {
         "isOverridden": BooleanAttribute, // Select whether the system rollup fields are updated. If set to Yes, the next system rollup will not update the values of the rollup fields with the system calculated values.
         "entityImageId": UUIDAttribute, // For internal use only.
       ])
-      .registerPath("applications_goals");
+      .registerPath("applications_goals")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("GoalEntity"));

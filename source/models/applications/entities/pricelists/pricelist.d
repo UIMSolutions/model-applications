@@ -42,7 +42,8 @@ class DPriceListEntity : DEntity {
         "module_display": StringAttribute, // 
         "timeUnit": StringAttribute, // Select the default unit of role based time on this price list
       ])
-      .registerPath("applications_accounts");
+      .registerPath("applications_accounts")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("PriceListEntity"));

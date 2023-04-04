@@ -91,7 +91,8 @@ class DRecurringAppointmentEntity : DEntity {
         "traversedPath": StringAttribute, // For internal use only.
         "isUnsafe": BooleanAttribute, // For internal use only.
       ])
-      .registerPath("applications_recurringappointments");
+      .registerPath("applications_recurringappointments")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("RecurringAppointmentEntity"));

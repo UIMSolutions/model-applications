@@ -34,7 +34,8 @@ class DArticleTemplateEntity : DEntity {
         "isCustomizable": BooleanAttribute, // Information that specifies whether this component can be customized.
         "introducedVersiOn": DatetimeAttribute, // Version in which the form is introduced.
       ])
-      .registerPath("applications_articles.templates");
+      .registerPath("applications_articles.templates")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("ArticleTemplateEntity"));

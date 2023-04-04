@@ -22,7 +22,8 @@ class DArticleCommentEntity : DEntity {
         "commentText": StringAttribute, // Comment text for the knowledge base article.
         "organizationId": UUIDAttribute, // Unique identifier of the organization with which the article comment is associated.
       ])
-      .registerPath("applications_articles.comments");
+      .registerPath("applications_articles.comments")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("ArticleCommentEntity"));

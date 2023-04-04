@@ -35,7 +35,8 @@ class DArticleEntity : DEntity {
         "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.
         "entityImageId": UUIDAttribute, // For internal use only.
       ])
-      .registerPath("applications_articles");
+      .registerPath("applications_articles")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("ArticleEntity"));

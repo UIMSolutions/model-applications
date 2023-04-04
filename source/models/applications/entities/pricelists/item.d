@@ -46,7 +46,8 @@ class DPriceListItemEntity : DEntity {
         "uoMId": UUIDAttribute, // Unique identifier of the unit for the price list.
         "uoMScheduleId": UUIDAttribute, // Unique identifier of the unit schedule for the price list.
       ])
-      .registerPath("applications_pricelists.items");
+      .registerPath("applications_pricelists.items")
+      .routingPath("/applications");
   }
 }
 mixin(EntityCalls!("PriceListItemEntity"));
