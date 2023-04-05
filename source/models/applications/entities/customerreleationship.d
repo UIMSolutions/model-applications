@@ -35,7 +35,7 @@ class DCustomerRelationshipEntity : DEntity {
         "owningTeamId": TeamIdAttribute, // , // Unique identifier of the team who owns the customer relationship.
       ])
       .registerPath("applications_customerrelationships")
-      .routingPath("/applications");
+      .routingPath("/applications/customerrelationships");
   }
 }
 mixin(EntityCalls!("CustomerRelationshipEntity"));

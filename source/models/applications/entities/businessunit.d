@@ -1,4 +1,4 @@
-module models.applications.entities.business_unit;
+module models.applications.entities.businessunit;
 
 @safe:
 import models.applications;
@@ -87,7 +87,7 @@ class DBusinessUnitEntity : DEntity {
         "exchangeRate": StringAttribute, // Exchange rate for the currency associated with the businessunit with respect to the base currency.
       ])
       .registerPath("applications_businessunits")
-      .routingPath("/applications");
+      .routingPath("/applications/businessunits");
   }
 }
 mixin(EntityCalls!("BusinessUnitEntity"));

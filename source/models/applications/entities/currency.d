@@ -30,7 +30,7 @@ class DCurrencyEntity : DEntity {
         "entityImageId": UUIDAttribute, // For internal use only.
       ])
       .registerPath("applications_currencies")
-      .routingPath("/applications");
+      .routingPath("/applications/currencies");
   }
 }
 mixin(EntityCalls!("CurrencyEntity"));

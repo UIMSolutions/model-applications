@@ -222,7 +222,7 @@ class DContactEntity : DEntity {
         "marketingOnly": StringAttribute, // Whether is only for marketing
       ])
       .registerPath("applications_contacts")
-      .routingPath("/applications");
+      .routingPath("/applications/contacts");
   }
 }
 mixin(EntityCalls!("ContactEntity"));

@@ -76,7 +76,7 @@ class DAppointmentEntity : DEntity {
         "isDraft": BooleanAttribute, // Information regarding whether the appointment is a draft.
       ])
       .registerPath("applications_appointments")
-      .routingPath("/applications");
+      .routingPath("/applications/appointments");
   }
 }
 mixin(EntityCalls!("AppointmentEntity"));
