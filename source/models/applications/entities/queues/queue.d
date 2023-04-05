@@ -56,7 +56,7 @@ class DQueueEntity : DEntity {
         "queueViewType_display": StringAttribute, // 
       ])
       .registerPath("applications.queues")
-      .routingPath("/applications");
+      .routingPath("/applications/queues");
   }
 }
 mixin(EntityCalls!("QueueEntity"));

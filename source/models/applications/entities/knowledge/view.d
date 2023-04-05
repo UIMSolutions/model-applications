@@ -1,4 +1,4 @@
-module models.applications.entities.views;
+module models.applications.entities.view  ;
 
 @safe:
 import models.applications;
@@ -41,8 +41,8 @@ class DKnowledgeArticleViewEntity : DEntity {
         "location": StringAttribute, //	Shows where the knowledge was used	
         "location_display": StringAttribute, //		
       ])
-      .registerPath("applications_goals")
-      .routingPath("/applications/goals");
+      .registerPath("applications_knowledgearticleviews")
+      .routingPath("/applications/knowledgearticleviews");
   }
 }
 mixin(EntityCalls!("KnowledgeArticleViewEntity"));

@@ -38,7 +38,7 @@ class DSLAItemEntity : DEntity {
         "workflowId": UUIDAttribute, // Workflow associated with the SLA Item.
       ])
       .registerPath("applications_sla.items")
-      .routingPath("/applications");
+      .routingPath("/applications/slaitems");
   }
 }
 mixin(EntityCalls!("SLAItemEntity"));

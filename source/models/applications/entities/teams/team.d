@@ -38,7 +38,7 @@ class DTeamEntity : DEntity {
         "processId": UUIDAttribute, // Shows the ID of the process.
       ])
       .registerPath("applications_teams")
-      .routingPath("/applications");
+      .routingPath("/applications/teams");
   }
 }
 mixin(EntityCalls!("TeamEntity"));

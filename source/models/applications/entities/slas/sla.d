@@ -46,7 +46,7 @@ class DSLAEntity : DEntity {
         "primaryEntityOTC": StringAttribute, // Shows the primary entity that the SLA has been created for.
       ])
       .registerPath("applications_slas")
-      .routingPath("/applications");
+      .routingPath("/applications/slas");
   }
 }
 mixin(EntityCalls!("SLAEntity"));

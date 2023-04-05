@@ -35,7 +35,7 @@ class DSLAKpiInstanceEntity : DEntity {
         "warningTimeReached_display": StringAttribute, // 
       ])
       .registerPath("applications_slas.kpi_instance")
-      .routingPath("/applications");
+      .routingPath("/applications/slaskpiinstances");
   }
 }
 mixin(EntityCalls!("SLAKpiInstanceEntity"));

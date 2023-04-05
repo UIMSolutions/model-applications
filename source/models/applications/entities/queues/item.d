@@ -46,7 +46,7 @@ class DQueueItemEntity : DEntity {
         "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
       ])
       .registerPath("applications.queues.items")
-      .routingPath("/applications");
+      .routingPath("/applications/queueitems");
   }
 }
 mixin(EntityCalls!("QueueItemEntity"));
