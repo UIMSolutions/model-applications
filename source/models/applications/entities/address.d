@@ -56,7 +56,7 @@ class DAddressEntity : DEntity {
         "composite": StringAttribute, // Shows the complete address.
       ])
       .registerPath("applications_addresses")
-      .routingPath("/applications");
+      .routingPath("/applications/addresses");
   }
 }
 mixin(EntityCalls!("AddressEntity"));

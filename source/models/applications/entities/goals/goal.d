@@ -104,8 +104,7 @@ class DGoalEntity : DEntity {
 mixin(EntityCalls!("GoalEntity"));
 
 version(test_model_applications) { unittest {
-    assert(GoalEntity);
-  
-    auto entity = GoalEntity;
-  }
-}
+  assert(GoalEntity);
+
+  auto entity = GoalEntity;
+}}

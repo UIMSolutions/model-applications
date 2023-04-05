@@ -10,6 +10,7 @@ public import models.applications.entities.foundations;
 public import models.applications.entities.activities;
 public import models.applications.entities.articles;
 public import models.applications.entities.connections;
+public import models.applications.entities.emails;
 public import models.applications.entities.goals;
 public import models.applications.entities.knowledge;
 public import models.applications.entities.pricelists;

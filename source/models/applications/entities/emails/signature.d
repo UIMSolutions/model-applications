@@ -18,22 +18,33 @@ class DEmailSignatureEntity : DEntity {
         StatusCodeAttribute, // Select the email's status.
       ])
       .addValues([
-        "kbEmailId": UUIDAttribute, // Shows the ID of the email.
-        "kbEmailTemplateId": UUIDAttribute, // Choose the template that you want to use as a base for creating the new email.
-        "organizationId": UUIDAttribute, // Unique identifier of the organization associated with the email.
-        "subjectId": UUIDAttribute, // Choose the subject of the email to assist with email searches. You can configure subjects under Business Management in the Settings area.
-        "emailXml": StringAttribute, // Shows the email content and formatting, stored as XML.
-        "title": StringAttribute, // Type a subject or descriptive name for the email to assist with email searches.
-        "number": StringAttribute, // Knowledge base email number.
-        "content": StringAttribute, // Description of the content of the knowledge base email.
-        "comments": StringAttribute, // Comments regarding the knowledge base email.
-        "keyWords": StringAttribute, // Keywords to be used for searches in knowledge base emails.
-        "importSequenceNumber": NumberAttribute, // Unique identifier of the data import or data migration that created this record.
-        "overriddenCreatedOn": TimestampAttribute, // Date and time that the record was migrated.
-        "languageCode": IntegerAttribute, // Select which language the email must be available in. This list is based on the list of language packs that are installed in your Server environment.
-        "exchangeRate": StringAttribute, // Shows the conversion rate of the record's currency. The exchange rate is used to convert all money fields in the record from the local currency to the system's default currency.
-        "transactionCurrencyId": CurrencyIdAttribute, // Choose the local currency for the record to make sure budgets are reported in the correct currency.
-        "entityImageId": UUIDAttribute, // For internal use only.
+        "emailSignatureId": StringAttribute, //	Unique identifier of the email signature.	
+        "owningBusinessUnit": StringAttribute, //	Unique identifier of the business unit that owns the email signature.	
+        "isPersonal": StringAttribute, //	Information about whether the email signature is personal or is available to all users.	
+        "mimeType": StringAttribute, //	MIME type of the email signature.	
+        "body": StringAttribute, //	Body text of the email signature.	
+        "title": StringAttribute, //	Title of the email signature.	
+        "description": StringAttribute, //	Description of the email signature.	
+        "owningUser": StringAttribute, //	Unique identifier of the user who owns the email signature.	
+        "createdBy": StringAttribute, //	Unique identifier of the user who created the email signature.	
+        "presentationXml": StringAttribute, //	XML data for the body of the email signature.	
+        "createdOn": StringAttribute, //	Date and time when the email signature was created.	
+        "modifiedBy": StringAttribute, //	Unique identifier of the user who last modified the email signature.	
+        "modifiedOn": StringAttribute, //	Date and time when the email signature was last modified.	
+        "ownerId": StringAttribute, //	Owner Id	
+        "ownerIdType": StringAttribute, //	The type of owner, either User or Team.	
+        "generationTypeCode": StringAttribute, //	For internal use only.	
+        "languageCode": StringAttribute, //	Language of the email signature.	
+        "importSequenceNumber": StringAttribute, //	Unique identifier of the data import or data migration that created this record.	
+        "overwriteTime": StringAttribute, //	For internal use only.	
+        "componentState": StringAttribute, //	For internal use only.	
+        "componentState_display": StringAttribute, //		
+        "createdOnBehalfBy": StringAttribute, //	Unique identifier of the delegate user who created the email signature.	
+        "modifiedOnBehalfBy": StringAttribute, //	Unique identifier of the delegate user who last modified the email signature.	
+        "owningTeam": StringAttribute, //	Unique identifier of the team who owns the email signature.	
+        "isCustomizable": StringAttribute, //	Information that specifies whether this component can be customized.	
+        "overriddenCreatedOn": StringAttribute, //	Date and time that the record was migrated.	
+        "isDefault": StringAttribute, //	Information that specifies whether the email signature is default to the user.	
       ])
       .registerPath("applications_emailsignatures")
       .routingPath("/applications/emailsignatures");

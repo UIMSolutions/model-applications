@@ -65,7 +65,7 @@ class DFaxEntity : DEntity {
         "lastOnHoldTime": TimeAttribute, // Contains the date and time stamp of the last on hold time.
       ])
       .registerPath("applications_faxes")
-      .routingPath("/applications");
+      .routingPath("/applications/faxes");
   }
 }
 mixin(EntityCalls!("FaxEntity"));
