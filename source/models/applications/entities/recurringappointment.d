@@ -1,4 +1,4 @@
-module models.applications.entities.recurring_appointment;
+module models.applications.entities.recurringappointment;
 
 @safe:
 import models.applications;
@@ -92,7 +92,7 @@ class DRecurringAppointmentEntity : DEntity {
         "isUnsafe": BooleanAttribute, // For internal use only.
       ])
       .registerPath("applications_recurringappointments")
-      .routingPath("/applications");
+      .routingPath("/applications/recurringappointments");
   }
 }
 mixin(EntityCalls!("RecurringAppointmentEntity"));

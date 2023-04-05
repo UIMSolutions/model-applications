@@ -27,7 +27,7 @@ class DTerritoryEntity : DEntity {
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the territory.
       ])
       .registerPath("applications_territories")
-      .routingPath("/applications");
+      .routingPath("/applications/territories");
   }
 }
 mixin(EntityCalls!("TerritoryEntity"));

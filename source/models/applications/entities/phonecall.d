@@ -63,7 +63,7 @@ class DPhoneCallEntity : DEntity {
         "slaId": UUIDAttribute, // Choose the service level agreement (SLA) that you want to apply to the Phone Call record.
       ])
       .registerPath("applications_phonecalls")
-      .routingPath("/applications");
+      .routingPath("/applications/phonecalls");
   }
 }
 mixin(EntityCalls!("PhoneCallEntity"));

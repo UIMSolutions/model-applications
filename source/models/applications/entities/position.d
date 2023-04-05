@@ -28,7 +28,7 @@ class DPositionEntity : DEntity {
         "transactionCurrencyId": CurrencyIdAttribute, // Unique identifier of the currency associated with the position.
       ])
       .registerPath("applications_positions")
-      .routingPath("/applications");
+      .routingPath("/applications/positions");
   }
 }
 mixin(EntityCalls!("PositionEntity"));

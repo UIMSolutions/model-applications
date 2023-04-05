@@ -16,7 +16,7 @@ class DOwnerEntity : DEntity {
         "yomiName": StringAttribute, // Pronunciation of the name of the owner, written in phonetic hiragana or katakana characters.
       ])
       .registerPath("applications_owners")
-      .routingPath("/applications");
+      .routingPath("/applications/owners");
   }
 }
 mixin(EntityCalls!("OwnerEntity"));
